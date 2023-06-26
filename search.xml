@@ -1,347 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/05/29/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>writing</title>
-    <url>/2023/05/29/writing/</url>
-    <content><![CDATA[<p> 这里的—什么意思<br>这是文章的正文吗<br>    空格测试，<br>    换行测试<br>换行定格测试。<br>快速开始<br>快速开始<br>开始使用 Redefine 主题。</p>
-<p>Hexo 版本需要大于 5.0.0</p>
-<p>安装<br>安装主题<br>在 Hexo 根目录执行以下命令安装主题，有两种方式：</p>
-<p>终端<br>npm install hexo-theme-redefine@latest</p>
-<p>启用主题<br>在 Hexo 根目录的 _config.yml 文件中，将 theme 值修改为 redefine。</p>
-<p>_config.yml<br>theme: redefine</p>
-<p>创建主题配置文件<br>在 Hexo 根目录下创建 _config.redefine.yml 文件。</p>
-<p>并将此处(opens in a new tab)的所有内容复制进去。</p>
-<p>本文件会自动覆盖主题的配置项，创建本文件的目的是为了方便你在升级主题时，不会丢失你的配置。</p>
-<p>VOILA!<br>现在你可以启动 Hexo，看看效果了。</p>
-<p>接下来请先阅读配置注意事项，然后继续配置主题。</p>
-<p>注意事项</p>
-<ol>
-<li>文档阅读说明<br>在接下来的配置中，xxx.yyy 表示你需要在 _config.redefine.yml 文件中的 xxx 下的 yyy 配置项中进行配置。</li>
-</ol>
-<p>例如，info.title 指的是 info 下的 title 配置项。</p>
-<p>_config.redefine.yml<br>info:<br>    title: Redefine</p>
-<ol start="2">
-<li>YAML 语法<br>配置文件 _config.redefine.yml 使用 YAML 语法，如果你不熟悉 YAML 语法，请先阅读此处(opens in a new tab)。</li>
-</ol>
-<p>YAML 语法是按照缩进来区分层级的，所以请注意缩进。</p>
-<p>请保持原本的缩进，注意在配置项之前不要乱加空格。</p>
-<ol start="3">
-<li>配置主题<br>所有改动都请在 _config.redefine.yml 文件中进行，不建议直接修改主题文件，因为更新主题时会覆盖你的改动。</li>
-</ol>
-<p>更新<br>更新主题<br>在 Hexo 根目录执行和安装时同样的命令更新主题：</p>
-<p>终端<br>npm install hexo-theme-redefine@latest</p>
-<p>迁移配置<br>有时候，更新完主题后，你的配置文件会有一些新的配置项，或者删除了一些配置项，或者对配置项名称进行了改动，这时候你需要将这些配置同步到你的配置文件中。</p>
-<p>可以使用 VS Code 等编辑器的 文件比对 功能，将新旧配置文件进行对比，然后将新的配置项添加到你的配置文件中。</p>
-<p>例如，以下分别是两个不同安装方法的 VS Code 文件对比教程：</p>
-<p>在 VS Code 中，按住 Ctrl(windows) 或者 Command(macos) 键，</p>
-<p>选中旧配置文件(_config.redefine.yml)，</p>
-<p>再选中新配置文件(node_modules&#x2F;hexo-theme-redefine&#x2F;_config.yml)。</p>
-<p>然后点击 比较选中的文件 或者 Compare Selected 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。</p>
-<p>Last updated on 2023年3月25日</p>
-]]></content>
-      <tags>
-        <tag>测试文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试文章2</title>
-    <url>/2023/06/02/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>段落样式，段落样式</p>
-<p>插入表格：</p>
-<table>
-<thead>
-<tr>
-<th>表格</th>
-<th>123</th>
-<th>456</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>项目1</td>
-<td>abc</td>
-<td>DEF</td>
-</tr>
-<tr>
-<td>项目2</td>
-<td>完成</td>
-<td>未完成</td>
-</tr>
-<tr>
-<td>项目3</td>
-<td>￥5000</td>
-<td>插入图形</td>
-</tr>
-</tbody></table>
-<p>图表说明：该表格是测试表格</p>
-<p>插入图片：</p>
+    <title>How should we educate children?</title>
+    <url>/2023/06/18/Children-Education/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I’ve been thinking a lot about my child’s education, especially after visiting their school a couple of days ago. It’s time to seriously consider their education.</p>
+<p>First grade is almost over, and if we look at their academic performance alone, it’s not ideal. Compared to myself at the same age, my child is clearly <strong>lagging behind</strong>. They don’t excel in pinyin, Chinese characters, <strong>mental</strong> <strong>arithmetic</strong>, or show much enthusiasm for learning or a desire to read. They also struggle with problem-solving and building relationships, just like any other typical six-year-old.</p>
+<p>As for my educational thoughts, I initially wanted to write about educational philosophy, but I feel that my ideas are not worthy of such <strong>lofty</strong> concepts. Instead, I’ll briefly explain my own views on education. I am a graduate student from a <strong>prestigious</strong> university in China (referred to as “985” and “211” universities). Looking back on my journey, I realize that my <strong>academic qualifications</strong> have not made me exceptionally outstanding or successful. However, they have helped me understand, accept, and appreciate myself, as well as be grateful for the people and things around me and cherish the present moment. From another perspective, I don’t consider myself a successful individual, as the value of academic qualifications in society is limited, contrary to what most people expect. Based on my personal experience and that of my classmates, I don’t regard academic qualifications as <strong>overly</strong> important, but I also never underestimate their <strong>significance</strong>.</p>
+<p>Without <strong>being obsessed with</strong> academic qualifications, when it comes to my child’s education, I <strong>am more inclined to</strong> help them become a healthy adult and allow them to choose the life they want. The ability to choose one’s desired path in life is already a challenging task that requires a lot of personal effort. <strong>As the saying goes</strong>, you must complete the necessary journey before you can walk the path you desire. For my child, I hope they can develop an independent personality, <strong>possess appropriate values</strong>, and have the ability to <strong>think critically</strong>, analyze problems, and find solutions.</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/privateinvestocat.jpg"
-                      alt="privateinvestocat"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/FvzvnPvacAAR7od.jpg"
-                      alt="FvzvnPvacAAR7od"
-                ></p>
-<p>超链接测试：</p>
-<p>[方括号]: <a class="link"   href="https://www.baidu.com/" >https://www.baidu.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“百度”</p>
-<p>插入图片2</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/GitHub-Bug-Bounty_for-social.webp"
+                     data-src="/../images/Children-Education/Fx7fx3lWYAAhq01.jpg"
                      
                 ></p>
-<p><em><strong><u>测试完毕</u></strong></em></p>
+<p>Let’s talk about learning and how to guide children in their learning process. First, it’s important to help children gradually understand what learning is, why they need to learn, and how to learn. I am somewhat against directly teaching children specific methods. Although they may quickly solve problems using the methods taught to them, it <strong>deprives</strong> them of critical thinking. Instead, let children experience the process of learning, from not knowing to understanding, from unfamiliarity to familiarity. Let them feel how they can gradually master specific knowledge through effort and reflection, and learn how to learn. Learning is a long-term process, and learning how to learn is much more important than learning <strong>specific knowledge</strong>.</p>
+<p>Now, let’s talk about handling relationships with others around them. Children begin to interact with a <strong>collective</strong> when they go from home to school, so it’s important for them to learn how to get along with others. Currently, it seems difficult for first-grade children to <strong>navigate</strong> their relationships with others. My own child is lacking in this aspect, and I haven’t seen any child who can handle relationships well in the first grade. This is a physiological limitation. As parents, we should not be too impatient. We need to give children space, time, and enough patience. However, being patient with children doesn’t mean we can ignore their behavior. We should guide them when appropriate, manage them during important moments, and even discipline them if necessary. From my child, I can clearly sense a strong self-centeredness, where everything and everyone must revolve around them, or else they become unhappy or even throw <strong>tantrums</strong>. This is a common <strong>trait</strong> among children at this age stage - being self-centered and lacking emotional control. Regarding this, proper guidance is <strong>crucial</strong>. We need to be patient with children and avoid blaming or denying them when they exhibit behavior that adults may not understand. Instead, we should gradually guide them to learn the correct methods of interacting with others and their surrounding environment.</p>
+<p>Lastly, let’s talk about the aspect of companionship, which is something I haven’t been doing well. I am an independent person with my own life philosophy and chosen lifestyle. I have my own things to do every day. I’ve always believed that a child’s growth is a long-term process, and there is no need for excessive intervention. At one point, I even thought about letting the child develop freely and understand things on their own when they reach a certain age. However, now I realize that this hands-off approach may not be very wise because, after all, a child is a child. Their growth and development are undoubtedly influenced by the external environment. If the environment is <strong>conducive</strong>, they will be nurtured and cultivated well. But the current environment is not friendly. Can the child overcome it on their own if we just leave them to it? The current answer is no. Moreover, it’s very likely that by letting go, we are surrendering the responsibility of guiding and educating the child to others and the environment. Can we ensure that others can do a better job than us? Can we guarantee that the environment will provide better companionship than we can? This is the reason why I have decided to get involved. If we can’t completely shield the child from the influence of the external environment, then why not let me be the one who influences them? I don’t believe that anyone else can do a better job than me, and I don’t believe that this environment is suitable for providing the child with good education and influence.</p>
+<p>As for the specific education and guidance for the child, I will summarize it while providing companionship.</p>
+<h4 id="子供をどのように教育すべきですか？"><a href="#子供をどのように教育すべきですか？" class="headerlink" title="子供をどのように教育すべきですか？"></a>子供をどのように教育すべきですか？</h4><h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h3><p>1.<strong>lag behind</strong> 落后于</p>
+<p>表达”落后于别人”可以使用短语 “lag behind others”。这个短语强调了一个人或团体在某个方面相对于其他人或团体的进展较慢或滞后。例如，你可以说 “I feel like I’m lagging behind others in my career”（我感觉在职业上我落后于别人）或者 “Our country is lagging behind others in terms of technological advancements”（我们的国家在技术进步方面落后于别国）。这个短语可以用于描述各种领域或方面的落后情况。</p>
+<p>2.<strong>mental arithmetic</strong> 心算、口算</p>
+<p>&#x2F; ˌmentl əˈrɪθmətɪk &#x2F;</p>
+<p>3.<strong>lofty</strong> &#x2F; ˈlɔːfti &#x2F;</p>
+<p>巍峨的，高耸的；崇高的，高尚的；傲慢的，高傲的；（毛和其他纺织品）厚实而有弹性的</p>
+<p>4.<strong>prestigious</strong>  有威望的，有声望的</p>
+<p>&#x2F; preˈstiːdʒəs &#x2F;</p>
+<p>5.<strong>academic qualifications</strong> </p>
+<p>学术资格：指个人在学术领域所取得的证书、学位或其他形式的认证，以证明其在某一领域具备一定的知识和能力。</p>
+<p>6.<strong>significance</strong></p>
+<p>一件事情的意义可以用英语表达为 “the significance of something” 或者 “the meaning of something”。”significance” 侧重于事物的重要性和影响力，而 “meaning” 更关注事物的含义、目的和理解。此文中的学历的意义，用significance更合适。</p>
+<p>7.<strong>be obsessed with</strong> </p>
+<p>痴迷于：对某事物或某人有强烈的兴趣或关注，以至于难以自拔。</p>
+<p>8.<strong>be more inclined to</strong></p>
+<p>更倾向于：表示某人更容易或更愿意选择某种行为或观点。 </p>
+<p>9.<strong>as the saying goes</strong></p>
+<p>常言道，正如俗语所说</p>
+<p>10.<strong>possess appropriate values</strong></p>
+<p>拥有合适的价值观或者具备适当的价值观，这个短语强调个体应该拥有符合道德、伦理和社会规范的正确或适当的价值观。它表达了对于价值观的选择和塑造的重要性，以及对于个体行为和决策的指导作用。</p>
+<p>11.<strong>think critically</strong></p>
+<p>“think independently” 着重于独立性和自主性，而 “think critically” 则更注重于思维过程中的分析和评估能力，以及对信息和观点的挑战性思考。此文中的独立思考，是想表达通过获得多方面信息独立辩证的思考，使用critically更合适。</p>
+<p>12.<strong>deprives</strong> </p>
+<p>剥夺，使丧失；免去……的职务（尤指圣职）</p>
+<p>deprive somebody of something</p>
+<p>剥夺某人某物 ; 夺去</p>
+<p>13.<strong>specific knowledge</strong></p>
+<p>具体的知识点，专业知识</p>
+<p>14.<strong>collective</strong> 集体的，集体</p>
+<p>15.<strong>navigate</strong>&#x2F; ˈnævɪɡeɪt &#x2F;</p>
+<p>导航，引路；航行于，横渡；穿过，穿越；驾驶，操纵；浏览；（有效地）处理；(鱼、动物或昆虫)找到正确的行动方向；绕过</p>
+<p>“navigate their relationships with others” 可以翻译为 “与他人建立关系并妥善处理”。这个短语强调了个体在与他人交往中的导航、管理和处理能力。它包括了与他人建立良好关系、处理冲突、沟通和建立信任的技巧。因此，你可以说 “She has the ability to navigate her relationships with others effectively”（她有能力与他人建立良好关系并妥善处理）或者 “He needs to learn how to navigate his relationships with others in a more positive way”（他需要学会以更积极的方式与他人建立关系并妥善处理）。这个翻译传达了在与他人的交往中导航和处理的能力。</p>
+<p>16.<strong>tantrums</strong> 发脾气</p>
+<p>小孩子发脾气可以用英语表达为 “a child throwing a tantrum” 或者 “a child having a temper tantrum”。这些表达描述了小孩子因情绪失控而表现出的愤怒和情绪爆发行为。例如，你可以说 “The child started throwing a tantrum when he couldn’t get what he wanted”（当小孩子无法得到他想要的东西时，他开始发脾气）或者 “She had a temper tantrum in the store because her mother said no to buying candy”（因为母亲不同意买糖果，她在商店里发脾气）。这些表达可以形象地描述小孩子情绪失控的行为。</p>
+<p>17.a common <strong>trait</strong> 共同特征</p>
+<p>trait （人的个性的）特征，特点；遗传特征；一点，少许</p>
+<p>18.<strong>crucial</strong> &#x2F; ˈkruːʃ(ə)l &#x2F;</p>
+<p>至关重要的，决定性的；&lt;非正式&gt;极好的</p>
+<p>19.<strong>conducive</strong> 有助的，有益的</p>
+<p>&#x2F; kənˈduːsɪv &#x2F;</p>
 ]]></content>
       <tags>
-        <tag>测试文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>second artical</title>
-    <url>/2023/05/29/second-artical/</url>
-    <content><![CDATA[<p>如何设置文章，比如标题<br>如何插入图片<br>如何插入其他</p>
-<p>以下是设置之后插入的图片</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/second-artical/FvAxsc6aAAEA0tU.jpg"
-                      alt="FvAxsc6aAAEA0tU"
-                ></p>
-<p>以下是插入的图片，测试能否正常显示。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/second-artical/Fvzvn3RaAAAf09X.jpg"
-                      alt="Fvzvn3RaAAAf09X"
-                ></p>
-]]></content>
-      <tags>
-        <tag>测试文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo安装使用</title>
-    <url>/2023/06/02/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 只需几分钟时间。</p>
-<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
-<ul>
-<li><a class="link"   href="http://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
-<li><a class="link"   href="http://git-scm.com/" >Git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-</ul>
-<p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
-<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><ul>
-<li>Windows：下载并安装 <a class="link"   href="https://git-scm.com/download/win" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</li>
-</ul>
-<h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>Node.js 为大多数平台提供了官方的 <a class="link"   href="https://nodejs.org/zh-cn/download/" >安装程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
-
-<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></div>
-
-<p>可以直接建立blog文件夹，在文件夹使用git bash操作命令</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></div>
-
-<p>新建完成后，指定文件夹的目录如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 <a class="link"   href="https://hexo.io/zh-cn/docs/configuration" >配置 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 信息，您可以在此配置大部分的参数。</p>
-<h1 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h1><h2 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 才能使用。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure></div>
-
-<p>安装完成后，输入以下命令以启动服务器，您的网站会在 <code>http://localhost:4000</code> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>如果您想要更改端口，或是在执行时遇到了 <code>EADDRINUSE</code> 错误，可以在执行时使用 <code>-p</code> 选项指定其他端口，如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>在静态模式下，服务器只处理 <code>public</code> 文件夹内的文件，而不会处理文件变动，在执行时，您应该先自行执行 <code>hexo generate</code>，此模式通常用于生产环境（production mode）下。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure></div>
-
-<h1 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h1><p>使用 Hexo 生成静态文件快速而且简单。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><p>您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></div>
-
-<h1 id="在-GitHub-Pages-上部署-Hexo"><a href="#在-GitHub-Pages-上部署-Hexo" class="headerlink" title="在 GitHub Pages 上部署 Hexo"></a>在 GitHub Pages 上部署 Hexo</h1><h2 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h2><p>以下教学改编自 <a class="link"   href="https://hexo.io/zh-cn/docs/one-command-deployment" >一键部署 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
-<ol>
-<li><p>安装 <a class="link"   href="https://github.com/hexojs/hexo-deployer-git" >hexo-deployer-git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。Installation</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>在 <code>_config.yml</code> 中添加以下配置（如果配置已经存在，请将其替换为如下）:</p>
-</li>
-</ol>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git仓库SHH地址 </span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure></div>
-
-<p>此部分需要前期工作先设置github的SHH登录，生成SHH密钥，添加到github后方可使用。具体设置可以参考GitHub帮助文档。</p>
-<p>执行 <code>hexo clean &amp;&amp; hexo deploy</code> 。</p>
-<p>浏览 <code>&lt;GitHub 用户名&gt;.github.io</code> 检查你的网站能否运作。</p>
-<h2 id="相关帮助文档"><a href="#相关帮助文档" class="headerlink" title="相关帮助文档"></a>相关帮助文档</h2><p>[Hexo文档]: <a class="link"   href="https://hexo.io/zh-cn/docs/" >https://hexo.io/zh-cn/docs/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Hexo文档”<br>[GItHub文档]: <a class="link"   href="https://docs.github.com/zh" >https://docs.github.com/zh <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“GItHub文档”<br>[Redefine主题文档]: <a class="link"   href="https://redefine-docs.ohevan.com/" >https://redefine-docs.ohevan.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Redefine主题文档”</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora测试</title>
-    <url>/2023/06/02/Typora%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<hr>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>需要“#”这个标志在tags下面，不然无法输入，反复跳到tags后面。</p>
-<p>tags标签多个用“|”隔开，默认最多三个，categories同tags。</p>
-<p>多个tags标记没有解决，不知道如何表示，用什么符号隔开，不是“|”。</p>
-<p>不会就搜索，tags 后面这样写就行了：tags: [标签1,标签2,标签3]</p>
-<h2 id="文章首页图示"><a href="#文章首页图示" class="headerlink" title="文章首页图示"></a>文章首页图示</h2><p>加上thumbnail: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“</p>
-<p>也可以使用相对路径图片地址</p>
-<p>如thumbnail: “..&#x2F;images&#x2F;Tyora测试&#x2F;FvzvnPvacAAR7od.jpg”</p>
-<p>何用网络地址效果一样</p>
-<h2 id="文章头图"><a href="#文章头图" class="headerlink" title="文章头图"></a>文章头图</h2><p>加上cover: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“ </p>
-<p>cover这里如果设置了thumail会默认为改图，cover不用再输入地址。</p>
-<h2 id="中文乱码解决，应该是切换编码语言的原因。"><a href="#中文乱码解决，应该是切换编码语言的原因。" class="headerlink" title="中文乱码解决，应该是切换编码语言的原因。"></a>中文乱码解决，应该是切换编码语言的原因。</h2><p>正常输入没有问题。</p>
-<h2 id="文本内插入图片方式："><a href="#文本内插入图片方式：" class="headerlink" title="文本内插入图片方式："></a>文本内插入图片方式：</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxkHP9sWwAEoyvn-1685695670474.jpg"
-                      alt="图片说明"
-                ></p>
-<h2 id="格式菜单插入本地图片："><a href="#格式菜单插入本地图片：" class="headerlink" title="格式菜单插入本地图片："></a>格式菜单插入本地图片：</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg"
-                      alt="图片说明"
-                ></p>
-<h2 id="测试使用VS插入图片："><a href="#测试使用VS插入图片：" class="headerlink" title="测试使用VS插入图片："></a>测试使用VS插入图片：</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxgzoClXoAEK7Pg.jpg"
-                      alt="图片说明"
-                ></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>文章测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评论及主题更新</title>
-    <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h2><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
-<p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
-<p>不知道如何能不用审核就就直接显示评论。</p>
-<h2 id="Redefine主题更新"><a href="#Redefine主题更新" class="headerlink" title="Redefine主题更新"></a>Redefine主题更新</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
-
-<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
-<h3 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h3><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
-<h3 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h3><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
-<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
-<p>这样主题更新后不会影响网页图片加载。</p>
-]]></content>
-      <tags>
-        <tag>评论</tag>
-        <tag>主题更新</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Perseus with the Head of Medusa</title>
-    <url>/2023/06/05/Perseus-with-the-Head-of-Medusa/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Perseus with the Head of Medusa is a well-known mythological image and story from ancient Greek mythology. Perseus was a hero in Greek mythology and the son of Zeus and Danae. The story goes that Perseus was sent on a quest to slay the Gorgon Medusa, a monstrous creature with snakes for hair whose gaze could turn people to stone.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1024px-thumbnail.jpg"
-                     
-                ></p>
-<p>With the help of the gods Athena and Hermes, Perseus was given various tools and gifts to aid him in his quest. He was given a mirrored shield to see Medusa’s reflection without directly looking at her, winged sandals to fly swiftly, and a magical sword to behead her.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1280px-Cellini,_perseo_06.jpg"
-                     
-                ></p>
-<p>Using these gifts, Perseus managed to find Medusa’s lair and behead her while avoiding her gaze. As soon as he severed her head, the winged horse Pegasus and the giant Chrysaor sprang forth from her body. Perseus swiftly collected Medusa’s head, which still retained its petrifying power, and placed it in a magical sack for safekeeping.</p>
-<p>The image “Perseus with the Head of Medusa” is often depicted in art and sculptures. It typically shows Perseus holding Medusa’s severed head in one hand and his sword in the other. The image symbolizes the triumph of good over evil, as Perseus successfully completed his heroic task by slaying Medusa and using her head as a weapon.</p>
-<p>This mythological story and its imagery have captivated artists and storytellers throughout history, inspiring numerous works of art and literature. It serves as a prominent example of Greek mythology’s enduring influence on Western culture.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/123.jpg"
-                     
-                ></p>
-<p>“带着美杜莎的头的珀尔修斯”是一个来自古希腊神话的著名形象和故事。珀尔修斯是希腊神话中的英雄，是宙斯和达娜伊的儿子。故事讲述珀尔修斯被派遣去击败蛇发女妖美杜莎，她的凝视能将人们石化。</p>
-<p>在众神雅典娜和赫尔墨斯的帮助下，珀尔修斯得到了各种工具和礼物来协助他的任务。他获得了一面有镜子的盾牌，以便能看到美杜莎的反射而不直接注视她，还有有翅膀的凉鞋以快速飞行，和一把神奇的剑来斩首她。</p>
-<p>利用这些礼物，珀尔修斯成功找到了美杜莎的巢穴，并在避开她的凝视的情况下将她斩首。在他砍下头颅的瞬间，翼马飞马和巨人克里剑索尔从她的身体中冲出。珀尔修斯迅速收集了美杜莎的头颅，头颅仍然保留着它的石化能力，并将其放入一个神奇的袋子中保存起来。</p>
-<p>“带着美杜莎的头的珀尔修斯”的形象经常在艺术和雕塑中被描绘。通常情况下，图像显示珀尔修斯一手拿着美杜莎的被斩首的头颅，另一手持剑。这个形象象征着善恶之间的胜利，珀尔修斯成功完成了他的英雄任务，通过杀死美杜莎并使用她的头颅作为武器。</p>
-<p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
-]]></content>
-      <tags>
-        <tag>daily</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改scaffold</title>
-    <url>/2023/06/06/%E4%BF%AE%E6%94%B9scaffold/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>hexo new 新文章，文章页的front matter中只有titile，date，tags三项内容，一般情况下新建文章包含首页缩略图，文章页头图，不希望出现文章摘要信息。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E4%BF%AE%E6%94%B9scaffold/Screenshot.png"
-                     
-                ></p>
-<p>通过修改根目录下scaffold文件夹下post.md文件，修改默认文章页front matter内容，添加所需要项目，如thumbnail文章首页缩略图，文章页头图cover，摘要excerpt不显示或者修改摘要内容。</p>
-<p>PS：文章插入图片又出现hexo s本地无法显示的情况，昨天也是某种图片无法加载，具体原因不详，初步发现是图片名称格式或内容的问题，修改图片名称为相对简单的名称后，即可正常加载。如Screenshot 2023-06-06 094854.png无法加载，修改为Screenshot.png即可正常加载显示。</p>
-]]></content>
-      <tags>
-        <tag>文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>The Value of Life</title>
-    <url>/2023/06/06/value-of-life/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/value-of-life/value.jpg"
-                     
-                ></p>
-<p>chatgpt：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
-<p>Regenerate response：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
-<p>bing AI：</p>
-<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
-]]></content>
-      <tags>
-        <tag>感想</tag>
+        <tag>education</tag>
       </tags>
   </entry>
   <entry>
@@ -434,115 +152,6 @@
       </tags>
   </entry>
   <entry>
-    <title>How should we educate children?</title>
-    <url>/2023/06/18/Children-Education/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I’ve been thinking a lot about my child’s education, especially after visiting their school a couple of days ago. It’s time to seriously consider their education.</p>
-<p>First grade is almost over, and if we look at their academic performance alone, it’s not ideal. Compared to myself at the same age, my child is clearly <strong>lagging behind</strong>. They don’t excel in pinyin, Chinese characters, <strong>mental</strong> <strong>arithmetic</strong>, or show much enthusiasm for learning or a desire to read. They also struggle with problem-solving and building relationships, just like any other typical six-year-old.</p>
-<p>As for my educational thoughts, I initially wanted to write about educational philosophy, but I feel that my ideas are not worthy of such <strong>lofty</strong> concepts. Instead, I’ll briefly explain my own views on education. I am a graduate student from a <strong>prestigious</strong> university in China (referred to as “985” and “211” universities). Looking back on my journey, I realize that my <strong>academic qualifications</strong> have not made me exceptionally outstanding or successful. However, they have helped me understand, accept, and appreciate myself, as well as be grateful for the people and things around me and cherish the present moment. From another perspective, I don’t consider myself a successful individual, as the value of academic qualifications in society is limited, contrary to what most people expect. Based on my personal experience and that of my classmates, I don’t regard academic qualifications as <strong>overly</strong> important, but I also never underestimate their <strong>significance</strong>.</p>
-<p>Without <strong>being obsessed with</strong> academic qualifications, when it comes to my child’s education, I <strong>am more inclined to</strong> help them become a healthy adult and allow them to choose the life they want. The ability to choose one’s desired path in life is already a challenging task that requires a lot of personal effort. <strong>As the saying goes</strong>, you must complete the necessary journey before you can walk the path you desire. For my child, I hope they can develop an independent personality, <strong>possess appropriate values</strong>, and have the ability to <strong>think critically</strong>, analyze problems, and find solutions.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Children-Education/Fx7fx3lWYAAhq01.jpg"
-                     
-                ></p>
-<p>Let’s talk about learning and how to guide children in their learning process. First, it’s important to help children gradually understand what learning is, why they need to learn, and how to learn. I am somewhat against directly teaching children specific methods. Although they may quickly solve problems using the methods taught to them, it <strong>deprives</strong> them of critical thinking. Instead, let children experience the process of learning, from not knowing to understanding, from unfamiliarity to familiarity. Let them feel how they can gradually master specific knowledge through effort and reflection, and learn how to learn. Learning is a long-term process, and learning how to learn is much more important than learning <strong>specific knowledge</strong>.</p>
-<p>Now, let’s talk about handling relationships with others around them. Children begin to interact with a <strong>collective</strong> when they go from home to school, so it’s important for them to learn how to get along with others. Currently, it seems difficult for first-grade children to <strong>navigate</strong> their relationships with others. My own child is lacking in this aspect, and I haven’t seen any child who can handle relationships well in the first grade. This is a physiological limitation. As parents, we should not be too impatient. We need to give children space, time, and enough patience. However, being patient with children doesn’t mean we can ignore their behavior. We should guide them when appropriate, manage them during important moments, and even discipline them if necessary. From my child, I can clearly sense a strong self-centeredness, where everything and everyone must revolve around them, or else they become unhappy or even throw <strong>tantrums</strong>. This is a common <strong>trait</strong> among children at this age stage - being self-centered and lacking emotional control. Regarding this, proper guidance is <strong>crucial</strong>. We need to be patient with children and avoid blaming or denying them when they exhibit behavior that adults may not understand. Instead, we should gradually guide them to learn the correct methods of interacting with others and their surrounding environment.</p>
-<p>Lastly, let’s talk about the aspect of companionship, which is something I haven’t been doing well. I am an independent person with my own life philosophy and chosen lifestyle. I have my own things to do every day. I’ve always believed that a child’s growth is a long-term process, and there is no need for excessive intervention. At one point, I even thought about letting the child develop freely and understand things on their own when they reach a certain age. However, now I realize that this hands-off approach may not be very wise because, after all, a child is a child. Their growth and development are undoubtedly influenced by the external environment. If the environment is <strong>conducive</strong>, they will be nurtured and cultivated well. But the current environment is not friendly. Can the child overcome it on their own if we just leave them to it? The current answer is no. Moreover, it’s very likely that by letting go, we are surrendering the responsibility of guiding and educating the child to others and the environment. Can we ensure that others can do a better job than us? Can we guarantee that the environment will provide better companionship than we can? This is the reason why I have decided to get involved. If we can’t completely shield the child from the influence of the external environment, then why not let me be the one who influences them? I don’t believe that anyone else can do a better job than me, and I don’t believe that this environment is suitable for providing the child with good education and influence.</p>
-<p>As for the specific education and guidance for the child, I will summarize it while providing companionship.</p>
-<h4 id="子供をどのように教育すべきですか？"><a href="#子供をどのように教育すべきですか？" class="headerlink" title="子供をどのように教育すべきですか？"></a>子供をどのように教育すべきですか？</h4><h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h3><p>1.<strong>lag behind</strong> 落后于</p>
-<p>表达”落后于别人”可以使用短语 “lag behind others”。这个短语强调了一个人或团体在某个方面相对于其他人或团体的进展较慢或滞后。例如，你可以说 “I feel like I’m lagging behind others in my career”（我感觉在职业上我落后于别人）或者 “Our country is lagging behind others in terms of technological advancements”（我们的国家在技术进步方面落后于别国）。这个短语可以用于描述各种领域或方面的落后情况。</p>
-<p>2.<strong>mental arithmetic</strong> 心算、口算</p>
-<p>&#x2F; ˌmentl əˈrɪθmətɪk &#x2F;</p>
-<p>3.<strong>lofty</strong> &#x2F; ˈlɔːfti &#x2F;</p>
-<p>巍峨的，高耸的；崇高的，高尚的；傲慢的，高傲的；（毛和其他纺织品）厚实而有弹性的</p>
-<p>4.<strong>prestigious</strong>  有威望的，有声望的</p>
-<p>&#x2F; preˈstiːdʒəs &#x2F;</p>
-<p>5.<strong>academic qualifications</strong> </p>
-<p>学术资格：指个人在学术领域所取得的证书、学位或其他形式的认证，以证明其在某一领域具备一定的知识和能力。</p>
-<p>6.<strong>significance</strong></p>
-<p>一件事情的意义可以用英语表达为 “the significance of something” 或者 “the meaning of something”。”significance” 侧重于事物的重要性和影响力，而 “meaning” 更关注事物的含义、目的和理解。此文中的学历的意义，用significance更合适。</p>
-<p>7.<strong>be obsessed with</strong> </p>
-<p>痴迷于：对某事物或某人有强烈的兴趣或关注，以至于难以自拔。</p>
-<p>8.<strong>be more inclined to</strong></p>
-<p>更倾向于：表示某人更容易或更愿意选择某种行为或观点。 </p>
-<p>9.<strong>as the saying goes</strong></p>
-<p>常言道，正如俗语所说</p>
-<p>10.<strong>possess appropriate values</strong></p>
-<p>拥有合适的价值观或者具备适当的价值观，这个短语强调个体应该拥有符合道德、伦理和社会规范的正确或适当的价值观。它表达了对于价值观的选择和塑造的重要性，以及对于个体行为和决策的指导作用。</p>
-<p>11.<strong>think critically</strong></p>
-<p>“think independently” 着重于独立性和自主性，而 “think critically” 则更注重于思维过程中的分析和评估能力，以及对信息和观点的挑战性思考。此文中的独立思考，是想表达通过获得多方面信息独立辩证的思考，使用critically更合适。</p>
-<p>12.<strong>deprives</strong> </p>
-<p>剥夺，使丧失；免去……的职务（尤指圣职）</p>
-<p>deprive somebody of something</p>
-<p>剥夺某人某物 ; 夺去</p>
-<p>13.<strong>specific knowledge</strong></p>
-<p>具体的知识点，专业知识</p>
-<p>14.<strong>collective</strong> 集体的，集体</p>
-<p>15.<strong>navigate</strong>&#x2F; ˈnævɪɡeɪt &#x2F;</p>
-<p>导航，引路；航行于，横渡；穿过，穿越；驾驶，操纵；浏览；（有效地）处理；(鱼、动物或昆虫)找到正确的行动方向；绕过</p>
-<p>“navigate their relationships with others” 可以翻译为 “与他人建立关系并妥善处理”。这个短语强调了个体在与他人交往中的导航、管理和处理能力。它包括了与他人建立良好关系、处理冲突、沟通和建立信任的技巧。因此，你可以说 “She has the ability to navigate her relationships with others effectively”（她有能力与他人建立良好关系并妥善处理）或者 “He needs to learn how to navigate his relationships with others in a more positive way”（他需要学会以更积极的方式与他人建立关系并妥善处理）。这个翻译传达了在与他人的交往中导航和处理的能力。</p>
-<p>16.<strong>tantrums</strong> 发脾气</p>
-<p>小孩子发脾气可以用英语表达为 “a child throwing a tantrum” 或者 “a child having a temper tantrum”。这些表达描述了小孩子因情绪失控而表现出的愤怒和情绪爆发行为。例如，你可以说 “The child started throwing a tantrum when he couldn’t get what he wanted”（当小孩子无法得到他想要的东西时，他开始发脾气）或者 “She had a temper tantrum in the store because her mother said no to buying candy”（因为母亲不同意买糖果，她在商店里发脾气）。这些表达可以形象地描述小孩子情绪失控的行为。</p>
-<p>17.a common <strong>trait</strong> 共同特征</p>
-<p>trait （人的个性的）特征，特点；遗传特征；一点，少许</p>
-<p>18.<strong>crucial</strong> &#x2F; ˈkruːʃ(ə)l &#x2F;</p>
-<p>至关重要的，决定性的；&lt;非正式&gt;极好的</p>
-<p>19.<strong>conducive</strong> 有助的，有益的</p>
-<p>&#x2F; kənˈduːsɪv &#x2F;</p>
-]]></content>
-      <tags>
-        <tag>education</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>What is the Meaning of War?</title>
-    <url>/2023/06/22/WAR/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I have been watching some battlefield videos of the <strong>Russo-Ukrainian war</strong>. In the <strong>winding</strong> <strong>trenches</strong>, where killings occur at close range, I once again <strong>lament</strong> the cruelty of war. One by one, vibrant lives fall to the ground without experiencing pain or struggle, just <strong>collapsing onto the earth</strong>. The previous videos mostly <strong>depicted</strong> long-range attacks, where you don’t witness a life disappearing so <strong>vividly</strong> before your eyes. You know there are <strong>casualties</strong> after an attack, but you don’t know who they are, so the impact isn’t as <strong>profound</strong>. Life becomes so cheap in war, <strong>inevitably</strong> leading one to <strong>contemplate</strong>: What exactly is war? Why does it start, and why does it persist?</p>
-<p>Even now, I am not clear about the true purpose of the Russo-Ukrainian war. Perhaps even the soldiers who lost their lives on the battlefield are not clear either. All they can do is obey orders, to attack when commanded to attack and to defend when commanded to defend. Sometimes, watching those soldiers in the videos, one truly feels their helplessness. And those soldiers who <strong>resort to suicide</strong>, how deeply lost must they have been? Can they know why they went to the battlefield? Can they know what they are fighting for?</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/WAR/ed3e91fb2ef90572807350928b3e6005.jpg"
-                     
-                ></p>
-<h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h3><p>1.<strong>winding</strong> 曲折，弯曲，蜿蜒</p>
-<p>2.<strong>trench</strong> 壕沟，沟渠；海沟，海底沟；战壕，堑壕</p>
-<p>3.<strong>lament</strong> &#x2F; ləˈment &#x2F;</p>
-<p>n.挽歌，悼文；表达哀伤（或痛惜）之情的言辞；抱怨<br>v.对……感到悲痛，对……表示失望；抱怨</p>
-<p>4.<strong>depict</strong> 描述，描绘</p>
-<p>5.<strong>vividly</strong> 生动的，强烈的</p>
-<p>6.<strong>casualty</strong> &#x2F; ˈkæʒuəlti &#x2F;</p>
-<p>伤亡人员；受害者，毁坏物；急诊室，急救室；事故，灾难（主要用于保险中）</p>
-<p>7.<strong>profound</strong> &#x2F; prəˈfaʊnd &#x2F;</p>
-<p>（影响）深刻的，极大的；（感情）强烈的，深切的；（思想）深邃的，（见解）深刻的</p>
-<p>In summary, “significant” emphasizes importance and attention, while “profound” emphasizes depth, intensity, and lasting impact on one’s emotions or understanding.</p>
-<p>8.<strong>inevitably</strong> 不可避免地，必然地；意料之中</p>
-<p>9.<strong>contemplate</strong> &#x2F; ˈkɑːntəmpleɪt &#x2F;</p>
-<p>沉思，深思熟虑；盘算，打算；凝视，注视；考虑接受（发生某事的可能性）</p>
-<p>10.<strong>resort to suicide</strong> 诉诸自杀</p>
-]]></content>
-      <tags>
-        <tag>war</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Marriage to Me</title>
-    <url>/2023/06/22/Marriage-to-Me/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>I still can’t avoid the topic of marriage. During <strong>the Dragon Boat Festival</strong> holiday, my wife took our child to her family’s home. Before leaving, there was an issue with printing the child’s homework. In front of my child, she simply said, “<strong>nothing at all</strong>.” Although she didn’t say it directly to me, I could tell from the child’s questioning that those were her words. This phrase has become her habitual expression, and it feels like a thorn in my throat that I can neither swallow nor spit out. From the beginning, this marriage had many signs indicating that we were not suitable for each other. I chose to ignore them and believed that people can change. Looking at it now, I was <strong>deceiving</strong> myself. I feel like I have been trying my best to <strong>maintain</strong> this marriage, but I am increasingly <strong>overwhelmed</strong>. It was just a few days ago, after that night, that I suddenly decided not to have a second child. I completely <strong>convinced</strong> myself to give up the idea of a second child because this marriage has not yet moved <strong>beyond its established pattern</strong>. I am becoming more and more uncertain about how far we can go. Having a second child is based on confidence in this marriage, and now I have none. As for her, she has probably dismissed the idea of marriage and a second child a long time ago. I’m still here, just like in the beginning, <strong>indulging</strong> in <strong>solitary fantasies</strong>, and it’s just <strong>self-delusion</strong>.</p>
-<p>What has this marriage brought me? Well, I got married, had children, meeting the traditional standards in China. As for other aspects, I need to think carefully about what they are. Let’s talk about the current situation. I had hoped that my wife could fulfill the roles of a supportive spouse, nurturing our children, and showing filial piety to our parents, but she hasn’t fulfilled any of these expectations. I won’t go into details about being a good companion; I have never felt it. If she doesn’t <strong>undermine</strong> me, it’s already considered good enough. Not to mention the idea of having an intuitive understanding and cooperating with each other; now when she comes home, she is completely <strong>indifferent</strong> and <strong>lifeless</strong>. Besides putting on a smiling face and speaking a few words to our child, <strong>I’m as good as air to her.</strong> I don’t even want to talk about how she treats me; it’s neither interesting nor heartwarming. The fact that this marriage has been sustained is not because of how she treats me. If that were the only consideration, it would have ended a long time ago. Being a good companion is something she never even wanted, and as for teaching our child, she does want to do it, but she is genuinely incapable of doing it well. I’ve taken over the task of tutoring the child. Initially, I thought she could handle teaching the child in the early grades, and when the difficulty level increased, I would take over. But even in the first grade, she couldn’t provide proper guidance. The child doesn’t listen to her, and even if the child does, it comes with various conditions and time delays. Forget about developing good study habits; now there are plenty of bad habits. Considering the child’s difficulties in handling relationships and integrating into a group, I took over everything directly. I let the child develop on their own, but it’s difficult to achieve under the current educational system. Since intervention is unavoidable, it’s best if I intervene. As for <strong>filial piety</strong> towards our parents, she is a kind person, and I don’t doubt her desire to be filial. However, I can no longer bear witnessing how she interacts with our parents. She loses her temper regardless of the occasion or the person, and when her face sours, she becomes dismissive and leaves the other person speechless. In this household, besides putting on a smiling face for our child, she doesn’t consider anyone else worthy of her attention. That’s how I genuinely feel.</p>
-<p>I have always thought that I have <strong>indulged</strong> her temper too much, which has led to this situation. Sometimes when we argue, she <strong>restrains</strong> herself and controls her temper <strong>to some extent</strong>. But in the context of our ongoing marriage, is this really the method we should rely on? Just thinking about it feels helpless. At present, I have no expectations for this marriage anymore. Everything that comes to mind is negative, and I can’t see any signs of improvement. The only consolation is that she has a fundamentally kind nature. But can a kind nature justify treating the people around you this way? As for this household, let alone any sense of gratitude, there is now resentment deep in her heart. Marriage is the <strong>merging</strong> of two families, and I always thought I would be an exception. I always believed that I had found true love, but looking back now, I realize how foolish I was.</p>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Marriage-to-Me/FzH7W9aakAYDrC0.jpg"
-                     
-                ></p>
-<p>What should I do next? If I still want to continue this marriage, the first thing I need to do is to no longer tolerate her temper and make her restrain herself. Then, I need to shift the focus back to myself, <strong>seek self-improvement from within</strong>, and avoid wasting too much energy on meaningless things. I should engage in more learning, reading, and writing. Stocks, law, and writing will be the major areas for me to focus on in the next step.</p>
-<p>Lastly, I would like to add that it’s not simply a matter of whether or not to have a second child. When I gave up on the idea of a second child from deep within, I basically let go of any illusions about this marriage. I will take each step as it comes. Let’s not indulge in inner dramas too much. Live each day well and make the most of the present.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Deep-thinking Young People</title>
     <url>/2023/06/26/Deep-thinking-Young-People/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Theme Update</p>
@@ -577,6 +186,397 @@
 ]]></content>
       <tags>
         <tag>thinking</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Marriage to Me</title>
+    <url>/2023/06/22/Marriage-to-Me/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>I still can’t avoid the topic of marriage. During <strong>the Dragon Boat Festival</strong> holiday, my wife took our child to her family’s home. Before leaving, there was an issue with printing the child’s homework. In front of my child, she simply said, “<strong>nothing at all</strong>.” Although she didn’t say it directly to me, I could tell from the child’s questioning that those were her words. This phrase has become her habitual expression, and it feels like a thorn in my throat that I can neither swallow nor spit out. From the beginning, this marriage had many signs indicating that we were not suitable for each other. I chose to ignore them and believed that people can change. Looking at it now, I was <strong>deceiving</strong> myself. I feel like I have been trying my best to <strong>maintain</strong> this marriage, but I am increasingly <strong>overwhelmed</strong>. It was just a few days ago, after that night, that I suddenly decided not to have a second child. I completely <strong>convinced</strong> myself to give up the idea of a second child because this marriage has not yet moved <strong>beyond its established pattern</strong>. I am becoming more and more uncertain about how far we can go. Having a second child is based on confidence in this marriage, and now I have none. As for her, she has probably dismissed the idea of marriage and a second child a long time ago. I’m still here, just like in the beginning, <strong>indulging</strong> in <strong>solitary fantasies</strong>, and it’s just <strong>self-delusion</strong>.</p>
+<p>What has this marriage brought me? Well, I got married, had children, meeting the traditional standards in China. As for other aspects, I need to think carefully about what they are. Let’s talk about the current situation. I had hoped that my wife could fulfill the roles of a supportive spouse, nurturing our children, and showing filial piety to our parents, but she hasn’t fulfilled any of these expectations. I won’t go into details about being a good companion; I have never felt it. If she doesn’t <strong>undermine</strong> me, it’s already considered good enough. Not to mention the idea of having an intuitive understanding and cooperating with each other; now when she comes home, she is completely <strong>indifferent</strong> and <strong>lifeless</strong>. Besides putting on a smiling face and speaking a few words to our child, <strong>I’m as good as air to her.</strong> I don’t even want to talk about how she treats me; it’s neither interesting nor heartwarming. The fact that this marriage has been sustained is not because of how she treats me. If that were the only consideration, it would have ended a long time ago. Being a good companion is something she never even wanted, and as for teaching our child, she does want to do it, but she is genuinely incapable of doing it well. I’ve taken over the task of tutoring the child. Initially, I thought she could handle teaching the child in the early grades, and when the difficulty level increased, I would take over. But even in the first grade, she couldn’t provide proper guidance. The child doesn’t listen to her, and even if the child does, it comes with various conditions and time delays. Forget about developing good study habits; now there are plenty of bad habits. Considering the child’s difficulties in handling relationships and integrating into a group, I took over everything directly. I let the child develop on their own, but it’s difficult to achieve under the current educational system. Since intervention is unavoidable, it’s best if I intervene. As for <strong>filial piety</strong> towards our parents, she is a kind person, and I don’t doubt her desire to be filial. However, I can no longer bear witnessing how she interacts with our parents. She loses her temper regardless of the occasion or the person, and when her face sours, she becomes dismissive and leaves the other person speechless. In this household, besides putting on a smiling face for our child, she doesn’t consider anyone else worthy of her attention. That’s how I genuinely feel.</p>
+<p>I have always thought that I have <strong>indulged</strong> her temper too much, which has led to this situation. Sometimes when we argue, she <strong>restrains</strong> herself and controls her temper <strong>to some extent</strong>. But in the context of our ongoing marriage, is this really the method we should rely on? Just thinking about it feels helpless. At present, I have no expectations for this marriage anymore. Everything that comes to mind is negative, and I can’t see any signs of improvement. The only consolation is that she has a fundamentally kind nature. But can a kind nature justify treating the people around you this way? As for this household, let alone any sense of gratitude, there is now resentment deep in her heart. Marriage is the <strong>merging</strong> of two families, and I always thought I would be an exception. I always believed that I had found true love, but looking back now, I realize how foolish I was.</p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Marriage-to-Me/FzH7W9aakAYDrC0.jpg"
+                     
+                ></p>
+<p>What should I do next? If I still want to continue this marriage, the first thing I need to do is to no longer tolerate her temper and make her restrain herself. Then, I need to shift the focus back to myself, <strong>seek self-improvement from within</strong>, and avoid wasting too much energy on meaningless things. I should engage in more learning, reading, and writing. Stocks, law, and writing will be the major areas for me to focus on in the next step.</p>
+<p>Lastly, I would like to add that it’s not simply a matter of whether or not to have a second child. When I gave up on the idea of a second child from deep within, I basically let go of any illusions about this marriage. I will take each step as it comes. Let’s not indulge in inner dramas too much. Live each day well and make the most of the present.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Perseus with the Head of Medusa</title>
+    <url>/2023/06/05/Perseus-with-the-Head-of-Medusa/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Perseus with the Head of Medusa is a well-known mythological image and story from ancient Greek mythology. Perseus was a hero in Greek mythology and the son of Zeus and Danae. The story goes that Perseus was sent on a quest to slay the Gorgon Medusa, a monstrous creature with snakes for hair whose gaze could turn people to stone.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1024px-thumbnail.jpg"
+                     
+                ></p>
+<p>With the help of the gods Athena and Hermes, Perseus was given various tools and gifts to aid him in his quest. He was given a mirrored shield to see Medusa’s reflection without directly looking at her, winged sandals to fly swiftly, and a magical sword to behead her.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1280px-Cellini,_perseo_06.jpg"
+                     
+                ></p>
+<p>Using these gifts, Perseus managed to find Medusa’s lair and behead her while avoiding her gaze. As soon as he severed her head, the winged horse Pegasus and the giant Chrysaor sprang forth from her body. Perseus swiftly collected Medusa’s head, which still retained its petrifying power, and placed it in a magical sack for safekeeping.</p>
+<p>The image “Perseus with the Head of Medusa” is often depicted in art and sculptures. It typically shows Perseus holding Medusa’s severed head in one hand and his sword in the other. The image symbolizes the triumph of good over evil, as Perseus successfully completed his heroic task by slaying Medusa and using her head as a weapon.</p>
+<p>This mythological story and its imagery have captivated artists and storytellers throughout history, inspiring numerous works of art and literature. It serves as a prominent example of Greek mythology’s enduring influence on Western culture.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/123.jpg"
+                     
+                ></p>
+<p>“带着美杜莎的头的珀尔修斯”是一个来自古希腊神话的著名形象和故事。珀尔修斯是希腊神话中的英雄，是宙斯和达娜伊的儿子。故事讲述珀尔修斯被派遣去击败蛇发女妖美杜莎，她的凝视能将人们石化。</p>
+<p>在众神雅典娜和赫尔墨斯的帮助下，珀尔修斯得到了各种工具和礼物来协助他的任务。他获得了一面有镜子的盾牌，以便能看到美杜莎的反射而不直接注视她，还有有翅膀的凉鞋以快速飞行，和一把神奇的剑来斩首她。</p>
+<p>利用这些礼物，珀尔修斯成功找到了美杜莎的巢穴，并在避开她的凝视的情况下将她斩首。在他砍下头颅的瞬间，翼马飞马和巨人克里剑索尔从她的身体中冲出。珀尔修斯迅速收集了美杜莎的头颅，头颅仍然保留着它的石化能力，并将其放入一个神奇的袋子中保存起来。</p>
+<p>“带着美杜莎的头的珀尔修斯”的形象经常在艺术和雕塑中被描绘。通常情况下，图像显示珀尔修斯一手拿着美杜莎的被斩首的头颅，另一手持剑。这个形象象征着善恶之间的胜利，珀尔修斯成功完成了他的英雄任务，通过杀死美杜莎并使用她的头颅作为武器。</p>
+<p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
+]]></content>
+      <tags>
+        <tag>daily</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora测试</title>
+    <url>/2023/06/02/Typora%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>需要“#”这个标志在tags下面，不然无法输入，反复跳到tags后面。</p>
+<p>tags标签多个用“|”隔开，默认最多三个，categories同tags。</p>
+<p>多个tags标记没有解决，不知道如何表示，用什么符号隔开，不是“|”。</p>
+<p>不会就搜索，tags 后面这样写就行了：tags: [标签1,标签2,标签3]</p>
+<h2 id="文章首页图示"><a href="#文章首页图示" class="headerlink" title="文章首页图示"></a>文章首页图示</h2><p>加上thumbnail: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“</p>
+<p>也可以使用相对路径图片地址</p>
+<p>如thumbnail: “..&#x2F;images&#x2F;Tyora测试&#x2F;FvzvnPvacAAR7od.jpg”</p>
+<p>何用网络地址效果一样</p>
+<h2 id="文章头图"><a href="#文章头图" class="headerlink" title="文章头图"></a>文章头图</h2><p>加上cover: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“ </p>
+<p>cover这里如果设置了thumail会默认为改图，cover不用再输入地址。</p>
+<h2 id="中文乱码解决，应该是切换编码语言的原因。"><a href="#中文乱码解决，应该是切换编码语言的原因。" class="headerlink" title="中文乱码解决，应该是切换编码语言的原因。"></a>中文乱码解决，应该是切换编码语言的原因。</h2><p>正常输入没有问题。</p>
+<h2 id="文本内插入图片方式："><a href="#文本内插入图片方式：" class="headerlink" title="文本内插入图片方式："></a>文本内插入图片方式：</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxkHP9sWwAEoyvn-1685695670474.jpg"
+                      alt="图片说明"
+                ></p>
+<h2 id="格式菜单插入本地图片："><a href="#格式菜单插入本地图片：" class="headerlink" title="格式菜单插入本地图片："></a>格式菜单插入本地图片：</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg"
+                      alt="图片说明"
+                ></p>
+<h2 id="测试使用VS插入图片："><a href="#测试使用VS插入图片：" class="headerlink" title="测试使用VS插入图片："></a>测试使用VS插入图片：</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxgzoClXoAEK7Pg.jpg"
+                      alt="图片说明"
+                ></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>文章测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>What is the Meaning of War?</title>
+    <url>/2023/06/22/WAR/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I have been watching some battlefield videos of the <strong>Russo-Ukrainian war</strong>. In the <strong>winding</strong> <strong>trenches</strong>, where killings occur at close range, I once again <strong>lament</strong> the cruelty of war. One by one, vibrant lives fall to the ground without experiencing pain or struggle, just <strong>collapsing onto the earth</strong>. The previous videos mostly <strong>depicted</strong> long-range attacks, where you don’t witness a life disappearing so <strong>vividly</strong> before your eyes. You know there are <strong>casualties</strong> after an attack, but you don’t know who they are, so the impact isn’t as <strong>profound</strong>. Life becomes so cheap in war, <strong>inevitably</strong> leading one to <strong>contemplate</strong>: What exactly is war? Why does it start, and why does it persist?</p>
+<p>Even now, I am not clear about the true purpose of the Russo-Ukrainian war. Perhaps even the soldiers who lost their lives on the battlefield are not clear either. All they can do is obey orders, to attack when commanded to attack and to defend when commanded to defend. Sometimes, watching those soldiers in the videos, one truly feels their helplessness. And those soldiers who <strong>resort to suicide</strong>, how deeply lost must they have been? Can they know why they went to the battlefield? Can they know what they are fighting for?</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/WAR/ed3e91fb2ef90572807350928b3e6005.jpg"
+                     
+                ></p>
+<h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h3><p>1.<strong>winding</strong> 曲折，弯曲，蜿蜒</p>
+<p>2.<strong>trench</strong> 壕沟，沟渠；海沟，海底沟；战壕，堑壕</p>
+<p>3.<strong>lament</strong> &#x2F; ləˈment &#x2F;</p>
+<p>n.挽歌，悼文；表达哀伤（或痛惜）之情的言辞；抱怨<br>v.对……感到悲痛，对……表示失望；抱怨</p>
+<p>4.<strong>depict</strong> 描述，描绘</p>
+<p>5.<strong>vividly</strong> 生动的，强烈的</p>
+<p>6.<strong>casualty</strong> &#x2F; ˈkæʒuəlti &#x2F;</p>
+<p>伤亡人员；受害者，毁坏物；急诊室，急救室；事故，灾难（主要用于保险中）</p>
+<p>7.<strong>profound</strong> &#x2F; prəˈfaʊnd &#x2F;</p>
+<p>（影响）深刻的，极大的；（感情）强烈的，深切的；（思想）深邃的，（见解）深刻的</p>
+<p>In summary, “significant” emphasizes importance and attention, while “profound” emphasizes depth, intensity, and lasting impact on one’s emotions or understanding.</p>
+<p>8.<strong>inevitably</strong> 不可避免地，必然地；意料之中</p>
+<p>9.<strong>contemplate</strong> &#x2F; ˈkɑːntəmpleɪt &#x2F;</p>
+<p>沉思，深思熟虑；盘算，打算；凝视，注视；考虑接受（发生某事的可能性）</p>
+<p>10.<strong>resort to suicide</strong> 诉诸自杀</p>
+]]></content>
+      <tags>
+        <tag>war</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo安装使用</title>
+    <url>/2023/06/02/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 只需几分钟时间。</p>
+<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+<ul>
+<li><a class="link"   href="http://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li><a class="link"   href="http://git-scm.com/" >Git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
+<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><ul>
+<li>Windows：下载并安装 <a class="link"   href="https://git-scm.com/download/win" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</li>
+</ul>
+<h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>Node.js 为大多数平台提供了官方的 <a class="link"   href="https://nodejs.org/zh-cn/download/" >安装程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）。</p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>可以直接建立blog文件夹，在文件夹使用git bash操作命令</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>新建完成后，指定文件夹的目录如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 <a class="link"   href="https://hexo.io/zh-cn/docs/configuration" >配置 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 信息，您可以在此配置大部分的参数。</p>
+<h1 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h1><h2 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 才能使用。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后，输入以下命令以启动服务器，您的网站会在 <code>http://localhost:4000</code> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>如果您想要更改端口，或是在执行时遇到了 <code>EADDRINUSE</code> 错误，可以在执行时使用 <code>-p</code> 选项指定其他端口，如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>在静态模式下，服务器只处理 <code>public</code> 文件夹内的文件，而不会处理文件变动，在执行时，您应该先自行执行 <code>hexo generate</code>，此模式通常用于生产环境（production mode）下。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h1><p>使用 Hexo 生成静态文件快速而且简单。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><p>您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="在-GitHub-Pages-上部署-Hexo"><a href="#在-GitHub-Pages-上部署-Hexo" class="headerlink" title="在 GitHub Pages 上部署 Hexo"></a>在 GitHub Pages 上部署 Hexo</h1><h2 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h2><p>以下教学改编自 <a class="link"   href="https://hexo.io/zh-cn/docs/one-command-deployment" >一键部署 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
+<ol>
+<li><p>安装 <a class="link"   href="https://github.com/hexojs/hexo-deployer-git" >hexo-deployer-git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。Installation</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在 <code>_config.yml</code> 中添加以下配置（如果配置已经存在，请将其替换为如下）:</p>
+</li>
+</ol>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git仓库SHH地址 </span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure></div>
+
+<p>此部分需要前期工作先设置github的SHH登录，生成SHH密钥，添加到github后方可使用。具体设置可以参考GitHub帮助文档。</p>
+<p>执行 <code>hexo clean &amp;&amp; hexo deploy</code> 。</p>
+<p>浏览 <code>&lt;GitHub 用户名&gt;.github.io</code> 检查你的网站能否运作。</p>
+<h2 id="相关帮助文档"><a href="#相关帮助文档" class="headerlink" title="相关帮助文档"></a>相关帮助文档</h2><p>[Hexo文档]: <a class="link"   href="https://hexo.io/zh-cn/docs/" >https://hexo.io/zh-cn/docs/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Hexo文档”<br>[GItHub文档]: <a class="link"   href="https://docs.github.com/zh" >https://docs.github.com/zh <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“GItHub文档”<br>[Redefine主题文档]: <a class="link"   href="https://redefine-docs.ohevan.com/" >https://redefine-docs.ohevan.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Redefine主题文档”</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>second artical</title>
+    <url>/2023/05/29/second-artical/</url>
+    <content><![CDATA[<p>如何设置文章，比如标题<br>如何插入图片<br>如何插入其他</p>
+<p>以下是设置之后插入的图片</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/second-artical/FvAxsc6aAAEA0tU.jpg"
+                      alt="FvAxsc6aAAEA0tU"
+                ></p>
+<p>以下是插入的图片，测试能否正常显示。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/second-artical/Fvzvn3RaAAAf09X.jpg"
+                      alt="Fvzvn3RaAAAf09X"
+                ></p>
+]]></content>
+      <tags>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Value of Life</title>
+    <url>/2023/06/06/value-of-life/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/value-of-life/value.jpg"
+                     
+                ></p>
+<p>chatgpt：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
+<p>Regenerate response：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
+<p>bing AI：</p>
+<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
+]]></content>
+      <tags>
+        <tag>感想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>writing</title>
+    <url>/2023/05/29/writing/</url>
+    <content><![CDATA[<p> 这里的—什么意思<br>这是文章的正文吗<br>    空格测试，<br>    换行测试<br>换行定格测试。<br>快速开始<br>快速开始<br>开始使用 Redefine 主题。</p>
+<p>Hexo 版本需要大于 5.0.0</p>
+<p>安装<br>安装主题<br>在 Hexo 根目录执行以下命令安装主题，有两种方式：</p>
+<p>终端<br>npm install hexo-theme-redefine@latest</p>
+<p>启用主题<br>在 Hexo 根目录的 _config.yml 文件中，将 theme 值修改为 redefine。</p>
+<p>_config.yml<br>theme: redefine</p>
+<p>创建主题配置文件<br>在 Hexo 根目录下创建 _config.redefine.yml 文件。</p>
+<p>并将此处(opens in a new tab)的所有内容复制进去。</p>
+<p>本文件会自动覆盖主题的配置项，创建本文件的目的是为了方便你在升级主题时，不会丢失你的配置。</p>
+<p>VOILA!<br>现在你可以启动 Hexo，看看效果了。</p>
+<p>接下来请先阅读配置注意事项，然后继续配置主题。</p>
+<p>注意事项</p>
+<ol>
+<li>文档阅读说明<br>在接下来的配置中，xxx.yyy 表示你需要在 _config.redefine.yml 文件中的 xxx 下的 yyy 配置项中进行配置。</li>
+</ol>
+<p>例如，info.title 指的是 info 下的 title 配置项。</p>
+<p>_config.redefine.yml<br>info:<br>    title: Redefine</p>
+<ol start="2">
+<li>YAML 语法<br>配置文件 _config.redefine.yml 使用 YAML 语法，如果你不熟悉 YAML 语法，请先阅读此处(opens in a new tab)。</li>
+</ol>
+<p>YAML 语法是按照缩进来区分层级的，所以请注意缩进。</p>
+<p>请保持原本的缩进，注意在配置项之前不要乱加空格。</p>
+<ol start="3">
+<li>配置主题<br>所有改动都请在 _config.redefine.yml 文件中进行，不建议直接修改主题文件，因为更新主题时会覆盖你的改动。</li>
+</ol>
+<p>更新<br>更新主题<br>在 Hexo 根目录执行和安装时同样的命令更新主题：</p>
+<p>终端<br>npm install hexo-theme-redefine@latest</p>
+<p>迁移配置<br>有时候，更新完主题后，你的配置文件会有一些新的配置项，或者删除了一些配置项，或者对配置项名称进行了改动，这时候你需要将这些配置同步到你的配置文件中。</p>
+<p>可以使用 VS Code 等编辑器的 文件比对 功能，将新旧配置文件进行对比，然后将新的配置项添加到你的配置文件中。</p>
+<p>例如，以下分别是两个不同安装方法的 VS Code 文件对比教程：</p>
+<p>在 VS Code 中，按住 Ctrl(windows) 或者 Command(macos) 键，</p>
+<p>选中旧配置文件(_config.redefine.yml)，</p>
+<p>再选中新配置文件(node_modules&#x2F;hexo-theme-redefine&#x2F;_config.yml)。</p>
+<p>然后点击 比较选中的文件 或者 Compare Selected 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。</p>
+<p>Last updated on 2023年3月25日</p>
+]]></content>
+      <tags>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改scaffold</title>
+    <url>/2023/06/06/%E4%BF%AE%E6%94%B9scaffold/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>hexo new 新文章，文章页的front matter中只有titile，date，tags三项内容，一般情况下新建文章包含首页缩略图，文章页头图，不希望出现文章摘要信息。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E4%BF%AE%E6%94%B9scaffold/Screenshot.png"
+                     
+                ></p>
+<p>通过修改根目录下scaffold文件夹下post.md文件，修改默认文章页front matter内容，添加所需要项目，如thumbnail文章首页缩略图，文章页头图cover，摘要excerpt不显示或者修改摘要内容。</p>
+<p>PS：文章插入图片又出现hexo s本地无法显示的情况，昨天也是某种图片无法加载，具体原因不详，初步发现是图片名称格式或内容的问题，修改图片名称为相对简单的名称后，即可正常加载。如Screenshot 2023-06-06 094854.png无法加载，修改为Screenshot.png即可正常加载显示。</p>
+]]></content>
+      <tags>
+        <tag>文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试文章2</title>
+    <url>/2023/06/02/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>段落样式，段落样式</p>
+<p>插入表格：</p>
+<table>
+<thead>
+<tr>
+<th>表格</th>
+<th>123</th>
+<th>456</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目1</td>
+<td>abc</td>
+<td>DEF</td>
+</tr>
+<tr>
+<td>项目2</td>
+<td>完成</td>
+<td>未完成</td>
+</tr>
+<tr>
+<td>项目3</td>
+<td>￥5000</td>
+<td>插入图形</td>
+</tr>
+</tbody></table>
+<p>图表说明：该表格是测试表格</p>
+<p>插入图片：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/privateinvestocat.jpg"
+                      alt="privateinvestocat"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/FvzvnPvacAAR7od.jpg"
+                      alt="FvzvnPvacAAR7od"
+                ></p>
+<p>超链接测试：</p>
+<p>[方括号]: <a class="link"   href="https://www.baidu.com/" >https://www.baidu.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“百度”</p>
+<p>插入图片2</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/GitHub-Bug-Bounty_for-social.webp"
+                     
+                ></p>
+<p><em><strong><u>测试完毕</u></strong></em></p>
+]]></content>
+      <tags>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>评论及主题更新</title>
+    <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h2><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
+<p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
+<p>不知道如何能不用审核就就直接显示评论。</p>
+<h2 id="Redefine主题更新"><a href="#Redefine主题更新" class="headerlink" title="Redefine主题更新"></a>Redefine主题更新</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+
+<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
+<h3 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h3><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
+<h3 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h3><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
+<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
+<p>这样主题更新后不会影响网页图片加载。</p>
+]]></content>
+      <tags>
+        <tag>评论</tag>
+        <tag>主题更新</tag>
       </tags>
   </entry>
 </search>
