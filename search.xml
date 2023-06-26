@@ -249,7 +249,7 @@
 <p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
 ]]></content>
       <categories>
-        <category>knowledge</category>
+        <category>interesting</category>
       </categories>
       <tags>
         <tag>daily</tag>
@@ -278,24 +278,6 @@
       <tags>
         <tag>ThemeUpdate</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
   </entry>
   <entry>
     <title>Typora测试</title>
@@ -374,6 +356,50 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/06/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>second artical</title>
+    <url>/2023/05/29/second-artical/</url>
+    <content><![CDATA[<p>如何设置文章，比如标题<br>如何插入图片<br>如何插入其他</p>
+<p>以下是设置之后插入的图片</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/second-artical/FvAxsc6aAAEA0tU.jpg"
+                      alt="FvAxsc6aAAEA0tU"
+                ></p>
+<p>以下是插入的图片，测试能否正常显示。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/second-artical/Fvzvn3RaAAAf09X.jpg"
+                      alt="Fvzvn3RaAAAf09X"
+                ></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo安装使用</title>
     <url>/2023/06/02/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 只需几分钟时间。</p>
@@ -444,29 +470,50 @@
       </tags>
   </entry>
   <entry>
-    <title>second artical</title>
-    <url>/2023/05/29/second-artical/</url>
-    <content><![CDATA[<p>如何设置文章，比如标题<br>如何插入图片<br>如何插入其他</p>
-<p>以下是设置之后插入的图片</p>
+    <title>The Value of Life</title>
+    <url>/2023/06/06/value-of-life/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/second-artical/FvAxsc6aAAEA0tU.jpg"
-                      alt="FvAxsc6aAAEA0tU"
+                     data-src="/../images/value-of-life/value.jpg"
+                     
                 ></p>
-<p>以下是插入的图片，测试能否正常显示。</p>
+<p>chatgpt：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
+<p>Regenerate response：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
+<p>bing AI：</p>
+<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
+]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改scaffold</title>
+    <url>/2023/06/06/%E4%BF%AE%E6%94%B9scaffold/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="修改新建文章默认项"><a href="#修改新建文章默认项" class="headerlink" title="修改新建文章默认项"></a>修改新建文章默认项</h3><p>hexo new 新文章，文章页的front matter中只有titile，date，tags三项内容，一般情况下新建文章包含首页缩略图，文章页头图，不希望出现文章摘要信息。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/second-artical/Fvzvn3RaAAAf09X.jpg"
-                      alt="Fvzvn3RaAAAf09X"
+                     data-src="/../images/%E4%BF%AE%E6%94%B9scaffold/Screenshot.png"
+                     
                 ></p>
+<p>通过修改根目录下scaffold文件夹下post.md文件，修改默认文章页front matter内容，添加所需要项目，如thumbnail文章首页缩略图，文章页头图cover，摘要excerpt不显示或者修改摘要内容。</p>
+<h3 id="图片本地无法正常显示"><a href="#图片本地无法正常显示" class="headerlink" title="图片本地无法正常显示"></a>图片本地无法正常显示</h3><p>PS：文章插入图片又出现hexo s本地无法显示的情况，昨天也是某种图片无法加载，具体原因不详，初步发现是图片名称格式或内容的问题，修改图片名称为相对简单的名称后，即可正常加载。如Screenshot 2023-06-06 094854.png无法加载，修改为Screenshot.png即可正常加载显示。</p>
+<h3 id="添加categories网页不更新"><a href="#添加categories网页不更新" class="headerlink" title="添加categories网页不更新"></a>添加categories网页不更新</h3><p>添加categories时，通过每篇文章独立加入，修改上述文件，添加categories：项，新建文章就好增加categories项，每次编辑文章进行分类。实际操作中，每篇文章添加categories后，hexo g-s-d，本地显示正常，推送网页并没有更新，至少一个小时后仍未有更新。本地命令hexo cl后，再hexo-g-s-d本地正常，推送后延迟5分钟左右，网页正常更新，添加了categories项目。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>测试文章</tag>
+        <tag>文章默认项</tag>
+        <tag>图片显示</tag>
+        <tag>categories问题</tag>
       </tags>
   </entry>
   <entry>
@@ -531,53 +578,6 @@
       </tags>
   </entry>
   <entry>
-    <title>The Value of Life</title>
-    <url>/2023/06/06/value-of-life/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/value-of-life/value.jpg"
-                     
-                ></p>
-<p>chatgpt：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
-<p>Regenerate response：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
-<p>bing AI：</p>
-<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
-]]></content>
-      <categories>
-        <category>thinking</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改scaffold</title>
-    <url>/2023/06/06/%E4%BF%AE%E6%94%B9scaffold/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="修改新建文章默认项"><a href="#修改新建文章默认项" class="headerlink" title="修改新建文章默认项"></a>修改新建文章默认项</h3><p>hexo new 新文章，文章页的front matter中只有titile，date，tags三项内容，一般情况下新建文章包含首页缩略图，文章页头图，不希望出现文章摘要信息。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E4%BF%AE%E6%94%B9scaffold/Screenshot.png"
-                     
-                ></p>
-<p>通过修改根目录下scaffold文件夹下post.md文件，修改默认文章页front matter内容，添加所需要项目，如thumbnail文章首页缩略图，文章页头图cover，摘要excerpt不显示或者修改摘要内容。</p>
-<h3 id="图片本地无法正常显示"><a href="#图片本地无法正常显示" class="headerlink" title="图片本地无法正常显示"></a>图片本地无法正常显示</h3><p>PS：文章插入图片又出现hexo s本地无法显示的情况，昨天也是某种图片无法加载，具体原因不详，初步发现是图片名称格式或内容的问题，修改图片名称为相对简单的名称后，即可正常加载。如Screenshot 2023-06-06 094854.png无法加载，修改为Screenshot.png即可正常加载显示。</p>
-<h3 id="添加categories网页不更新"><a href="#添加categories网页不更新" class="headerlink" title="添加categories网页不更新"></a>添加categories网页不更新</h3><p>添加categories时，通过每篇文章独立加入，修改上述文件，添加categories：项，新建文章就好增加categories项，每次编辑文章进行分类。实际操作中，每篇文章添加categories后，hexo g-s-d，本地显示正常，推送网页并没有更新，至少一个小时后仍未有更新。本地命令hexo cl后，再hexo-g-s-d本地正常，推送后延迟5分钟左右，网页正常更新，添加了categories项目。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>文章默认项</tag>
-        <tag>图片显示</tag>
-        <tag>categories问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>评论及主题更新</title>
     <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h2><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
@@ -595,8 +595,8 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>主题更新</tag>
         <tag>评论</tag>
+        <tag>主题更新</tag>
       </tags>
   </entry>
 </search>
