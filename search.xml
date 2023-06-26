@@ -58,6 +58,9 @@
 <p>19.<strong>conducive</strong> 有助的，有益的</p>
 <p>&#x2F; kənˈduːsɪv &#x2F;</p>
 ]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
       <tags>
         <tag>education</tag>
       </tags>
@@ -206,6 +209,12 @@
 <p>What should I do next? If I still want to continue this marriage, the first thing I need to do is to no longer tolerate her temper and make her restrain herself. Then, I need to shift the focus back to myself, <strong>seek self-improvement from within</strong>, and avoid wasting too much energy on meaningless things. I should engage in more learning, reading, and writing. Stocks, law, and writing will be the major areas for me to focus on in the next step.</p>
 <p>Lastly, I would like to add that it’s not simply a matter of whether or not to have a second child. When I gave up on the idea of a second child from deep within, I basically let go of any illusions about this marriage. I will take each step as it comes. Let’s not indulge in inner dramas too much. Live each day well and make the most of the present.</p>
 ]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
+      <tags>
+        <tag>marriage</tag>
+      </tags>
   </entry>
   <entry>
     <title>Perseus with the Head of Medusa</title>
@@ -239,6 +248,9 @@
 <p>“带着美杜莎的头的珀尔修斯”的形象经常在艺术和雕塑中被描绘。通常情况下，图像显示珀尔修斯一手拿着美杜莎的被斩首的头颅，另一手持剑。这个形象象征着善恶之间的胜利，珀尔修斯成功完成了他的英雄任务，通过杀死美杜莎并使用她的头颅作为武器。</p>
 <p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
 ]]></content>
+      <categories>
+        <category>knowledge</category>
+      </categories>
       <tags>
         <tag>daily</tag>
       </tags>
@@ -278,7 +290,7 @@
                 ></p>
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>Typora</tag>
@@ -312,6 +324,9 @@
 <p>沉思，深思熟虑；盘算，打算；凝视，注视；考虑接受（发生某事的可能性）</p>
 <p>10.<strong>resort to suicide</strong> 诉诸自杀</p>
 ]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
       <tags>
         <tag>war</tag>
       </tags>
@@ -397,8 +412,11 @@
 <p>浏览 <code>&lt;GitHub 用户名&gt;.github.io</code> 检查你的网站能否运作。</p>
 <h2 id="相关帮助文档"><a href="#相关帮助文档" class="headerlink" title="相关帮助文档"></a>相关帮助文档</h2><p>[Hexo文档]: <a class="link"   href="https://hexo.io/zh-cn/docs/" >https://hexo.io/zh-cn/docs/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Hexo文档”<br>[GItHub文档]: <a class="link"   href="https://docs.github.com/zh" >https://docs.github.com/zh <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“GItHub文档”<br>[Redefine主题文档]: <a class="link"   href="https://redefine-docs.ohevan.com/" >https://redefine-docs.ohevan.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Redefine主题文档”</p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>安装</tag>
       </tags>
   </entry>
   <entry>
@@ -420,6 +438,9 @@
                       alt="Fvzvn3RaAAAf09X"
                 ></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>测试文章</tag>
       </tags>
@@ -441,51 +462,11 @@
 <p>bing AI：</p>
 <p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
 ]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
       <tags>
-        <tag>感想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>writing</title>
-    <url>/2023/05/29/writing/</url>
-    <content><![CDATA[<p> 这里的—什么意思<br>这是文章的正文吗<br>    空格测试，<br>    换行测试<br>换行定格测试。<br>快速开始<br>快速开始<br>开始使用 Redefine 主题。</p>
-<p>Hexo 版本需要大于 5.0.0</p>
-<p>安装<br>安装主题<br>在 Hexo 根目录执行以下命令安装主题，有两种方式：</p>
-<p>终端<br>npm install hexo-theme-redefine@latest</p>
-<p>启用主题<br>在 Hexo 根目录的 _config.yml 文件中，将 theme 值修改为 redefine。</p>
-<p>_config.yml<br>theme: redefine</p>
-<p>创建主题配置文件<br>在 Hexo 根目录下创建 _config.redefine.yml 文件。</p>
-<p>并将此处(opens in a new tab)的所有内容复制进去。</p>
-<p>本文件会自动覆盖主题的配置项，创建本文件的目的是为了方便你在升级主题时，不会丢失你的配置。</p>
-<p>VOILA!<br>现在你可以启动 Hexo，看看效果了。</p>
-<p>接下来请先阅读配置注意事项，然后继续配置主题。</p>
-<p>注意事项</p>
-<ol>
-<li>文档阅读说明<br>在接下来的配置中，xxx.yyy 表示你需要在 _config.redefine.yml 文件中的 xxx 下的 yyy 配置项中进行配置。</li>
-</ol>
-<p>例如，info.title 指的是 info 下的 title 配置项。</p>
-<p>_config.redefine.yml<br>info:<br>    title: Redefine</p>
-<ol start="2">
-<li>YAML 语法<br>配置文件 _config.redefine.yml 使用 YAML 语法，如果你不熟悉 YAML 语法，请先阅读此处(opens in a new tab)。</li>
-</ol>
-<p>YAML 语法是按照缩进来区分层级的，所以请注意缩进。</p>
-<p>请保持原本的缩进，注意在配置项之前不要乱加空格。</p>
-<ol start="3">
-<li>配置主题<br>所有改动都请在 _config.redefine.yml 文件中进行，不建议直接修改主题文件，因为更新主题时会覆盖你的改动。</li>
-</ol>
-<p>更新<br>更新主题<br>在 Hexo 根目录执行和安装时同样的命令更新主题：</p>
-<p>终端<br>npm install hexo-theme-redefine@latest</p>
-<p>迁移配置<br>有时候，更新完主题后，你的配置文件会有一些新的配置项，或者删除了一些配置项，或者对配置项名称进行了改动，这时候你需要将这些配置同步到你的配置文件中。</p>
-<p>可以使用 VS Code 等编辑器的 文件比对 功能，将新旧配置文件进行对比，然后将新的配置项添加到你的配置文件中。</p>
-<p>例如，以下分别是两个不同安装方法的 VS Code 文件对比教程：</p>
-<p>在 VS Code 中，按住 Ctrl(windows) 或者 Command(macos) 键，</p>
-<p>选中旧配置文件(_config.redefine.yml)，</p>
-<p>再选中新配置文件(node_modules&#x2F;hexo-theme-redefine&#x2F;_config.yml)。</p>
-<p>然后点击 比较选中的文件 或者 Compare Selected 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。</p>
-<p>Last updated on 2023年3月25日</p>
-]]></content>
-      <tags>
-        <tag>测试文章</tag>
+        <tag>life</tag>
       </tags>
   </entry>
   <entry>
@@ -560,6 +541,9 @@
                 ></p>
 <p><em><strong><u>测试完毕</u></strong></em></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>测试文章</tag>
       </tags>
@@ -578,6 +562,9 @@
 <p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
 <p>这样主题更新后不会影响网页图片加载。</p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>评论</tag>
         <tag>主题更新</tag>
@@ -599,8 +586,16 @@
                      
                 ></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>ThemeUpdate</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2023/06/26/test/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
