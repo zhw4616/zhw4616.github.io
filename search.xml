@@ -263,7 +263,14 @@
   <entry>
     <title>Theme Update</title>
     <url>/2023/06/26/Theme-Update/</url>
-    <content><![CDATA[<h3 id="2023-06-26-Theme-Update"><a href="#2023-06-26-Theme-Update" class="headerlink" title="2023.06.26 Theme Update"></a>2023.06.26 Theme Update</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
+    <content><![CDATA[<h3 id="Redefine-Theme-Update-2023-06-05"><a href="#Redefine-Theme-Update-2023-06-05" class="headerlink" title="Redefine Theme Update 2023.06.05"></a>Redefine Theme Update 2023.06.05</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+
+<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
+<h4 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h4><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
+<h4 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h4><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
+<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
+<p>这样主题更新后不会影响网页图片加载。</p>
+<h3 id="Redefine-Theme-Update-2023-06-26"><a href="#Redefine-Theme-Update-2023-06-26" class="headerlink" title="Redefine Theme Update 2023.06.26"></a>Redefine Theme Update 2023.06.26</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
 
 <p>current version is v2.2.1,latest version is v2.2.1</p>
 <p>手动修改了部分配置文件，对网页使用没有影响。字体和大小有少许改动，更新了字体样式，网页字体已更新。字体更新有延迟，需要命令hexo cl后再hexo g重新生成，hexo d推送网站后，字体更新成功，这样操作后字体感觉也是有延迟的，推送后过了一段时间网页才更新新字体。</p>
@@ -275,13 +282,15 @@
                      data-src="/../images/Theme-Update/47690335362.jpeg"
                      
                 ></p>
-<p>PS：添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
+<p><strong>PS：</strong>添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
+<h4 id="应用子仓库主题更新问题"><a href="#应用子仓库主题更新问题" class="headerlink" title="应用子仓库主题更新问题"></a>应用子仓库主题更新问题</h4><p>如果将该主题应用于子仓库，主题文件夹下好几个文件需要改动，如果升级主题会全部覆盖，所以需要将修改的主题文件夹hexo-theme-redefine拷贝到根目录theme中，改名redefine，在此改动，升级后该文件夹不被覆盖。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>ThemeUpdate</tag>
+        <tag>redefine</tag>
+        <tag>themeupdate</tag>
       </tags>
   </entry>
   <entry>
@@ -451,7 +460,7 @@
   <entry>
     <title>Redefine theme root issue</title>
     <url>/2023/07/03/redefine-theme-root-issue/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="Hexo-redefin主题应用在子仓库中的问题"><a href="#Hexo-redefin主题应用在子仓库中的问题" class="headerlink" title="Hexo-redefin主题应用在子仓库中的问题"></a>Hexo-redefin主题应用在子仓库中的问题</h3><p>使用redefine主题，hexo-config配置文件中url地址，如果使用<strong>根仓库</strong> url: <a class="link"   href="https://username.github.io/" >https://username.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 不会出现问题；如果使用<strong>子仓库</strong> url: <a class="link"   href="https://username.github.io/test" >https://username.github.io/test <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 则会出现以下问题：</p>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="Hexo-redefine主题应用在子仓库中的问题"><a href="#Hexo-redefine主题应用在子仓库中的问题" class="headerlink" title="Hexo-redefine主题应用在子仓库中的问题"></a>Hexo-redefine主题应用在子仓库中的问题</h3><p>使用redefine主题，hexo-config配置文件中url地址，如果使用<strong>根仓库</strong> url: <a class="link"   href="https://username.github.io/" >https://username.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 不会出现问题；如果使用<strong>子仓库</strong> url: <a class="link"   href="https://username.github.io/test" >https://username.github.io/test <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 则会出现以下问题：</p>
 <ol>
 <li>hexo s本地部署，无法加载背景图片，推送GitHub后网页能加载背景图片。</li>
 <li>hexo s本地部署，无法加载头像图片，推送后网页也无法加载头像图片。</li>
@@ -674,25 +683,17 @@
       </tags>
   </entry>
   <entry>
-    <title>评论及主题更新</title>
+    <title>添加评论功能</title>
     <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h2><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
 <p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
 <p>不知道如何能不用审核就就直接显示评论。</p>
-<h2 id="Redefine主题更新"><a href="#Redefine主题更新" class="headerlink" title="Redefine主题更新"></a>Redefine主题更新</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
-
-<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
-<h3 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h3><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
-<h3 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h3><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
-<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
-<p>这样主题更新后不会影响网页图片加载。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
         <tag>评论</tag>
-        <tag>主题更新</tag>
       </tags>
   </entry>
 </search>
