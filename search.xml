@@ -398,26 +398,26 @@
 <p>tags标签多个用“|”隔开，默认最多三个，categories同tags。</p>
 <p>多个tags标记没有解决，不知道如何表示，用什么符号隔开，不是“|”。</p>
 <p>不会就搜索，tags 后面这样写就行了：tags: [标签1,标签2,标签3]，注意此处的逗号为英文格式。</p>
-<h2 id="文章首页图示"><a href="#文章首页图示" class="headerlink" title="文章首页图示"></a>文章首页图示</h2><p>加上thumbnail: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“</p>
+<h4 id="文章首页图示"><a href="#文章首页图示" class="headerlink" title="文章首页图示"></a>文章首页图示</h4><p>加上thumbnail: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“</p>
 <p>也可以使用相对路径图片地址</p>
 <p>如thumbnail: “..&#x2F;images&#x2F;Tyora测试&#x2F;FvzvnPvacAAR7od.jpg”</p>
 <p>何用网络地址效果一样</p>
-<h2 id="文章头图"><a href="#文章头图" class="headerlink" title="文章头图"></a>文章头图</h2><p>加上cover: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“ </p>
+<h4 id="文章头图"><a href="#文章头图" class="headerlink" title="文章头图"></a>文章头图</h4><p>加上cover: “<a href="https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg">https://zhw4616.github.io/images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg</a>“ </p>
 <p>cover这里如果设置了thumail会默认为改图，cover不用再输入地址。</p>
-<h2 id="中文乱码解决，应该是切换编码语言的原因。"><a href="#中文乱码解决，应该是切换编码语言的原因。" class="headerlink" title="中文乱码解决，应该是切换编码语言的原因。"></a>中文乱码解决，应该是切换编码语言的原因。</h2><p>正常输入没有问题。</p>
-<h2 id="文本内插入图片方式："><a href="#文本内插入图片方式：" class="headerlink" title="文本内插入图片方式："></a>文本内插入图片方式：</h2><p><img  
+<h4 id="中文乱码解决，应该是切换编码语言的原因。"><a href="#中文乱码解决，应该是切换编码语言的原因。" class="headerlink" title="中文乱码解决，应该是切换编码语言的原因。"></a>中文乱码解决，应该是切换编码语言的原因。</h4><p>正常输入没有问题。</p>
+<h4 id="文本内插入图片方式："><a href="#文本内插入图片方式：" class="headerlink" title="文本内插入图片方式："></a>文本内插入图片方式：</h4><p><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxkHP9sWwAEoyvn-1685695670474.jpg"
                       alt="图片说明"
                 ></p>
-<h2 id="格式菜单插入本地图片："><a href="#格式菜单插入本地图片：" class="headerlink" title="格式菜单插入本地图片："></a>格式菜单插入本地图片：</h2><p><img  
+<h4 id="格式菜单插入本地图片："><a href="#格式菜单插入本地图片：" class="headerlink" title="格式菜单插入本地图片："></a>格式菜单插入本地图片：</h4><p><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FvzvnPvacAAR7od.jpg"
                       alt="图片说明"
                 ></p>
-<h2 id="测试使用VS插入图片："><a href="#测试使用VS插入图片：" class="headerlink" title="测试使用VS插入图片："></a>测试使用VS插入图片：</h2><p><img  
+<h4 id="测试使用VS插入图片："><a href="#测试使用VS插入图片：" class="headerlink" title="测试使用VS插入图片："></a>测试使用VS插入图片：</h4><p><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/../images/Typora%E6%B5%8B%E8%AF%95/FxgzoClXoAEK7Pg.jpg"
@@ -485,20 +485,20 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo安装使用</title>
+    <title>Hexo安装使用</title>
     <url>/2023/06/02/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 只需几分钟时间。</p>
-<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装 Hexo 只需几分钟时间。</p>
+<h4 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h4><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
 <ul>
 <li><a class="link"   href="http://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
 <li><a class="link"   href="http://git-scm.com/" >Git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 <p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
-<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><ul>
+<h4 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h4><ul>
 <li>Windows：下载并安装 <a class="link"   href="https://git-scm.com/download/win" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</li>
 </ul>
-<h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>Node.js 为大多数平台提供了官方的 <a class="link"   href="https://nodejs.org/zh-cn/download/" >安装程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><p>Node.js 为大多数平台提供了官方的 <a class="link"   href="https://nodejs.org/zh-cn/download/" >安装程序 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）。</p>
+<h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
 
 <p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
@@ -510,8 +510,8 @@
 <p>新建完成后，指定文件夹的目录如下：</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 <a class="link"   href="https://hexo.io/zh-cn/docs/configuration" >配置 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 信息，您可以在此配置大部分的参数。</p>
-<h1 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h1><h2 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 才能使用。</p>
+<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><p>网站的 <a class="link"   href="https://hexo.io/zh-cn/docs/configuration" >配置 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 信息，您可以在此配置大部分的参数。</p>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><h4 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a class="link"   href="https://github.com/hexojs/hexo-server" >hexo-server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 才能使用。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure></div>
 
 <p>安装完成后，输入以下命令以启动服务器，您的网站会在 <code>http://localhost:4000</code> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
@@ -520,19 +520,19 @@
 <p>如果您想要更改端口，或是在执行时遇到了 <code>EADDRINUSE</code> 错误，可以在执行时使用 <code>-p</code> 选项指定其他端口，如下：</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>在静态模式下，服务器只处理 <code>public</code> 文件夹内的文件，而不会处理文件变动，在执行时，您应该先自行执行 <code>hexo generate</code>，此模式通常用于生产环境（production mode）下。</p>
+<h4 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h4><p>在静态模式下，服务器只处理 <code>public</code> 文件夹内的文件，而不会处理文件变动，在执行时，您应该先自行执行 <code>hexo generate</code>，此模式通常用于生产环境（production mode）下。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure></div>
 
-<h1 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h1><p>使用 Hexo 生成静态文件快速而且简单。</p>
+<h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><p>使用 Hexo 生成静态文件快速而且简单。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p>
+<h4 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h4><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><p>您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
+<h4 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h4><p>您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure></div>
 
-<h1 id="在-GitHub-Pages-上部署-Hexo"><a href="#在-GitHub-Pages-上部署-Hexo" class="headerlink" title="在 GitHub Pages 上部署 Hexo"></a>在 GitHub Pages 上部署 Hexo</h1><h2 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h2><p>以下教学改编自 <a class="link"   href="https://hexo.io/zh-cn/docs/one-command-deployment" >一键部署 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
+<h3 id="GitHub-Pages-一键部署"><a href="#GitHub-Pages-一键部署" class="headerlink" title="GitHub Pages 一键部署"></a>GitHub Pages 一键部署</h3><p>以下教学改编自 <a class="link"   href="https://hexo.io/zh-cn/docs/one-command-deployment" >一键部署 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
 <ol>
 <li><p>安装 <a class="link"   href="https://github.com/hexojs/hexo-deployer-git" >hexo-deployer-git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。Installation</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
@@ -545,8 +545,7 @@
 <p>此部分需要前期工作先设置github的SHH登录，生成SHH密钥，添加到github后方可使用。具体设置可以参考GitHub帮助文档。</p>
 <p>执行 <code>hexo clean &amp;&amp; hexo deploy</code> 。</p>
 <p>浏览 <code>&lt;GitHub 用户名&gt;.github.io</code> 检查你的网站能否运作。</p>
-<h2 id="相关帮助文档"><a href="#相关帮助文档" class="headerlink" title="相关帮助文档"></a>相关帮助文档</h2><p>[Hexo文档]: <a class="link"   href="https://hexo.io/zh-cn/docs/" >https://hexo.io/zh-cn/docs/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Hexo文档”<br>[GItHub文档]: <a class="link"   href="https://docs.github.com/zh" >https://docs.github.com/zh <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“GItHub文档”<br>[Redefine主题文档]: <a class="link"   href="https://redefine-docs.ohevan.com/" >https://redefine-docs.ohevan.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“Redefine主题文档”</p>
-]]></content>
+<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -685,10 +684,9 @@
   <entry>
     <title>添加评论功能</title>
     <url>/2023/06/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
-<p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
 <p>不知道如何能不用审核就就直接显示评论。</p>
-<p>PS: 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
+<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><h4 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h4><p><strong>PS:</strong> 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
