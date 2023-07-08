@@ -469,56 +469,26 @@
 <h4 id="1-背景图片本地部署无法加载"><a href="#1-背景图片本地部署无法加载" class="headerlink" title="1.背景图片本地部署无法加载"></a>1.背景图片本地部署无法加载</h4><p><em><strong>背景图片本地加载不显示的问题还没有解决</strong></em>，但是不影响使用，推送后网页可以正常加载背景图片。</p>
 <p><strong>PS：该问题已经解决。</strong></p>
 <p>在主题配置文件图片地址前加上..&#x2F;成为相对路径，本地部署图片正常加载。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87%E8%AE%BE%E7%BD%AE.png"
-                     
-                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">_config.redefine .yml</span><br><span class="line"></span><br><span class="line">home_banner:</span><br><span class="line">  # Home banner image</span><br><span class="line">  image: </span><br><span class="line">    light: ../images/wallhaven-wqery6-light.webp # 添加../本地正常加载</span><br><span class="line">    dark: ../images/wallhaven-wqery6-dark.webp # 添加../本地正常加载</span><br></pre></td></tr></table></figure></div>
+
 <h4 id="2-主页及文章页头像图片无法加载"><a href="#2-主页及文章页头像图片无法加载" class="headerlink" title="2.主页及文章页头像图片无法加载"></a>2.主页及文章页头像图片无法加载</h4><p>问题已解决，路径代码错误导致图片加载路径出错。</p>
 <p>index.html文件图片路径错误：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF.png"
-                     
-                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;img src=&quot;/test/test/images/redefine-avatar.svg&quot;&gt;</span><br><span class="line">                &lt;/div&gt; </span><br><span class="line">                             # 由于root重复引用，路径错误无法加载</span><br></pre></td></tr></table></figure></div>
+
 <p>原代码：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/%E5%A4%B4%E5%83%8F%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9%E5%89%8D.png"
-                     
-                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span><br><span class="line">                &lt;/div&gt; </span><br><span class="line">                                # 由于root重复引用，路径错误无法加载</span><br></pre></td></tr></table></figure></div>
+
 <p>修改后：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/%E5%A4%B4%E5%83%8F%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9%E5%90%8E.png"
-                     
-                ></p>
-<p>关于头像图片加载问题，还有文章页也需要修改该行代码</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/%E6%96%87%E7%AB%A0%E9%A1%B5%E5%A4%B4%E5%83%8F%E5%9B%BE%E7%89%87.png"
-                     
-                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span><br><span class="line">                &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>关于头像图片加载问题，文章页也需要修改该行代码</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.ejs</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                ## 更改&lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span><br><span class="line">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span><br><span class="line">                &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+
+
+
 <h4 id="3-logo图片和内容索引错误"><a href="#3-logo图片和内容索引错误" class="headerlink" title="3.logo图片和内容索引错误"></a>3.logo图片和内容索引错误</h4><p>问题已解决，主要问题就是href路径代码问题。</p>
-<p>原代码：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/logo%E7%B4%A2%E5%BC%95%E4%BF%AE%E6%94%B9%E5%89%8D.png"
-                     
-                ></p>
-<p>修改后：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/logo%E7%B4%A2%E5%BC%95%E4%BF%AE%E6%94%B9%E5%90%8E.png"
-                     
-                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\navbar.ejs</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;navbar-content&lt;%- (theme.home_banner.enable === true &amp;&amp; is_home() &amp;&amp; !page.prev) ? &#x27; has-home-banner&#x27; : &#x27;&#x27; %&gt;&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">            &lt;% if (theme.defaults.hasOwnProperty(&#x27;logo&#x27;) &amp;&amp; theme.defaults.logo) &#123; %&gt;</span><br><span class="line">                ## 原代码 &lt;a class=&quot;logo-image&quot; href=&quot;/&quot;&gt; </span><br><span class="line">                &lt;a class=&quot;logo-image&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt; 更改代码 </span><br><span class="line">                    &lt;%- image_tag(theme.defaults.logo) %&gt;</span><br><span class="line">                &lt;/a&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            ## 原代码 &lt;a class=&quot;logo-title&quot; href=&quot;/&quot;&gt;</span><br><span class="line">            &lt;a class=&quot;logo-title&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt; 更改代码</span><br><span class="line">               &lt;%- is_home() ? &#x27;&lt;h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">                &lt;%= theme.info.title || config.title || &#x27;Redefine Theme&#x27; %&gt;</span><br><span class="line">                &lt;%- is_home() ? &#x27;&lt;/h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">            &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+
 <p>修改后，本地和网页都能正确指向子仓库。</p>
 <h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>上周用了两天的时间，主要解决了redefine主题url放置在子仓库中无法加载背景图片和头像图片，以及主页logo和图像索引指向根仓库的问题。</p>
 <p>如果将redefine主题应用在根仓库无&#x2F;root&#x2F;，则都不用更改正常使用，因为没有root路径，转化生成时不会出现路径错误。有了root之后，路径引用就容易出现问题，因为这个主题的目标就是根目录，最根本的代码还是没有找到原因。</p>
@@ -695,6 +665,103 @@
       </categories>
       <tags>
         <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>写作模块测试</title>
+    <url>/2023/07/08/%E5%86%99%E4%BD%9C%E6%A8%A1%E5%9D%97%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h3><h3 id="大号提示块"><a href="#大号提示块" class="headerlink" title="大号提示块"></a>大号提示块</h3><h4 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h4><p>（<code>notel</code> 意思是 <code>note large</code> ，方便记，也可以写成 <code>note-large</code> ）</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% notel [颜色] [可选: 自定义图标] [标题] %&#125;</span><br><span class="line">内容</span><br><span class="line">支持换行</span><br><span class="line">&#123;% endnotel %&#125; </span><br></pre></td></tr></table></figure></div>
+
+
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>颜色</td>
+<td>提示块的样式或颜色</td>
+<td><code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td>自定义图标</td>
+<td>自定义图标，选填</td>
+<td><a class="link"   href="https://fontawesome.com/search" >Fontawsome(opens in a new tab) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的图标名称后半部分，比如 <code>fa-image</code></td>
+</tr>
+</tbody></table>
+<h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% notel default fa-info 信息 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% notel blue 提示 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% notel red 自定义标题 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125; </span><br></pre></td></tr></table></figure></div>
+
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>信息</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div>
+
+<div class="note-large blue"><div class="notel-title"><p>提示</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div>
+
+<div class="note-large red"><div class="notel-title"><p>自定义标题</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div> 
+
+<h3 id="小号提示块"><a href="#小号提示块" class="headerlink" title="小号提示块"></a>小号提示块</h3><h4 id="格式：-1"><a href="#格式：-1" class="headerlink" title="格式："></a>格式：</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note [样式/颜色] [可选: 自定义图标] %&#125;</span><br><span class="line">笔记内容</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th align="left">可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>样式&#x2F; 颜色</td>
+<td>提示块的样式或颜色</td>
+<td align="left"><code>success</code> <code>default</code> <code>primary</code> <code>info</code> <code>warning</code> <code>danger</code> <code>tip</code> <code>question</code> 以及 <code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td>自定义图标</td>
+<td>自定义图标，选填</td>
+<td align="left"><a class="link"   href="https://fontawesome.com/search" >Fontawsome(opens in a new tab) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的图标名称后半部分，比如 <code>fa-image</code></td>
+</tr>
+</tbody></table>
+<h4 id="例如：-1"><a href="#例如：-1" class="headerlink" title="例如："></a>例如：</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note  %&#125;</span><br><span class="line">默认 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default  %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary  %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125; </span><br><span class="line"></span><br><span class="line">&#123;% note success  %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info  %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning  %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger  %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note red fa-bolt%&#125;</span><br><span class="line">自定义提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="效果：-1"><a href="#效果：-1" class="headerlink" title="效果："></a>效果：</h4><div class="note default"><p>默认 提示块标签</p>
+</div>
+
+<div class="note default"><p>default 提示块标签</p>
+</div>
+
+<div class="note primary"><p>primary 提示块标签</p>
+</div> 
+
+<div class="note success"><p>success 提示块标签</p>
+</div>
+
+<div class="note info"><p>info 提示块标签</p>
+</div>
+
+<div class="note warning"><p>warning 提示块标签</p>
+</div>
+
+<div class="note danger"><p>danger 提示块标签</p>
+</div>
+
+<div class="note red icon-padding"><i class="note-icon fa-solid fa-bolt"></i><p>自定义提示块标签</p>
+</div>]]></content>
+      <categories>
+        <category>文章测试</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>提示</tag>
       </tags>
   </entry>
 </search>
