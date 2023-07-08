@@ -101,6 +101,9 @@
 <p>行未果，假想灾难愁不展； </p>
 <p>事已开，过往仍在脑中演。</p>
 ]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
       <tags>
         <tag>thinking</tag>
       </tags>
@@ -311,11 +314,12 @@
 <div class="note red icon-padding"><i class="note-icon fa-solid fa-bolt"></i><p>自定义提示块标签</p>
 </div>]]></content>
       <categories>
-        <category>文章测试</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>笔记</tag>
         <tag>提示</tag>
+        <tag>文章测试</tag>
       </tags>
   </entry>
   <entry>
@@ -637,7 +641,7 @@
   <entry>
     <title>The Value of Life</title>
     <url>/2023/06/06/value-of-life/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h4 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h4><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
