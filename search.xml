@@ -688,6 +688,7 @@
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
 <p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
 <p>不知道如何能不用审核就就直接显示评论。</p>
+<p>PS: 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
