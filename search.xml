@@ -222,6 +222,39 @@
       </tags>
   </entry>
   <entry>
+    <title>Theme Update</title>
+    <url>/2023/06/26/Theme-Update/</url>
+    <content><![CDATA[<h3 id="Redefine-Theme-Update-2023-06-05"><a href="#Redefine-Theme-Update-2023-06-05" class="headerlink" title="Redefine Theme Update 2023.06.05"></a>Redefine Theme Update 2023.06.05</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+
+<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
+<h4 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h4><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
+<h4 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h4><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
+<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
+<p>这样主题更新后不会影响网页图片加载。</p>
+<h3 id="Redefine-Theme-Update-2023-06-26"><a href="#Redefine-Theme-Update-2023-06-26" class="headerlink" title="Redefine Theme Update 2023.06.26"></a>Redefine Theme Update 2023.06.26</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
+
+<p>current version is v2.2.1,latest version is v2.2.1</p>
+<p>手动修改了部分配置文件，对网页使用没有影响。字体和大小有少许改动，更新了字体样式，网页字体已更新。字体更新有延迟，需要命令hexo cl后再hexo g重新生成，hexo d推送网站后，字体更新成功，这样操作后字体感觉也是有延迟的，推送后过了一段时间网页才更新新字体。</p>
+<p>一开始升级主题成功后，网页字体并没有更改，不知道什么原因，于是采取上面步骤，字体更新成功。不确定是延迟还是需要clean后才能更新字体。</p>
+<p>目前是正常使用该主题，主题配置文件设置基本清楚，但是其他的文件内部关联并不清楚，比如网页配置、设置参数等。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Theme-Update/47690335362.jpeg"
+                     
+                ></p>
+<p><strong>PS：</strong>添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
+<h4 id="应用子仓库主题更新问题"><a href="#应用子仓库主题更新问题" class="headerlink" title="应用子仓库主题更新问题"></a>应用子仓库主题更新问题</h4><p>如果将该主题应用于子仓库，主题文件夹下好几个文件需要改动，如果升级主题会全部覆盖，所以需要将修改的主题文件夹hexo-theme-redefine拷贝到根目录theme中，改名redefine，在此改动，升级后该文件夹不被覆盖。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>redefine</tag>
+        <tag>themeupdate</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Perseus with the Head of Medusa</title>
     <url>/2023/06/05/Perseus-with-the-Head-of-Medusa/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Perseus with the Head of Medusa is a well-known mythological image and story from ancient Greek mythology. Perseus was a hero in Greek mythology and the son of Zeus and Danae. The story goes that Perseus was sent on a quest to slay the Gorgon Medusa, a monstrous creature with snakes for hair whose gaze could turn people to stone.</p>
@@ -258,39 +291,6 @@
       </categories>
       <tags>
         <tag>daily</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Theme Update</title>
-    <url>/2023/06/26/Theme-Update/</url>
-    <content><![CDATA[<h3 id="Redefine-Theme-Update-2023-06-05"><a href="#Redefine-Theme-Update-2023-06-05" class="headerlink" title="Redefine Theme Update 2023.06.05"></a>Redefine Theme Update 2023.06.05</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
-
-<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
-<h4 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h4><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
-<h4 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h4><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
-<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
-<p>这样主题更新后不会影响网页图片加载。</p>
-<h3 id="Redefine-Theme-Update-2023-06-26"><a href="#Redefine-Theme-Update-2023-06-26" class="headerlink" title="Redefine Theme Update 2023.06.26"></a>Redefine Theme Update 2023.06.26</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
-
-<p>current version is v2.2.1,latest version is v2.2.1</p>
-<p>手动修改了部分配置文件，对网页使用没有影响。字体和大小有少许改动，更新了字体样式，网页字体已更新。字体更新有延迟，需要命令hexo cl后再hexo g重新生成，hexo d推送网站后，字体更新成功，这样操作后字体感觉也是有延迟的，推送后过了一段时间网页才更新新字体。</p>
-<p>一开始升级主题成功后，网页字体并没有更改，不知道什么原因，于是采取上面步骤，字体更新成功。不确定是延迟还是需要clean后才能更新字体。</p>
-<p>目前是正常使用该主题，主题配置文件设置基本清楚，但是其他的文件内部关联并不清楚，比如网页配置、设置参数等。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Theme-Update/47690335362.jpeg"
-                     
-                ></p>
-<p><strong>PS：</strong>添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
-<h4 id="应用子仓库主题更新问题"><a href="#应用子仓库主题更新问题" class="headerlink" title="应用子仓库主题更新问题"></a>应用子仓库主题更新问题</h4><p>如果将该主题应用于子仓库，主题文件夹下好几个文件需要改动，如果升级主题会全部覆盖，所以需要将修改的主题文件夹hexo-theme-redefine拷贝到根目录theme中，改名redefine，在此改动，升级后该文件夹不被覆盖。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>redefine</tag>
-        <tag>themeupdate</tag>
       </tags>
   </entry>
   <entry>
@@ -336,6 +336,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/06/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>What is the Meaning of War?</title>
     <url>/2023/06/22/WAR/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I have been watching some battlefield videos of the <strong>Russo-Ukrainian war</strong>. In the <strong>winding</strong> <strong>trenches</strong>, where killings occur at close range, I once again <strong>lament</strong> the cruelty of war. One by one, vibrant lives fall to the ground without experiencing pain or struggle, just <strong>collapsing onto the earth</strong>. The previous videos mostly <strong>depicted</strong> long-range attacks, where you don’t witness a life disappearing so <strong>vividly</strong> before your eyes. You know there are <strong>casualties</strong> after an attack, but you don’t know who they are, so the impact isn’t as <strong>profound</strong>. Life becomes so cheap in war, <strong>inevitably</strong> leading one to <strong>contemplate</strong>: What exactly is war? Why does it start, and why does it persist?</p>
@@ -368,24 +386,6 @@
       <tags>
         <tag>war</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
   </entry>
   <entry>
     <title>hexo安装使用</title>
@@ -469,37 +469,37 @@
 <h4 id="1-背景图片本地部署无法加载"><a href="#1-背景图片本地部署无法加载" class="headerlink" title="1.背景图片本地部署无法加载"></a>1.背景图片本地部署无法加载</h4><p><em><strong>背景图片本地加载不显示的问题还没有解决</strong></em>，但是不影响使用，推送后网页可以正常加载背景图片。</p>
 <p><strong>PS：该问题已经解决。</strong></p>
 <p>在主题配置文件图片地址前加上..&#x2F;成为相对路径，本地部署图片正常加载。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">_config.redefine .yml</span><br><span class="line"></span><br><span class="line">home_banner:</span><br><span class="line">  # Home banner image</span><br><span class="line">  image: </span><br><span class="line">    light: ../images/wallhaven-wqery6-light.webp # 添加../本地正常加载</span><br><span class="line">    dark: ../images/wallhaven-wqery6-dark.webp # 添加../本地正常加载</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">_config.redefine.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">home_banner:</span></span><br><span class="line">  <span class="comment"># Home banner image</span></span><br><span class="line">  <span class="attr">image:</span> </span><br><span class="line">    <span class="attr">light:</span> <span class="string">../images/wallhaven-wqery6-light.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">../images/wallhaven-wqery6-dark.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br></pre></td></tr></table></figure></div>
 
 <h4 id="2-主页及文章页头像图片无法加载"><a href="#2-主页及文章页头像图片无法加载" class="headerlink" title="2.主页及文章页头像图片无法加载"></a>2.主页及文章页头像图片无法加载</h4><p>问题已解决，路径代码错误导致图片加载路径出错。</p>
 <p>index.html文件图片路径错误：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;img src=&quot;/test/test/images/redefine-avatar.svg&quot;&gt;</span><br><span class="line">                &lt;/div&gt; </span><br><span class="line">                             # 由于root重复引用，路径错误无法加载</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/test/test/images/redefine-avatar.svg&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">                           <span class="comment">&lt;!--由于root重复引用，路径错误无法加载--&gt;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>原代码：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span><br><span class="line">                &lt;/div&gt; </span><br><span class="line">                                # 由于root重复引用，路径错误无法加载</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\home-sidebar.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span> </span><br><span class="line">                              <span class="comment">// 由于root重复引用，路径错误无法加载</span></span><br></pre></td></tr></table></figure></div>
 
 <p>修改后：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span><br><span class="line">                &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
 
 <p>关于头像图片加载问题，文章页也需要修改该行代码</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.ejs</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;sidebar-content&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;avatar&quot;&gt;</span><br><span class="line">                ## 更改&lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span><br><span class="line">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span><br><span class="line">                &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// 代码注释符号</span></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    <span class="comment">&lt;!-- 原代码 --&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt;</span></span><br><span class="line"><span class="language-xml">                    <span class="comment">&lt;!-- 修改代码 --&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
 
 
 
 <h4 id="3-logo图片和内容索引错误"><a href="#3-logo图片和内容索引错误" class="headerlink" title="3.logo图片和内容索引错误"></a>3.logo图片和内容索引错误</h4><p>问题已解决，主要问题就是href路径代码问题。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\navbar.ejs</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;navbar-content&lt;%- (theme.home_banner.enable === true &amp;&amp; is_home() &amp;&amp; !page.prev) ? &#x27; has-home-banner&#x27; : &#x27;&#x27; %&gt;&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">            &lt;% if (theme.defaults.hasOwnProperty(&#x27;logo&#x27;) &amp;&amp; theme.defaults.logo) &#123; %&gt;</span><br><span class="line">                ## 原代码 &lt;a class=&quot;logo-image&quot; href=&quot;/&quot;&gt; </span><br><span class="line">                &lt;a class=&quot;logo-image&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt; 更改代码 </span><br><span class="line">                    &lt;%- image_tag(theme.defaults.logo) %&gt;</span><br><span class="line">                &lt;/a&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            ## 原代码 &lt;a class=&quot;logo-title&quot; href=&quot;/&quot;&gt;</span><br><span class="line">            &lt;a class=&quot;logo-title&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt; 更改代码</span><br><span class="line">               &lt;%- is_home() ? &#x27;&lt;h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">                &lt;%= theme.info.title || config.title || &#x27;Redefine Theme&#x27; %&gt;</span><br><span class="line">                &lt;%- is_home() ? &#x27;&lt;/h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">            &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\navbar.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// 代码注释符号</span></span><br><span class="line">&lt;header <span class="keyword">class</span>=<span class="string">&quot;navbar-container&quot;</span>&gt;</span><br><span class="line"><span class="comment">// 代码注释符号    </span></span><br><span class="line">    &lt;div class=&quot;navbar-content&lt;%- (theme.home_banner.enable === true &amp;&amp; is_home() &amp;&amp; !page.prev) ? &#x27; has-home-banner&#x27; : &#x27;&#x27; %&gt;&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">            &lt;% if (theme.defaults.hasOwnProperty(&#x27;logo&#x27;) &amp;&amp; theme.defaults.logo) &#123; %&gt;</span><br><span class="line">                &lt;!-- 原代码 --&gt;</span><br><span class="line">                &lt;a class=&quot;logo-image&quot; href=&quot;/&quot;&gt;</span><br><span class="line">                &lt;!-- 修改代码 --&gt;</span><br><span class="line">                &lt;a class=&quot;logo-image&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt;</span><br><span class="line">                    &lt;%- image_tag(theme.defaults.logo) %&gt;</span><br><span class="line">                &lt;/a&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            &lt;!-- 原代码 --&gt;    </span><br><span class="line">            &lt;a class=&quot;logo-title&quot; href=&quot;/&quot;&gt;</span><br><span class="line">            &lt;!-- 修改代码 --&gt;</span><br><span class="line">            &lt;a class=&quot;logo-title&quot; href=&quot;&lt;%- url_for() %&gt;&quot;&gt;</span><br><span class="line">                &lt;%- is_home() ? &#x27;&lt;h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">                &lt;%= theme.info.title || config.title || &#x27;Redefine Theme&#x27; %&gt;</span><br><span class="line">                &lt;%- is_home() ? &#x27;&lt;/h1&gt;&#x27; : &#x27;&#x27; %&gt;</span><br><span class="line">            &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
 
 <p>修改后，本地和网页都能正确指向子仓库。</p>
 <h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>上周用了两天的时间，主要解决了redefine主题url放置在子仓库中无法加载背景图片和头像图片，以及主页logo和图像索引指向根仓库的问题。</p>
 <p>如果将redefine主题应用在根仓库无&#x2F;root&#x2F;，则都不用更改正常使用，因为没有root路径，转化生成时不会出现路径错误。有了root之后，路径引用就容易出现问题，因为这个主题的目标就是根目录，最根本的代码还是没有找到原因。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;article-content markdown-body&quot;&gt;</span><br><span class="line">                &lt;%- page.content %&gt; 这里的代码如何转义不清楚</span><br><span class="line">            &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;article-content markdown-body&quot;</span>&gt;</span><br><span class="line">                &lt;%- page.<span class="property">content</span> %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br><span class="line">            &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
 
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--- Inject Part--&gt;</span><br><span class="line">   &lt;% if (theme.inject.enable == true) &#123; %&gt;</span><br><span class="line">       &lt;% for (let i in theme.inject.head) &#123; %&gt;</span><br><span class="line">           &lt;% if (theme.inject.head[i] !== null)&#123; %&gt;</span><br><span class="line">               &lt;% if (theme.global.pjax == true) &#123; %&gt;</span><br><span class="line">                   &lt;%- theme.inject.head[i].replace(&quot;&lt;script&quot;, &quot;&lt;script data-pjax&quot;) %&gt;</span><br><span class="line">               &lt;% &#125; else &#123; %&gt;</span><br><span class="line">                   &lt;%- theme.inject.head[i] %&gt;</span><br><span class="line">           &lt;% &#125; &#125;%&gt;</span><br><span class="line">   &lt;% &#125; &#125;%&gt;</span><br><span class="line">   &lt;%- export_config() %&gt; 这里的代码如何转义不清楚</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\head.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">&lt;!--- <span class="title class_">Inject</span> <span class="title class_">Part</span>--&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">enable</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">        &lt;% <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> theme.<span class="property">inject</span>.<span class="property">head</span>) &#123; %&gt;</span><br><span class="line">            &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">head</span>[i] !== <span class="literal">null</span>)&#123; %&gt;</span><br><span class="line">                &lt;% <span class="keyword">if</span> (theme.<span class="property">global</span>.<span class="property">pjax</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i].<span class="title function_">replace</span>(<span class="string">&quot;&lt;script&quot;</span>, <span class="string">&quot;&lt;script data-pjax&quot;</span>) %&gt;</span><br><span class="line">                &lt;% &#125; <span class="keyword">else</span> &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i] %&gt;</span><br><span class="line">            &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;%- <span class="title function_">export_config</span>() %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br></pre></td></tr></table></figure></div>
 
 <p>问题解决看着很简单，就是路径的问题，可是由于对代码不熟悉，大部分时间都用在找代码上面了。先从index.html入手，看本地和网页版代码，确定路径引用错误引起指向错误和图片无法加载，然后找到主题原代码位置，确定具体代码行对其修改。</p>
 <h3 id="Typora图片无法正常加载"><a href="#Typora图片无法正常加载" class="headerlink" title="Typora图片无法正常加载"></a>Typora图片无法正常加载</h3><p>解决redefine主题应用在子仓库中的问题，新建文章后，使用Typora插入图片，加载又出现问题，还是url中有&#x2F;root&#x2F;的问题，图片路径在转义时会出现错误，具体哪里的原因目前不清楚。通过调试，在Typora中添加图片根目录可解决。</p>
 <p>修改scaffolds中post.md默认内容如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:  </span><br><span class="line">categories:  </span><br><span class="line">thumbnail: 将图片地址复制至此处即可。</span><br><span class="line">cover: 有了thumbnail这里可以空缺。</span><br><span class="line">excerpt: false</span><br><span class="line">typora-root-url: .\..\ 设置图片根目录，这是有root后需要添加的。</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">tags:</span>  </span><br><span class="line"><span class="attr">categories:</span>  </span><br><span class="line"><span class="attr">thumbnail:</span> <span class="comment">## 将图片地址复制至此处即可。</span></span><br><span class="line"><span class="attr">cover:</span> <span class="comment">## 有了thumbnail这里可以空缺。</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">typora-root-url:</span> <span class="string">.\..\</span> <span class="comment">## 设置图片根目录，这是有root后需要添加的。</span></span><br></pre></td></tr></table></figure></div>
 
 <p>图片即可正常加载，如下图实例</p>
 <p>hexo new test5 插入图片，本地、推送网页均可正常加载。</p>
@@ -516,6 +516,30 @@
       <tags>
         <tag>url</tag>
         <tag>root</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Value of Life</title>
+    <url>/2023/06/06/value-of-life/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/value-of-life/value.jpg"
+                     
+                ></p>
+<p>chatgpt：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
+<p>Regenerate response：</p>
+<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
+<p>bing AI：</p>
+<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
+]]></content>
+      <categories>
+        <category>thinking</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
       </tags>
   </entry>
   <entry>
@@ -545,27 +569,17 @@
       </tags>
   </entry>
   <entry>
-    <title>The Value of Life</title>
-    <url>/2023/06/06/value-of-life/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="跳楼，2023年6月6日，下午三点"><a href="#跳楼，2023年6月6日，下午三点" class="headerlink" title="跳楼，2023年6月6日，下午三点"></a>跳楼，2023年6月6日，下午三点</h2><p>一位父亲要跳楼，因为二十天前他的儿子在公司跳楼自杀了，和公司协调赔偿问题，一直没与达成一致，今天这位父亲抱着孩子的遗像来到公司办公楼三楼，坐在窗户边上准备跳楼。民警以最快的速度赶到现场，救援队也及时赶到，还有家属和相关部门的人员。这位父亲口中说着，不要钱要人，一直不让任何人靠近，经过家属反复劝解，合力将其从窗户边拉到安全位置。也许，这一切都是为了能尽快协调赔偿，可是一条命应该值多少钱。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/value-of-life/value.jpg"
-                     
-                ></p>
-<p>chatgpt：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping off the company building twenty days ago. He had been trying to negotiate compensation with the company but had not reached an agreement. Today, the father arrived at the third floor of the company’s office building, holding a picture of his child, and sat by the window, preparing to jump. The police arrived at the scene as quickly as possible, and the rescue team and personnel from the family and relevant departments also arrived in time. The father, in his words, said he didn’t want money, he wanted his child back, and he didn’t let anyone come near. After repeated persuasion by the family members, they worked together to pull him away from the window to a safe position. Perhaps all of this was in order to expedite the negotiation of compensation, but how much is a life worth?</p>
-<p>Regenerate response：</p>
-<p>A father was about to jump off a building because his son had committed suicide by jumping from the company twenty days ago. They had been unable to reach an agreement with the company regarding compensation, and today the father came to the company’s office building on the third floor with a portrait of his child, sitting by the window, ready to jump. The police arrived at the scene as quickly as possible, and the rescue team also arrived promptly, along with family members and personnel from relevant departments. The father, with tears in his eyes, kept saying, “I don’t want money, I want my son back,” refusing to let anyone come near. After repeated persuasion from the family members, they worked together to pull him away from the window and to a safe position. Perhaps all of this was in an effort to expedite the compensation negotiation, but how much is a life worth?</p>
-<p>bing AI：</p>
-<p>A father wants to jump off a building because his son committed suicide by jumping off the company building twenty days ago. He has been trying to coordinate compensation with the company but has not reached an agreement. Today, the father came to the third floor of the company office building with his child’s portrait and sat by the window ready to jump off. The police arrived at the scene as quickly as possible, and the rescue team also arrived in time, as well as family members and personnel from relevant departments. The father said that he didn’t want money but wanted people. He didn’t let anyone approach him. After repeated persuasion from his family members, he was pulled from the window to a safe position. Perhaps all of this is for the sake of coordinating compensation as soon as possible, but how much is a life worth?</p>
+    <title>代码高亮</title>
+    <url>/2023/07/08/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>插入代码</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>（“代码高亮”）</span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
 ]]></content>
       <categories>
-        <category>thinking</category>
+        <category>文章测试</category>
       </categories>
       <tags>
-        <tag>life</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -589,82 +603,6 @@
         <tag>文章默认项</tag>
         <tag>图片显示</tag>
         <tag>categories问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试文章2</title>
-    <url>/2023/06/02/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>段落样式，段落样式</p>
-<p>插入表格：</p>
-<table>
-<thead>
-<tr>
-<th>表格</th>
-<th>123</th>
-<th>456</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>项目1</td>
-<td>abc</td>
-<td>DEF</td>
-</tr>
-<tr>
-<td>项目2</td>
-<td>完成</td>
-<td>未完成</td>
-</tr>
-<tr>
-<td>项目3</td>
-<td>￥5000</td>
-<td>插入图形</td>
-</tr>
-</tbody></table>
-<p>图表说明：该表格是测试表格</p>
-<p>插入图片：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/privateinvestocat.jpg"
-                      alt="privateinvestocat"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/FvzvnPvacAAR7od.jpg"
-                      alt="FvzvnPvacAAR7od"
-                ></p>
-<p>超链接测试：</p>
-<p>[方括号]: <a class="link"   href="https://www.baidu.com/" >https://www.baidu.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“百度”</p>
-<p>插入图片2</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/GitHub-Bug-Bounty_for-social.webp"
-                     
-                ></p>
-<p><em><strong><u>测试完毕</u></strong></em></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>测试文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>添加评论功能</title>
-    <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
-<p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
-<p>不知道如何能不用审核就就直接显示评论。</p>
-<p>PS: 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -762,6 +700,82 @@
       <tags>
         <tag>笔记</tag>
         <tag>提示</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试文章2</title>
+    <url>/2023/06/02/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>段落样式，段落样式</p>
+<p>插入表格：</p>
+<table>
+<thead>
+<tr>
+<th>表格</th>
+<th>123</th>
+<th>456</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目1</td>
+<td>abc</td>
+<td>DEF</td>
+</tr>
+<tr>
+<td>项目2</td>
+<td>完成</td>
+<td>未完成</td>
+</tr>
+<tr>
+<td>项目3</td>
+<td>￥5000</td>
+<td>插入图形</td>
+</tr>
+</tbody></table>
+<p>图表说明：该表格是测试表格</p>
+<p>插入图片：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/privateinvestocat.jpg"
+                      alt="privateinvestocat"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/FvzvnPvacAAR7od.jpg"
+                      alt="FvzvnPvacAAR7od"
+                ></p>
+<p>超链接测试：</p>
+<p>[方括号]: <a class="link"   href="https://www.baidu.com/" >https://www.baidu.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“百度”</p>
+<p>插入图片2</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/GitHub-Bug-Bounty_for-social.webp"
+                     
+                ></p>
+<p><em><strong><u>测试完毕</u></strong></em></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>添加评论功能</title>
+    <url>/2023/06/05/%E8%AF%84%E8%AE%BA%E5%8F%8A%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>[添加评论]: <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>	“帮助文档”</p>
+<p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
+<p>不知道如何能不用审核就就直接显示评论。</p>
+<p>PS: 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>评论</tag>
       </tags>
   </entry>
 </search>
