@@ -805,8 +805,8 @@
       </tags>
   </entry>
   <entry>
-    <title>html notes</title>
-    <url>/2023/07/10/html-notes/</url>
+    <title>Coding Notes</title>
+    <url>/2023/07/10/coding-notes/</url>
     <content><![CDATA[<h3 id="2023-07-10"><a href="#2023-07-10" class="headerlink" title="2023.07.10"></a>2023.07.10</h3><h4 id="The-alt-Attribute"><a href="#The-alt-Attribute" class="headerlink" title="The alt Attribute"></a>The alt Attribute</h4><p>The required <code>alt</code> attribute for the <code>&lt;img&gt;</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <code>src</code> attribute, or if the user uses a screen reader.</p>
 <div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img_girl.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Girl with a jacket&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -833,7 +833,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/../images/html-notes/workplace.jpg"
+                     data-src="/../images/coding-notes/workplace.jpg"
                      
                 ></p>
 ]]></content>
@@ -841,8 +841,9 @@
         <category>code</category>
       </categories>
       <tags>
-        <tag>html</tag>
-        <tag>css</tag>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
 </search>
