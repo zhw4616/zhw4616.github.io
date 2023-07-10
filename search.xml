@@ -804,4 +804,45 @@
         <tag>time-use</tag>
       </tags>
   </entry>
+  <entry>
+    <title>html notes</title>
+    <url>/2023/07/10/html-notes/</url>
+    <content><![CDATA[<h3 id="2023-07-10"><a href="#2023-07-10" class="headerlink" title="2023.07.10"></a>2023.07.10</h3><h4 id="The-alt-Attribute"><a href="#The-alt-Attribute" class="headerlink" title="The alt Attribute"></a>The alt Attribute</h4><p>The required <code>alt</code> attribute for the <code>&lt;img&gt;</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <code>src</code> attribute, or if the user uses a screen reader.</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img_girl.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Girl with a jacket&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="HTML-Comment-Tag"><a href="#HTML-Comment-Tag" class="headerlink" title="HTML Comment Tag"></a>HTML Comment Tag</h4><p>You can add comments to your HTML source by using the following syntax:</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Write your comments here --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">&lt;p&gt;Look at this cool image:&lt;/p&gt;</span></span><br><span class="line"><span class="comment">&lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot; alt=&quot;Trulli&quot;&gt;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="CSS-Comments"><a href="#CSS-Comments" class="headerlink" title="CSS Comments"></a>CSS Comments</h4><p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+<p>Comments are ignored by browsers.</p>
+<p>A CSS comment is placed inside the <code>&lt;style&gt;</code> element, and starts with <code>/*</code> and ends with <code>*/</code>:</p>
+<div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* This is a single-line comment */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* This is</span></span><br><span class="line"><span class="comment">a multi-line</span></span><br><span class="line"><span class="comment">comment */</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="JavaScript-Comments"><a href="#JavaScript-Comments" class="headerlink" title="JavaScript Comments"></a>JavaScript Comments</h4><p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+<p>JavaScript comments can also be used to prevent execution, when testing alternative code.</p>
+<h5 id="Single-Line-Comments"><a href="#Single-Line-Comments" class="headerlink" title="Single Line Comments"></a>Single Line Comments</h5><p>Single line comments start with <code>//</code>.</p>
+<p>Any text between <code>//</code> and the end of the line will be ignored by JavaScript (will not be executed).</p>
+<p>This example uses a single-line comment before each code line:</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Change heading:</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myH&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;My First Page&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Change paragraph:</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myP&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;My first paragraph.&quot;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<h5 id="Multi-line-Comments"><a href="#Multi-line-Comments" class="headerlink" title="Multi-line Comments"></a>Multi-line Comments</h5><p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>.</p>
+<p>Any text between <code>/*</code> and <code>*/</code> will be ignored by JavaScript.</p>
+<p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">The code below will change</span></span><br><span class="line"><span class="comment">the heading with id = &quot;myH&quot;</span></span><br><span class="line"><span class="comment">and the paragraph with id = &quot;myP&quot;</span></span><br><span class="line"><span class="comment">in my web page:</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myH&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;My First Page&quot;</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myP&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;My first paragraph.&quot;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/html-notes/workplace.jpg"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
 </search>
