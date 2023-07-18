@@ -206,6 +206,40 @@
       </tags>
   </entry>
   <entry>
+    <title>Ellsberg paradox</title>
+    <url>/2023/07/18/Ellsberg-paradox/</url>
+    <content><![CDATA[<h4 id="Why-people-struggle-to-understand-climate-risk"><a href="#Why-people-struggle-to-understand-climate-risk" class="headerlink" title="Why people struggle to understand climate risk"></a>Why people struggle to understand climate risk</h4><blockquote>
+<p>The confusion inherent in a hotter world</p>
+</blockquote>
+<p>Placed before you are two <code>urns</code>. Each contains 100 balls. You are given a clear description of the first urn’s contents, in which there are 50 red balls and 50 black balls. The economist running the experiment is <code>tight-lipped</code> about the second, saying only that there are 100 balls divided between red and black in some ratio. Then you are offered a choice. Pick a red ball from an urn and you will get a million dollars. Which urn would you like to pull from? Now try again, but select a black ball. Which urn this time?</p>
+<p>Most people <code>plump for</code> the first urn both times, despite such a choice implying that there are both more and fewer red balls than in the second urn. This fact is known as the <code>Ellsberg paradox</code> after Daniel Ellsberg, a researcher at the <code>rand corporation</code>, a <code>think-tank</code>, better known for leaking documents detailing America’s involvement in the Vietnam war. Ellsberg, who died on June 16th, called the <code>behaviour ambiguity aversion</code>. It was a <code>deviation</code> from the model of <code>rational</code> choice developed by John von Neumann, a mathematician, and a demonstration that knowing the likelihood of something can <code>alter</code> decision-making.</p>
+<p>The experiment may seem like just another of the <code>cutesy</code> puzzles beloved by economists. In fact, it reveals a deeper problem facing the world as it struggles with climate change. Not only are the probabilities of outcomes not known—the likelihood, say, of hurricanes in the Caribbean ten years from now—nor is the damage they might do. Ignorance of the future carries a cost today: ambiguity makes risks uninsurable, or at the very least prohibitively expensive. The less insurers know about risks, the more capital they need to protect their balance-sheets against possible losses.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Ellsberg-paradox/choice.webp"
+                     
+                ></p>
+<h4 id="为什么人们难以理解气候风险"><a href="#为什么人们难以理解气候风险" class="headerlink" title="为什么人们难以理解气候风险"></a>为什么人们难以理解气候风险</h4><blockquote>
+<p>一个更加炎热的世界中存在的困惑</p>
+</blockquote>
+<p>摆在你面前的是两个瓮。每个瓮中都装有100个球。你被清楚地告知了第一个瓮的内容，其中有50个红球和50个黑球。负责实验的经济学家对第二个瓮保持沉默，只是说其中的红球和黑球以某种比例分布。然后你被提供了一个选择。从一个瓮中取出一个红球，你将得到一百万美元。你想从哪个瓮中取球？现在再试一次，选择一个黑球。这次你会选择哪个瓮？</p>
+<p>大多数人两次都选择了第一个瓮，尽管这样的选择意味着第一个瓮中既有更多的红球，也有更少的红球。这个事实被称为埃尔斯伯格悖论，以丹尼尔·埃尔斯伯格（Daniel Ellsberg）的名字命名，他是兰德公司的研究员，这是一个著名的智囊团，以泄漏详细描述美国参与越南战争的文件而闻名。埃尔斯伯格于6月16日去世，他称这种行为为”模糊规避”。这是对由数学家约翰·冯·诺伊曼（John von Neumann）发展的理性选择模型的偏离，也证明了了解某事的可能性可以改变决策。</p>
+<p>这个实验可能看起来只是经济学家喜欢的另一个可爱的谜题。实际上，它揭示了世界在应对气候变化时面临的更深层次问题。我们不仅不知道结果的概率，比如说未来十年加勒比地区的飓风可能性，而且也不清楚它们可能造成的破坏。对未来的无知在今天带来了一种代价：不确定性使得风险无法获得保险，或者至少变得成本过高。保险公司对风险了解得越少，就越需要资本来保护它们的资产负债表免受可能的损失。</p>
+<h4 id="Ellsberg-paradox"><a href="#Ellsberg-paradox" class="headerlink" title="Ellsberg paradox"></a>Ellsberg paradox</h4><p>In decision theory, the Ellsberg paradox (or Ellsberg’s paradox) is a paradox in which people’s decisions are inconsistent with subjective expected utility theory. Daniel Ellsberg popularized the paradox in his 1961 paper, “Risk, Ambiguity, and the Savage Axioms”. John Maynard Keynes published a version of the paradox in 1921. It is generally taken to be evidence of ambiguity aversion, in which a person tends to prefer choices with quantifiable risks over those with unknown, incalculable risks.</p>
+<p>Ellsberg’s findings indicate that choices with an underlying level of risk are favored in instances where the likelihood of risk is clear, rather than instances in which the likelihood of risk is unknown. A decision-maker will overwhelmingly favor a choice with a transparent likelihood of risk, even in instances where the unknown alternative will likely produce greater utility. When offered choices with varying risk, people prefer choices with calculable risk, even when they have less utility. </p>
+<p>Experimental research： Ellsberg’s experimental research involved two separate thought experiments: the 2-urn 2-color scenario and the 1 urn 3-color scenario.</p>
+<h4 id="艾尔斯伯格悖论"><a href="#艾尔斯伯格悖论" class="headerlink" title="艾尔斯伯格悖论"></a>艾尔斯伯格悖论</h4><p><strong>艾尔斯伯格悖论</strong>（英语：Ellsberg paradox）是决策论中的一个悖论，1961年由学者丹尼尔·艾尔斯伯格提出，以证明预期效用理论存在逻辑不一致的问题。</p>
+<p>实验结论即艾尔斯伯格悖论，它表明人是模糊厌恶（Ambiguity averse）的，即，不喜欢他们对某一博弈的概率分布不清楚，也即，人在冒险时喜欢用已知的概率作根据，而非未知的概率。人在决策是否参赌一个不确定事件的时候，除了事件的概率之外，也考虑到它的来源。</p>
+]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>climate change</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Fortress Besieged</title>
     <url>/2023/07/16/Fortress-Besieged/</url>
     <content><![CDATA[<blockquote>
@@ -268,6 +302,43 @@
       </categories>
       <tags>
         <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maximize Time-Use Strategies</title>
+    <url>/2023/07/08/Maximize-Time-Use-Strategies/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><div class="note default"><p><strong>Making full use of your time involves effective planning, prioritization, and disciplined execution of tasks. Here are some strategies to help you maximize your productivity and make the most of your time:</strong></p>
+</div>
+
+<h4 id="-1"><a href="#-1" class="headerlink" title=""></a><div class="note-large blue"><div class="notel-title"><p><strong>1.Set-Clear-Goals</strong></p>
+</div><div class="notel-content"><p>Start by defining specific and achievable goals. Having a clear sense of direction will help you prioritize your tasks and <em>allocate</em> your time effectively.</p>
+</div></div></h4><h4 id="-2"><a href="#-2" class="headerlink" title=""></a><div class="note-large red"><div class="notel-title"><p><strong>2.Prioritize-Tasks</strong></p>
+</div><div class="notel-content"><p>Determine which tasks are most important and require immediate attention. Use techniques like the Eisenhower Matrix, which categorizes tasks based on their urgency and importance, to help you prioritize effectively.</p>
+</div></div></h4><h4 id="-3"><a href="#-3" class="headerlink" title=""></a><div class="note-large yellow"><div class="notel-title"><p><strong>3.Plan-Your-Schedule</strong></p>
+</div><div class="notel-content"><p>Create a daily or weekly schedule that outlines your tasks and activities. Be realistic about how much time each task will take and allocate sufficient time for breaks and relaxation.</p>
+</div></div></h4><h4 id="-4"><a href="#-4" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>4.Avoid-Procrastination</strong></p>
+</div><div class="notel-content"><p>Procrastination can be a significant time waster. Identify the reasons behind your procrastination and find strategies to overcome them. Break tasks into smaller, manageable chunks and use techniques like the Pomodoro Technique (working in focused bursts with short breaks) to stay motivated and avoid distractions.</p>
+</div></div></h4><h4 id="-5"><a href="#-5" class="headerlink" title=""></a><div class="note-large orange"><div class="notel-title"><p><strong>5.Eliminate-Distractions</strong></p>
+</div><div class="notel-content"><p>Minimize distractions that can sidetrack you from your tasks. Put your phone on silent or use productivity apps to block certain websites or apps during focused work periods. Create a conducive environment for concentration by organizing your workspace and eliminating clutter.</p>
+</div></div></h4><h4 id="-6"><a href="#-6" class="headerlink" title=""></a><div class="note-large yellow"><div class="notel-title"><p><strong>6.Delegate-and-Outsource</strong></p>
+</div><div class="notel-content"><p>Learn to delegate tasks that can be handled by others, freeing up your time for more important or high-value activities. If possible, outsource tasks that are not within your expertise or that can be done more efficiently by someone else.</p>
+</div></div></h4><h4 id="-7"><a href="#-7" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>7.Practice-Time-Blocking</strong></p>
+</div><div class="notel-content"><p>Allocate specific blocks of time for different types of tasks or activities. This method helps create a structured schedule and ensures that you dedicate focused time to each task without multitasking excessively.</p>
+</div></div></h4><h4 id="-8"><a href="#-8" class="headerlink" title=""></a><div class="note-large green"><div class="notel-title"><p><strong>8.Avoid-Overcommitting</strong></p>
+</div><div class="notel-content"><p>Be mindful of your limitations and avoid taking on too many responsibilities or tasks. Learn to say no when necessary and set realistic expectations for yourself and others.</p>
+</div></div></h4><h4 id="-9"><a href="#-9" class="headerlink" title=""></a><div class="note-large red"><div class="notel-title"><p><strong>9.Continuous-Learning</strong></p>
+</div><div class="notel-content"><p>Invest time in personal and professional development. Continuously learning and acquiring new skills can enhance your productivity and open up new opportunities.</p>
+</div></div></h4><h4 id="-10"><a href="#-10" class="headerlink" title=""></a><div class="note-large blue"><div class="notel-title"><p><strong>10.Take-Breaks-and-Rest</strong></p>
+</div><div class="notel-content"><p>Remember to schedule regular breaks to recharge and avoid burnout. Taking short breaks can help maintain focus and increase overall productivity.</p>
+</div></div></h4><h4 id="-11"><a href="#-11" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>11.Reflect-and-Evaluate</strong></p>
+</div><div class="notel-content"><p>Regularly review your progress, assess your productivity methods, and make necessary adjustments. Identify areas for improvement and implement new strategies as needed.</p>
+</div></div></h4><div class="note default"><p><strong>Remember that everyone has their own unique ways of working effectively, so experiment with different techniques and find what works best for you. Consistency and self-discipline are key to making the most of your time.</strong></p>
+</div>]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>time-use</tag>
       </tags>
   </entry>
   <entry>
@@ -391,79 +462,36 @@
       </tags>
   </entry>
   <entry>
-    <title>Maximize Time-Use Strategies</title>
-    <url>/2023/07/08/Maximize-Time-Use-Strategies/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><div class="note default"><p><strong>Making full use of your time involves effective planning, prioritization, and disciplined execution of tasks. Here are some strategies to help you maximize your productivity and make the most of your time:</strong></p>
-</div>
+    <title>Theme Update</title>
+    <url>/2023/06/26/Theme-Update/</url>
+    <content><![CDATA[<h3 id="Redefine-Theme-Update-2023-06-05"><a href="#Redefine-Theme-Update-2023-06-05" class="headerlink" title="Redefine Theme Update 2023.06.05"></a>Redefine Theme Update 2023.06.05</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
 
-<h4 id="-1"><a href="#-1" class="headerlink" title=""></a><div class="note-large blue"><div class="notel-title"><p><strong>1.Set-Clear-Goals</strong></p>
-</div><div class="notel-content"><p>Start by defining specific and achievable goals. Having a clear sense of direction will help you prioritize your tasks and <em>allocate</em> your time effectively.</p>
-</div></div></h4><h4 id="-2"><a href="#-2" class="headerlink" title=""></a><div class="note-large red"><div class="notel-title"><p><strong>2.Prioritize-Tasks</strong></p>
-</div><div class="notel-content"><p>Determine which tasks are most important and require immediate attention. Use techniques like the Eisenhower Matrix, which categorizes tasks based on their urgency and importance, to help you prioritize effectively.</p>
-</div></div></h4><h4 id="-3"><a href="#-3" class="headerlink" title=""></a><div class="note-large yellow"><div class="notel-title"><p><strong>3.Plan-Your-Schedule</strong></p>
-</div><div class="notel-content"><p>Create a daily or weekly schedule that outlines your tasks and activities. Be realistic about how much time each task will take and allocate sufficient time for breaks and relaxation.</p>
-</div></div></h4><h4 id="-4"><a href="#-4" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>4.Avoid-Procrastination</strong></p>
-</div><div class="notel-content"><p>Procrastination can be a significant time waster. Identify the reasons behind your procrastination and find strategies to overcome them. Break tasks into smaller, manageable chunks and use techniques like the Pomodoro Technique (working in focused bursts with short breaks) to stay motivated and avoid distractions.</p>
-</div></div></h4><h4 id="-5"><a href="#-5" class="headerlink" title=""></a><div class="note-large orange"><div class="notel-title"><p><strong>5.Eliminate-Distractions</strong></p>
-</div><div class="notel-content"><p>Minimize distractions that can sidetrack you from your tasks. Put your phone on silent or use productivity apps to block certain websites or apps during focused work periods. Create a conducive environment for concentration by organizing your workspace and eliminating clutter.</p>
-</div></div></h4><h4 id="-6"><a href="#-6" class="headerlink" title=""></a><div class="note-large yellow"><div class="notel-title"><p><strong>6.Delegate-and-Outsource</strong></p>
-</div><div class="notel-content"><p>Learn to delegate tasks that can be handled by others, freeing up your time for more important or high-value activities. If possible, outsource tasks that are not within your expertise or that can be done more efficiently by someone else.</p>
-</div></div></h4><h4 id="-7"><a href="#-7" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>7.Practice-Time-Blocking</strong></p>
-</div><div class="notel-content"><p>Allocate specific blocks of time for different types of tasks or activities. This method helps create a structured schedule and ensures that you dedicate focused time to each task without multitasking excessively.</p>
-</div></div></h4><h4 id="-8"><a href="#-8" class="headerlink" title=""></a><div class="note-large green"><div class="notel-title"><p><strong>8.Avoid-Overcommitting</strong></p>
-</div><div class="notel-content"><p>Be mindful of your limitations and avoid taking on too many responsibilities or tasks. Learn to say no when necessary and set realistic expectations for yourself and others.</p>
-</div></div></h4><h4 id="-9"><a href="#-9" class="headerlink" title=""></a><div class="note-large red"><div class="notel-title"><p><strong>9.Continuous-Learning</strong></p>
-</div><div class="notel-content"><p>Invest time in personal and professional development. Continuously learning and acquiring new skills can enhance your productivity and open up new opportunities.</p>
-</div></div></h4><h4 id="-10"><a href="#-10" class="headerlink" title=""></a><div class="note-large blue"><div class="notel-title"><p><strong>10.Take-Breaks-and-Rest</strong></p>
-</div><div class="notel-content"><p>Remember to schedule regular breaks to recharge and avoid burnout. Taking short breaks can help maintain focus and increase overall productivity.</p>
-</div></div></h4><h4 id="-11"><a href="#-11" class="headerlink" title=""></a><div class="note-large purple"><div class="notel-title"><p><strong>11.Reflect-and-Evaluate</strong></p>
-</div><div class="notel-content"><p>Regularly review your progress, assess your productivity methods, and make necessary adjustments. Identify areas for improvement and implement new strategies as needed.</p>
-</div></div></h4><div class="note default"><p><strong>Remember that everyone has their own unique ways of working effectively, so experiment with different techniques and find what works best for you. Consistency and self-discipline are key to making the most of your time.</strong></p>
-</div>]]></content>
-      <categories>
-        <category>learning</category>
-      </categories>
-      <tags>
-        <tag>time-use</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Perseus with the Head of Medusa</title>
-    <url>/2023/06/05/Perseus-with-the-Head-of-Medusa/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Perseus with the Head of Medusa is a well-known mythological image and story from ancient Greek mythology. Perseus was a hero in Greek mythology and the son of Zeus and Danae. The story goes that Perseus was sent on a quest to slay the Gorgon Medusa, a monstrous creature with snakes for hair whose gaze could turn people to stone.</p>
+<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
+<h4 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h4><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
+<h4 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h4><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
+<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
+<p>这样主题更新后不会影响网页图片加载。</p>
+<h3 id="Redefine-Theme-Update-2023-06-26"><a href="#Redefine-Theme-Update-2023-06-26" class="headerlink" title="Redefine Theme Update 2023.06.26"></a>Redefine Theme Update 2023.06.26</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
+
+<p>current version is v2.2.1,latest version is v2.2.1</p>
+<p>手动修改了部分配置文件，对网页使用没有影响。字体和大小有少许改动，更新了字体样式，网页字体已更新。字体更新有延迟，需要命令hexo cl后再hexo g重新生成，hexo d推送网站后，字体更新成功，这样操作后字体感觉也是有延迟的，推送后过了一段时间网页才更新新字体。</p>
+<p>一开始升级主题成功后，网页字体并没有更改，不知道什么原因，于是采取上面步骤，字体更新成功。不确定是延迟还是需要clean后才能更新字体。</p>
+<p>目前是正常使用该主题，主题配置文件设置基本清楚，但是其他的文件内部关联并不清楚，比如网页配置、设置参数等。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1024px-thumbnail.jpg"
+                     data-src="/../images/Theme-Update/47690335362.jpeg"
                      
                 ></p>
-<p>With the help of the gods Athena and Hermes, Perseus was given various tools and gifts to aid him in his quest. He was given a mirrored shield to see Medusa’s reflection without directly looking at her, winged sandals to fly swiftly, and a magical sword to behead her.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1280px-Cellini,_perseo_06.jpg"
-                     
-                ></p>
-<p>Using these gifts, Perseus managed to find Medusa’s lair and behead her while avoiding her gaze. As soon as he severed her head, the winged horse Pegasus and the giant Chrysaor sprang forth from her body. Perseus swiftly collected Medusa’s head, which still retained its petrifying power, and placed it in a magical sack for safekeeping.</p>
-<p>The image “Perseus with the Head of Medusa” is often depicted in art and sculptures. It typically shows Perseus holding Medusa’s severed head in one hand and his sword in the other. The image symbolizes the triumph of good over evil, as Perseus successfully completed his heroic task by slaying Medusa and using her head as a weapon.</p>
-<p>This mythological story and its imagery have captivated artists and storytellers throughout history, inspiring numerous works of art and literature. It serves as a prominent example of Greek mythology’s enduring influence on Western culture.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Perseus-with-the-Head-of-Medusa/123.jpg"
-                     
-                ></p>
-<p>“带着美杜莎的头的珀尔修斯”是一个来自古希腊神话的著名形象和故事。珀尔修斯是希腊神话中的英雄，是宙斯和达娜伊的儿子。故事讲述珀尔修斯被派遣去击败蛇发女妖美杜莎，她的凝视能将人们石化。</p>
-<p>在众神雅典娜和赫尔墨斯的帮助下，珀尔修斯得到了各种工具和礼物来协助他的任务。他获得了一面有镜子的盾牌，以便能看到美杜莎的反射而不直接注视她，还有有翅膀的凉鞋以快速飞行，和一把神奇的剑来斩首她。</p>
-<p>利用这些礼物，珀尔修斯成功找到了美杜莎的巢穴，并在避开她的凝视的情况下将她斩首。在他砍下头颅的瞬间，翼马飞马和巨人克里剑索尔从她的身体中冲出。珀尔修斯迅速收集了美杜莎的头颅，头颅仍然保留着它的石化能力，并将其放入一个神奇的袋子中保存起来。</p>
-<p>“带着美杜莎的头的珀尔修斯”的形象经常在艺术和雕塑中被描绘。通常情况下，图像显示珀尔修斯一手拿着美杜莎的被斩首的头颅，另一手持剑。这个形象象征着善恶之间的胜利，珀尔修斯成功完成了他的英雄任务，通过杀死美杜莎并使用她的头颅作为武器。</p>
-<p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
+<p><strong>PS：</strong>添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
+<h4 id="应用子仓库主题更新问题"><a href="#应用子仓库主题更新问题" class="headerlink" title="应用子仓库主题更新问题"></a>应用子仓库主题更新问题</h4><p>如果将该主题应用于子仓库，主题文件夹下好几个文件需要改动，如果升级主题会全部覆盖，所以需要将修改的主题文件夹hexo-theme-redefine拷贝到根目录theme中，改名redefine，在此改动，升级后该文件夹不被覆盖。</p>
 ]]></content>
       <categories>
-        <category>interesting</category>
+        <category>redefine</category>
       </categories>
       <tags>
-        <tag>daily</tag>
+        <tag>theme</tag>
+        <tag>update</tag>
       </tags>
   </entry>
   <entry>
@@ -509,6 +537,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Perseus with the Head of Medusa</title>
+    <url>/2023/06/05/Perseus-with-the-Head-of-Medusa/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Perseus with the Head of Medusa is a well-known mythological image and story from ancient Greek mythology. Perseus was a hero in Greek mythology and the son of Zeus and Danae. The story goes that Perseus was sent on a quest to slay the Gorgon Medusa, a monstrous creature with snakes for hair whose gaze could turn people to stone.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1024px-thumbnail.jpg"
+                     
+                ></p>
+<p>With the help of the gods Athena and Hermes, Perseus was given various tools and gifts to aid him in his quest. He was given a mirrored shield to see Medusa’s reflection without directly looking at her, winged sandals to fly swiftly, and a magical sword to behead her.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/1280px-Cellini,_perseo_06.jpg"
+                     
+                ></p>
+<p>Using these gifts, Perseus managed to find Medusa’s lair and behead her while avoiding her gaze. As soon as he severed her head, the winged horse Pegasus and the giant Chrysaor sprang forth from her body. Perseus swiftly collected Medusa’s head, which still retained its petrifying power, and placed it in a magical sack for safekeeping.</p>
+<p>The image “Perseus with the Head of Medusa” is often depicted in art and sculptures. It typically shows Perseus holding Medusa’s severed head in one hand and his sword in the other. The image symbolizes the triumph of good over evil, as Perseus successfully completed his heroic task by slaying Medusa and using her head as a weapon.</p>
+<p>This mythological story and its imagery have captivated artists and storytellers throughout history, inspiring numerous works of art and literature. It serves as a prominent example of Greek mythology’s enduring influence on Western culture.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Perseus-with-the-Head-of-Medusa/123.jpg"
+                     
+                ></p>
+<p>“带着美杜莎的头的珀尔修斯”是一个来自古希腊神话的著名形象和故事。珀尔修斯是希腊神话中的英雄，是宙斯和达娜伊的儿子。故事讲述珀尔修斯被派遣去击败蛇发女妖美杜莎，她的凝视能将人们石化。</p>
+<p>在众神雅典娜和赫尔墨斯的帮助下，珀尔修斯得到了各种工具和礼物来协助他的任务。他获得了一面有镜子的盾牌，以便能看到美杜莎的反射而不直接注视她，还有有翅膀的凉鞋以快速飞行，和一把神奇的剑来斩首她。</p>
+<p>利用这些礼物，珀尔修斯成功找到了美杜莎的巢穴，并在避开她的凝视的情况下将她斩首。在他砍下头颅的瞬间，翼马飞马和巨人克里剑索尔从她的身体中冲出。珀尔修斯迅速收集了美杜莎的头颅，头颅仍然保留着它的石化能力，并将其放入一个神奇的袋子中保存起来。</p>
+<p>“带着美杜莎的头的珀尔修斯”的形象经常在艺术和雕塑中被描绘。通常情况下，图像显示珀尔修斯一手拿着美杜莎的被斩首的头颅，另一手持剑。这个形象象征着善恶之间的胜利，珀尔修斯成功完成了他的英雄任务，通过杀死美杜莎并使用她的头颅作为武器。</p>
+<p>这个神话故事及其形象一直以来吸引着艺术家和故事讲述者，激发了许多艺术作品和文学作品的创作。它是希腊神话对西方文化持久影响的重要例证。</p>
+]]></content>
+      <categories>
+        <category>interesting</category>
+      </categories>
+      <tags>
+        <tag>daily</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>What is the Meaning of War?</title>
     <url>/2023/06/22/WAR/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Lately, I have been watching some battlefield videos of the <strong>Russo-Ukrainian war</strong>. In the <strong>winding</strong> <strong>trenches</strong>, where killings occur at close range, I once again <strong>lament</strong> the cruelty of war. One by one, vibrant lives fall to the ground without experiencing pain or struggle, just <strong>collapsing onto the earth</strong>. The previous videos mostly <strong>depicted</strong> long-range attacks, where you don’t witness a life disappearing so <strong>vividly</strong> before your eyes. You know there are <strong>casualties</strong> after an attack, but you don’t know who they are, so the impact isn’t as <strong>profound</strong>. Life becomes so cheap in war, <strong>inevitably</strong> leading one to <strong>contemplate</strong>: What exactly is war? Why does it start, and why does it persist?</p>
@@ -543,37 +610,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Theme Update</title>
-    <url>/2023/06/26/Theme-Update/</url>
-    <content><![CDATA[<h3 id="Redefine-Theme-Update-2023-06-05"><a href="#Redefine-Theme-Update-2023-06-05" class="headerlink" title="Redefine Theme Update 2023.06.05"></a>Redefine Theme Update 2023.06.05</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+    <title>Hello World</title>
+    <url>/2023/05/29/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
-<p>根目录下执行该命令即可更新redefine主题，主题文件夹位于..\node_modules\hexo-theme-redefine</p>
-<h4 id="更新覆盖"><a href="#更新覆盖" class="headerlink" title="更新覆盖"></a>更新覆盖</h4><p>更新后，主题文件夹（..\node_modules\hexo-theme-redefine）全部覆盖更新，之前设定的网页相关图片全部丢失，所以主题文件夹中尽量不要有什么改动，因为更新时会被全部覆盖。目前也没有其他方面的改动，主要是网页图标的变动。</p>
-<h4 id="网页图片地址变更"><a href="#网页图片地址变更" class="headerlink" title="网页图片地址变更"></a>网页图片地址变更</h4><p>将网页图标文件从主题文件夹转移出来，放在根目录\source\images\blog picture</p>
-<p>修改_config.redefine.yml文件中图片引用地址\images\blog picture\ 图片名字。</p>
-<p>这样主题更新后不会影响网页图片加载。</p>
-<h3 id="Redefine-Theme-Update-2023-06-26"><a href="#Redefine-Theme-Update-2023-06-26" class="headerlink" title="Redefine Theme Update 2023.06.26"></a>Redefine Theme Update 2023.06.26</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest </span><br></pre></td></tr></table></figure></div>
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>current version is v2.2.1,latest version is v2.2.1</p>
-<p>手动修改了部分配置文件，对网页使用没有影响。字体和大小有少许改动，更新了字体样式，网页字体已更新。字体更新有延迟，需要命令hexo cl后再hexo g重新生成，hexo d推送网站后，字体更新成功，这样操作后字体感觉也是有延迟的，推送后过了一段时间网页才更新新字体。</p>
-<p>一开始升级主题成功后，网页字体并没有更改，不知道什么原因，于是采取上面步骤，字体更新成功。不确定是延迟还是需要clean后才能更新字体。</p>
-<p>目前是正常使用该主题，主题配置文件设置基本清楚，但是其他的文件内部关联并不清楚，比如网页配置、设置参数等。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/Theme-Update/47690335362.jpeg"
-                     
-                ></p>
-<p><strong>PS：</strong>添加categories时也出现了网页无法更新的问题，使用hexo cl命令后才延迟5分钟左右正常更新。看来这种变动，还是需要提前clean一下，重新推送。</p>
-<h4 id="应用子仓库主题更新问题"><a href="#应用子仓库主题更新问题" class="headerlink" title="应用子仓库主题更新问题"></a>应用子仓库主题更新问题</h4><p>如果将该主题应用于子仓库，主题文件夹下好几个文件需要改动，如果升级主题会全部覆盖，所以需要将修改的主题文件夹hexo-theme-redefine拷贝到根目录theme中，改名redefine，在此改动，升级后该文件夹不被覆盖。</p>
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
-        <category>redefine</category>
+        <category>hexo</category>
       </categories>
-      <tags>
-        <tag>theme</tag>
-        <tag>update</tag>
-      </tags>
   </entry>
   <entry>
     <title>Coding Notes</title>
@@ -616,27 +671,6 @@
         <tag>CSS</tag>
         <tag>JavaScript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/05/29/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
   </entry>
   <entry>
     <title>Hexo安装使用</title>
@@ -705,6 +739,61 @@
       </categories>
       <tags>
         <tag>安装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Redefine theme root issue</title>
+    <url>/2023/07/03/redefine-theme-root-issue/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="Hexo-redefine主题应用在子仓库中的问题"><a href="#Hexo-redefine主题应用在子仓库中的问题" class="headerlink" title="Hexo-redefine主题应用在子仓库中的问题"></a>Hexo-redefine主题应用在子仓库中的问题</h3><p>Redefine主题，hexo-config配置文件中url地址，</p>
+<p>使用<strong>根仓库</strong> url: <a class="link"   href="https://username.github.io/" >https://username.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 不会出现问题，</p>
+<p>使用<strong>子仓库</strong> url: <a class="link"   href="https://username.github.io/test" >https://username.github.io/test <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 则会出现以下问题：</p>
+<ol>
+<li>hexo s本地部署，无法加载背景图片，推送GitHub后网页能加载背景图片。</li>
+<li>hexo s本地部署，无法加载头像图片，推送后网页也无法加载头像图片。</li>
+<li>hexo s本地部署，网页logo和logo图像索引均指向根仓库，无法指向子仓库。推送后网页logo索引也指向根仓库，无法指向子仓库。</li>
+</ol>
+<h4 id="1-背景图片本地部署无法加载"><a href="#1-背景图片本地部署无法加载" class="headerlink" title="1.背景图片本地部署无法加载"></a>1.背景图片本地部署无法加载</h4><p><em><strong>背景图片本地加载不显示的问题还没有解决</strong></em>，但是不影响使用，推送后网页可以正常加载背景图片。</p>
+<p><strong>PS：该问题已经解决。</strong></p>
+<p>在主题配置文件图片地址前加上..&#x2F;成为相对路径，本地部署图片正常加载。</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">_config.redefine.yml</span></span><br><span class="line"><span class="comment"># yaml代码注释符号</span></span><br><span class="line"><span class="attr">home_banner:</span></span><br><span class="line">  <span class="comment"># Home banner image</span></span><br><span class="line">  <span class="attr">image:</span> </span><br><span class="line">    <span class="attr">light:</span> <span class="string">../images/wallhaven-wqery6-light.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">../images/wallhaven-wqery6-dark.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="2-主页及文章页头像图片无法加载"><a href="#2-主页及文章页头像图片无法加载" class="headerlink" title="2.主页及文章页头像图片无法加载"></a>2.主页及文章页头像图片无法加载</h4><p>问题已解决，路径代码错误导致图片加载路径出错。</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">index.html</span><br><span class="line"><span class="comment">&lt;!--html代码注释符号--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/test/test/images/redefine-avatar.svg&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">                           <span class="comment">&lt;!--由于根路径root重复引用，生成路径错误无法加载--&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\home-sidebar.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line"><span class="comment">/* ejs代码注释符号多行 */</span> </span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt; <span class="comment">&lt;!-- 原代码 --&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt; <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span> </span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">url_for</span></span><br><span class="line"><span class="comment">在路径前加上根路径，从 Hexo 2.7 开始应该使用此函数而不是 config.root + path。</span></span><br><span class="line"><span class="comment">&lt;%- url_for(path, [option]) %&gt;</span></span><br><span class="line"><span class="comment">theme.cofig中有root：/test/</span></span><br><span class="line"><span class="comment">&lt;%- image_tag(theme.defaults.avatar) %&gt; 已经加上根路径root</span></span><br><span class="line"><span class="comment">==&gt; &lt;img src=&quot;/test/images/redefine-avatar.svg&quot;&gt;</span></span><br><span class="line"><span class="comment">加上url_for后重复添加根路径</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
+
+<p>关于头像图片加载问题，文章页也需要修改该行代码</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt; <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt; <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="3-logo图片和内容索引错误"><a href="#3-logo图片和内容索引错误" class="headerlink" title="3.logo图片和内容索引错误"></a>3.logo图片和内容索引错误</h4><p>问题已解决，主要问题就是href路径代码问题，修改后，本地和网页都能正确指向子仓库。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\navbar.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">        &lt;div <span class="keyword">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span><br><span class="line">            &lt;% <span class="keyword">if</span> (theme.<span class="property">defaults</span>.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;logo&#x27;</span>) &amp;&amp; theme.<span class="property">defaults</span>.<span class="property">logo</span>) &#123; %&gt; </span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-image&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/&quot;</span>&gt;</span> <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-image&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- url_for() %&gt;&quot;</span>&gt;</span> <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.logo) %&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-title&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/&quot;</span>&gt;</span> <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-title&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- url_for() %&gt;&quot;</span>&gt;</span> <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                &lt;%- is_home() ? &#x27;<span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#x27; : &#x27;&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">                &lt;%= theme.info.title || config.title || &#x27;Redefine Theme&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">                &lt;%- is_home() ? &#x27;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>&#x27; : &#x27;&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>上周用了两天的时间，主要解决了redefine主题url放置在子仓库中无法加载背景图片和头像图片，以及主页logo和图像索引指向根仓库的问题。</p>
+<p>如果将redefine主题应用在根仓库无&#x2F;root&#x2F;，则都不用更改正常使用，因为没有root路径，转化生成时不会出现路径错误。有了root之后，路径引用就容易出现问题，因为这个主题的目标就是根目录，最根本的代码还是没有找到原因。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;article-content markdown-body&quot;</span>&gt;</span><br><span class="line">                &lt;%- page.<span class="property">content</span> %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br><span class="line">            &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\head.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line">&lt;!--- <span class="title class_">Inject</span> <span class="title class_">Part</span>--&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">enable</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">        &lt;% <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> theme.<span class="property">inject</span>.<span class="property">head</span>) &#123; %&gt;</span><br><span class="line">            &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">head</span>[i] !== <span class="literal">null</span>)&#123; %&gt;</span><br><span class="line">                &lt;% <span class="keyword">if</span> (theme.<span class="property">global</span>.<span class="property">pjax</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i].<span class="title function_">replace</span>(<span class="string">&quot;&lt;script&quot;</span>, <span class="string">&quot;&lt;script data-pjax&quot;</span>) %&gt;</span><br><span class="line">                &lt;% &#125; <span class="keyword">else</span> &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i] %&gt;</span><br><span class="line">            &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;%- <span class="title function_">export_config</span>() %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br></pre></td></tr></table></figure></div>
+
+<p>问题解决看着很简单，就是路径的问题，可是由于对代码不熟悉，大部分时间都用在找代码上面了。先从index.html入手，看本地和网页版代码，确定路径引用错误引起指向错误和图片无法加载，然后找到主题原代码位置，确定具体代码行对其修改。</p>
+<h3 id="Typora图片无法正常加载"><a href="#Typora图片无法正常加载" class="headerlink" title="Typora图片无法正常加载"></a>Typora图片无法正常加载</h3><p>解决redefine主题应用在子仓库中的问题，新建文章后，使用Typora插入图片，加载又出现问题，还是url中有&#x2F;root&#x2F;的问题，图片路径在转义时会出现错误，具体哪里的原因目前不清楚。通过调试，在Typora中添加图片根目录可解决。</p>
+<p>修改scaffolds中post.md默认内容如下：</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">tags:</span>  </span><br><span class="line"><span class="attr">categories:</span>  </span><br><span class="line"><span class="attr">thumbnail:</span> <span class="comment"># 将图片地址复制至此处即可。</span></span><br><span class="line"><span class="attr">cover:</span> <span class="comment"># 有了thumbnail这里可以空缺。</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="literal">false</span> <span class="comment"># 文章摘要，false为不显示。</span></span><br><span class="line"><span class="attr">typora-root-url:</span> <span class="string">.\..\</span> <span class="comment"># 设置图片根目录，这是有root后需要添加的。</span></span><br></pre></td></tr></table></figure></div>
+
+<p>图片即可正常加载，如下图实例</p>
+<p>hexo new test5 插入图片，本地、推送网页均可正常加载。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/redefine-theme-root-issue/post%E6%A0%BC%E5%BC%8F.png"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>redefine</category>
+      </categories>
+      <tags>
+        <tag>url</tag>
+        <tag>root</tag>
       </tags>
   </entry>
   <entry>
@@ -781,58 +870,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Redefine theme root issue</title>
-    <url>/2023/07/03/redefine-theme-root-issue/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="Hexo-redefine主题应用在子仓库中的问题"><a href="#Hexo-redefine主题应用在子仓库中的问题" class="headerlink" title="Hexo-redefine主题应用在子仓库中的问题"></a>Hexo-redefine主题应用在子仓库中的问题</h3><p>Redefine主题，hexo-config配置文件中url地址，</p>
-<p>使用<strong>根仓库</strong> url: <a class="link"   href="https://username.github.io/" >https://username.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 不会出现问题，</p>
-<p>使用<strong>子仓库</strong> url: <a class="link"   href="https://username.github.io/test" >https://username.github.io/test <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 则会出现以下问题：</p>
-<ol>
-<li>hexo s本地部署，无法加载背景图片，推送GitHub后网页能加载背景图片。</li>
-<li>hexo s本地部署，无法加载头像图片，推送后网页也无法加载头像图片。</li>
-<li>hexo s本地部署，网页logo和logo图像索引均指向根仓库，无法指向子仓库。推送后网页logo索引也指向根仓库，无法指向子仓库。</li>
-</ol>
-<h4 id="1-背景图片本地部署无法加载"><a href="#1-背景图片本地部署无法加载" class="headerlink" title="1.背景图片本地部署无法加载"></a>1.背景图片本地部署无法加载</h4><p><em><strong>背景图片本地加载不显示的问题还没有解决</strong></em>，但是不影响使用，推送后网页可以正常加载背景图片。</p>
-<p><strong>PS：该问题已经解决。</strong></p>
-<p>在主题配置文件图片地址前加上..&#x2F;成为相对路径，本地部署图片正常加载。</p>
-<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">_config.redefine.yml</span></span><br><span class="line"><span class="comment"># yaml代码注释符号</span></span><br><span class="line"><span class="attr">home_banner:</span></span><br><span class="line">  <span class="comment"># Home banner image</span></span><br><span class="line">  <span class="attr">image:</span> </span><br><span class="line">    <span class="attr">light:</span> <span class="string">../images/wallhaven-wqery6-light.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">../images/wallhaven-wqery6-dark.webp</span> <span class="comment"># 添加../本地正常加载</span></span><br></pre></td></tr></table></figure></div>
-
-<h4 id="2-主页及文章页头像图片无法加载"><a href="#2-主页及文章页头像图片无法加载" class="headerlink" title="2.主页及文章页头像图片无法加载"></a>2.主页及文章页头像图片无法加载</h4><p>问题已解决，路径代码错误导致图片加载路径出错。</p>
-<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">index.html</span><br><span class="line"><span class="comment">&lt;!--html代码注释符号--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/test/test/images/redefine-avatar.svg&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">                           <span class="comment">&lt;!--由于根路径root重复引用，生成路径错误无法加载--&gt;</span></span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\home-sidebar.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line"><span class="comment">/* ejs代码注释符号多行 */</span> </span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt; <span class="comment">&lt;!-- 原代码 --&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt; <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span> </span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">url_for</span></span><br><span class="line"><span class="comment">在路径前加上根路径，从 Hexo 2.7 开始应该使用此函数而不是 config.root + path。</span></span><br><span class="line"><span class="comment">&lt;%- url_for(path, [option]) %&gt;</span></span><br><span class="line"><span class="comment">theme.cofig中有root：/test/</span></span><br><span class="line"><span class="comment">&lt;%- image_tag(theme.defaults.avatar) %&gt; 已经加上根路径root</span></span><br><span class="line"><span class="comment">==&gt; &lt;img src=&quot;/test/images/redefine-avatar.svg&quot;&gt;</span></span><br><span class="line"><span class="comment">加上url_for后重复添加根路径</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
-
-<p>关于头像图片加载问题，文章页也需要修改该行代码</p>
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;sidebar-content&quot;</span>&gt;</span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;avatar&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(url_for(theme.defaults.avatar)) %&gt; <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.avatar) %&gt; <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
-
-<h4 id="3-logo图片和内容索引错误"><a href="#3-logo图片和内容索引错误" class="headerlink" title="3.logo图片和内容索引错误"></a>3.logo图片和内容索引错误</h4><p>问题已解决，主要问题就是href路径代码问题，修改后，本地和网页都能正确指向子仓库。</p>
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\navbar.<span class="property">ejs</span></span><br><span class="line"></span><br><span class="line">        &lt;div <span class="keyword">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span><br><span class="line">            &lt;% <span class="keyword">if</span> (theme.<span class="property">defaults</span>.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;logo&#x27;</span>) &amp;&amp; theme.<span class="property">defaults</span>.<span class="property">logo</span>) &#123; %&gt; </span><br><span class="line">                <span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-image&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/&quot;</span>&gt;</span> <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-image&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- url_for() %&gt;&quot;</span>&gt;</span> <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                    &lt;%- image_tag(theme.defaults.logo) %&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-title&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/&quot;</span>&gt;</span> <span class="comment">&lt;!-- 原代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;logo-title&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- url_for() %&gt;&quot;</span>&gt;</span> <span class="comment">&lt;!-- 修改代码 --&gt;</span> </span></span><br><span class="line"><span class="language-xml">                &lt;%- is_home() ? &#x27;<span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#x27; : &#x27;&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">                &lt;%= theme.info.title || config.title || &#x27;Redefine Theme&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">                &lt;%- is_home() ? &#x27;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>&#x27; : &#x27;&#x27; %&gt;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
-
-<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>上周用了两天的时间，主要解决了redefine主题url放置在子仓库中无法加载背景图片和头像图片，以及主页logo和图像索引指向根仓库的问题。</p>
-<p>如果将redefine主题应用在根仓库无&#x2F;root&#x2F;，则都不用更改正常使用，因为没有root路径，转化生成时不会出现路径错误。有了root之后，路径引用就容易出现问题，因为这个主题的目标就是根目录，最根本的代码还是没有找到原因。</p>
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\article-content.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;article-content markdown-body&quot;</span>&gt;</span><br><span class="line">                &lt;%- page.<span class="property">content</span> %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br><span class="line">            &lt;/div&gt;</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line">..\redefine\layout\_partials\head.<span class="property">ejs</span></span><br><span class="line"><span class="comment">// ejs代码注释符号单行</span></span><br><span class="line">&lt;!--- <span class="title class_">Inject</span> <span class="title class_">Part</span>--&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">enable</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">        &lt;% <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> theme.<span class="property">inject</span>.<span class="property">head</span>) &#123; %&gt;</span><br><span class="line">            &lt;% <span class="keyword">if</span> (theme.<span class="property">inject</span>.<span class="property">head</span>[i] !== <span class="literal">null</span>)&#123; %&gt;</span><br><span class="line">                &lt;% <span class="keyword">if</span> (theme.<span class="property">global</span>.<span class="property">pjax</span> == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i].<span class="title function_">replace</span>(<span class="string">&quot;&lt;script&quot;</span>, <span class="string">&quot;&lt;script data-pjax&quot;</span>) %&gt;</span><br><span class="line">                &lt;% &#125; <span class="keyword">else</span> &#123; %&gt;</span><br><span class="line">                    &lt;%- theme.<span class="property">inject</span>.<span class="property">head</span>[i] %&gt;</span><br><span class="line">            &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;% &#125; &#125;%&gt;</span><br><span class="line">    &lt;%- <span class="title function_">export_config</span>() %&gt; <span class="comment">// 这里的代码如何转义不清楚</span></span><br></pre></td></tr></table></figure></div>
-
-<p>问题解决看着很简单，就是路径的问题，可是由于对代码不熟悉，大部分时间都用在找代码上面了。先从index.html入手，看本地和网页版代码，确定路径引用错误引起指向错误和图片无法加载，然后找到主题原代码位置，确定具体代码行对其修改。</p>
-<h3 id="Typora图片无法正常加载"><a href="#Typora图片无法正常加载" class="headerlink" title="Typora图片无法正常加载"></a>Typora图片无法正常加载</h3><p>解决redefine主题应用在子仓库中的问题，新建文章后，使用Typora插入图片，加载又出现问题，还是url中有&#x2F;root&#x2F;的问题，图片路径在转义时会出现错误，具体哪里的原因目前不清楚。通过调试，在Typora中添加图片根目录可解决。</p>
-<p>修改scaffolds中post.md默认内容如下：</p>
-<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">tags:</span>  </span><br><span class="line"><span class="attr">categories:</span>  </span><br><span class="line"><span class="attr">thumbnail:</span> <span class="comment"># 将图片地址复制至此处即可。</span></span><br><span class="line"><span class="attr">cover:</span> <span class="comment"># 有了thumbnail这里可以空缺。</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="literal">false</span> <span class="comment"># 文章摘要，false为不显示。</span></span><br><span class="line"><span class="attr">typora-root-url:</span> <span class="string">.\..\</span> <span class="comment"># 设置图片根目录，这是有root后需要添加的。</span></span><br></pre></td></tr></table></figure></div>
-
-<p>图片即可正常加载，如下图实例</p>
-<p>hexo new test5 插入图片，本地、推送网页均可正常加载。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/redefine-theme-root-issue/post%E6%A0%BC%E5%BC%8F.png"
-                     
-                ></p>
+    <title>添加评论功能</title>
+    <url>/2023/06/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
+<p>不知道如何能不用审核就就直接显示评论。</p>
+<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><h4 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h4><p><strong>PS:</strong> 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
 ]]></content>
       <categories>
         <category>redefine</category>
       </categories>
       <tags>
-        <tag>url</tag>
-        <tag>root</tag>
+        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -895,20 +943,6 @@
       <tags>
         <tag>文章测试</tag>
         <tag>Typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>添加评论功能</title>
-    <url>/2023/06/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
-<p>不知道如何能不用审核就就直接显示评论。</p>
-<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><h4 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h4><p><strong>PS:</strong> 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
-]]></content>
-      <categories>
-        <category>redefine</category>
-      </categories>
-      <tags>
-        <tag>评论</tag>
       </tags>
   </entry>
 </search>
