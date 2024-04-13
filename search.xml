@@ -1422,7 +1422,7 @@
     <url>/2023/06/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>根据文档操作顺利部署评论功能，评论需要管理员审核才能被别人看到。</p>
 <p>不知道如何能不用审核就就直接显示评论。</p>
-<h4 id="参考文档-https-waline-js-org-guide-get-started"><a href="#参考文档-https-waline-js-org-guide-get-started" class="headerlink" title="参考文档 https://waline.js.org/guide/get-started/"></a>参考文档 <a class="link"   href="https://waline.js.org/guide/get-started/" >https://waline.js.org/guide/get-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><h4 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h4><p><strong>PS:</strong> 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
+<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a><a class="link"   href="https://waline.js.org/guide/get-started/" >参考文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><h4 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h4><p><strong>PS:</strong> 评论添加每一个blog需单独使用，之前workblog的评论转移至bloghome之后，bloghome评论可以使用，但是workblog的评论出现错误，根据帮助文档单独添加bloghome评论。</p>
 ]]></content>
       <categories>
         <category>redefine</category>
