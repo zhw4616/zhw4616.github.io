@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    
+    <meta name="author" content="不再孤独ing">
+    
+    <!-- Completely eliminate flash of wrong theme -->
+    <script>
+        (function() {
+            const THEME_KEY = "REDEFINE-THEME-STATUS";
+            const DARK = "dark", LIGHT = "light";
+            
+            // Get preferred theme
+            function getTheme() {
+                try {
+                    const saved = localStorage.getItem(THEME_KEY);
+                    if (saved) {
+                        const { isDark } = JSON.parse(saved);
+                        return isDark ? DARK : LIGHT;
+                    }
+                } catch (e) {}
+                
+                return matchMedia("(prefers-color-scheme: dark)").matches ? DARK : LIGHT;
+            }
+            
+            // Apply theme to document
+            function applyTheme(theme) {
+                const isDark = theme === DARK;
+                const root = document.documentElement;
+                
+                // Set classes for compatibility
+                root.classList.add(theme);
+                root.classList.remove(isDark ? LIGHT : DARK);
+                root.style.colorScheme = theme;
+            }
+            
+            // Initial application
+            const theme = getTheme();
+            applyTheme(theme);
+            
+            // Listen for system preference changes
+            matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+                // Only update if using system preference (no localStorage entry)
+                if (!localStorage.getItem(THEME_KEY)) {
+                    applyTheme(matches ? DARK : LIGHT);
+                }
+            });
+            
+            // Set body classes ASAP (before DOMContentLoaded)
+            (function() {
+                const addBodyClass = () => {
+                    const b = document.body;
+                    if (!b) return false;
+                    b.classList.add(theme + "-mode");
+                    return true;
+                };
+
+                // Try immediately
+                if (addBodyClass()) return;
+
+                // Observe until body exists
+                const mo = new MutationObserver(() => {
+                    if (addBodyClass()) mo.disconnect();
+                });
+                mo.observe(document.documentElement, { childList: true, subtree: true });
+            })();
+        })();
+    </script>
+    
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://zhw4616.github.io/2026/03/06/ubuntu-系统下本地文件夹完整备份到-github-仓库（实操指南）/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）">
+<meta property="og:url" content="https://zhw4616.github.io/2026/03/06/Ubuntu-%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%95%B4%E5%A4%87%E4%BB%BD%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93%EF%BC%88%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%EF%BC%89/index.html">
+<meta property="og:site_name" content="Work Blog">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zhw4616.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2026-03-06T08:52:52.000Z">
+<meta property="article:modified_time" content="2026-03-22T03:42:07.986Z">
+<meta property="article:author" content="zhw4616">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhw4616.github.io/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/blog/privateinvestocat.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/blog/privateinvestocat.jpg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/blog/privateinvestocat.jpg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南） | WORK BLOG
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"zhw4616.github.io","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["MVP++"]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":4,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/blog/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"side_tools":{"gear_rotation":true,"auto_expand":false},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/images/blog/wallhaven-wqery6-light.webp","dark":"/images/blog/wallhaven-wqery6-dark.webp"},"title":"What's Past Is Prologue.","subtitle":{"text":["“凡是过去，皆为序章。”"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":[{"icon":"fa-brands fa-github","url":"https://github.com/"},{"icon":"fa-brands fa-instagram","url":"https://www.instagram.com/"},{"icon":"fa-brands fa-twitter","url":"https://twitter.com/home/"},{"icon":"fa-solid fa-at","url":"https://mail.google.com/"},{"icon":"fa-brands fa-bilibili","url":"https://www.bilibili.com/"}],"qrs":[]}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0","theme":{"light":"default","dark":"dark"}}},"version":"2.9.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"About":{"icon":"fa-regular fa-user","submenus":{"Me":null,"Github":"https://github.com/","BlogHome":null,"Tags":"/tags","Categories":"/categories"}},"Gallery":{"path":"/masonry","icon":"fa-solid fa-image"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur","masonry":{"batch_size":12,"initial_batch_size":24}},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":"What's Past Is Prologue","show_on_mobile":true,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footer":{"runtime":true,"icon":"<i class=\"fa-solid fa-heart fa-beat\" style=\"--fa-animation-duration: 0.5s; color: #f54545\"></i>","start":"2023/5/29 16:03:11","statistics":true,"customize":null,"icp":{"enable":false,"number":null,"url":null}},"footerStart":"2023/5/29 16:03:11","mermaid":{"style":{"light":"default","dark":"dark"}}};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.i18n = {"search":"Search...","toc":"On this page","prev":"Prev","next":"Next","prev_posts":"Prev posts","next_posts":"Next posts","page":"Page %d","recent_posts":"Recent Posts","share":"Share","powered_by":"POWERED BY %s","theme":"THEME","rss_feed":"RSS Feed","category":"Category","categories":"Categories","tag":"Tag","tags":"Tags","post":"Post","posts":"Posts","tagcloud":"Tag Cloud","comment":"Comment","comments":"Comments","home":"Home","archive":"Archive","archives":"Archives","top":"TOP","sticky":"Sticky","go-back-home":"Go Back Home","masonry_loading":"Loading photos...","image_viewer":"Image viewer","close":"Close","exif":{"title":"EXIF","cards":{"camera":"Camera","lens":"Lens","exposure":"Exposure","other":"Other"},"fields":{"make":"Brand","model":"Model","date_taken":"Date taken","lens_model":"Lens","focal_length":"Focal length","focus_mode":"Focus mode","shutter":"Shutter","aperture":"Aperture","iso":"ISO","exposure_program":"Exposure program","exposure_compensation":"Exposure compensation","metering_mode":"Metering mode","flash":"Flash","white_balance":"White balance","latitude":"Latitude","longitude":"Longitude","altitude":"Altitude"},"status":{"loading":"Loading...","no_exif":"No EXIF available","library_missing":"EXIF library not loaded","image_source_missing":"Image source unavailable","unavailable":"EXIF unavailable (blocked by CORS or missing metadata)","flag_unavailable":"EXIF unavailable"}},"about":"About","changelog":"Changelog","links":"Links","link":"Link","friends":"Friends","friend":"Friend","timeline":"Timeline","shuoshuo":"Shuoshuo","bookmarks":"Bookmarks","site_uv":"VISITOR COUNT","site_pv":"TOTAL PAGE VIEWS","read_more":"Read more","wordcount":"Words","min2read":"Mins","status":"Status","runtime":"Blog up for","days":"days","hours":"hrs","minutes":"Min","seconds":"Sec","optimized_by":"and Optimized by Evan","rights":"All Rights Reserved","site_posts":"%s posts in total","site_wordcount":"%s words in total","copyright":{"author":"Author","title":"Title","link":"Link","create_time":"Created at","update_time":"Updated at","license_title":"License","license_content":"This work is licensed under %s.","all_rights_reserved":"All Rights Reserved &#169; %s","public_domain":"This work is in the public domain."},"ago":{"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"},"create_time":"Created","update_time":"Updated","expired":"This post is written %s days ago, and the content may not be up to date."};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
+                    <img src="/images/blog/privateinvestocat.jpg" class="w-full h-full rounded-xs">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                WORK BLOG
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a href="/null">
+                                                    ME
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://github.com/">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/null">
+                                                    BLOGHOME
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/tags">
+                                                    TAGS
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/categories">
+                                                    CATEGORIES
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/masonry"
+                                        >
+                                    <i class="fa-solid fa-image fa-fw"></i>
+                                    GALLERY
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-About"
+                        >
+                            <span>
+                                ABOUT
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-About">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/null">ME</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://github.com/">GITHUB</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/null">BLOGHOME</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/tags">TAGS</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/categories">CATEGORIES</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/masonry"
+                        >
+                            <span>
+                                GALLERY
+                            </span>
+                            
+                                <i class="fa-solid fa-image fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/tags"
+                        >
+                            <span>Tags</span>
+                            <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/categories"
+                        >
+                            <span>Categories</span>
+                            <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">33</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">65</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="/../images/Ubuntu-%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%95%B4%E5%A4%87%E4%BB%BD%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93%EF%BC%88%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%EF%BC%89/323f358e986419487af4b51036d43be0f2b7c25f.jpeg" alt="Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] shrink-0 rounded-medium border border-border-color p-px">
+				<img src="/images/blog/privateinvestocat.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">不再孤独ing</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">MVP++</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2026-03-06 16:52:52</span>
+        <span class="mobile">2026-03-06 16:52:52</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-03-22 11:42:07</span>
+            <span class="mobile">2026-03-22 11:42:07</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.5k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>6 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="Ubuntu-系统下本地文件夹完整备份到-GitHub-仓库（实操指南）"><a href="#Ubuntu-系统下本地文件夹完整备份到-GitHub-仓库（实操指南）" class="headerlink" title="Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）"></a>Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）</h1><p>本文针对 Ubuntu 系统，提供「本地文件夹 → GitHub 仓库」的完整备份方案，包含<strong>首次全量备份</strong>、<strong>日常增量备份</strong>、<strong>多账号适配</strong>（如你之前配置的双 GitHub 账号），步骤清晰可直接复刻，兼顾新手友好性和实用性。</p>
+<h2 id="一、前置准备"><a href="#一、前置准备" class="headerlink" title="一、前置准备"></a>一、前置准备</h2><ol>
+<li><p><strong>环境确认</strong>：Ubuntu 已安装 Git（未安装执行：<code>sudo apt install git -y</code>）；</p>
+</li>
+<li><p><strong>SSH 配置</strong>：已为目标 GitHub 账号配置 SSH Key（多账号需提前配置 <code>~/.ssh/config</code> 区分别名）；</p>
+</li>
+<li><p><strong>GitHub 仓库</strong>：提前在目标账号创建<strong>空仓库</strong>（建议仓库名与本地文件夹名一致，无需初始化 README&#x2F;许可证）；</p>
+</li>
+<li><p><strong>本地文件夹</strong>：待备份的文件夹路径无中文&#x2F;特殊字符（如 <code>~/my-backup-folder</code>）。</p>
+<h2 id="二、核心逻辑"><a href="#二、核心逻辑" class="headerlink" title="二、核心逻辑"></a>二、核心逻辑</h2><p>通过 Git 将本地文件夹初始化为仓库 → 关联远程 GitHub 仓库 → 提交所有文件并推送；后续仅需「拉取-提交-推送」即可实现增量备份，保证本地与远程文件同步。</p>
+</li>
+</ol>
+<hr>
+<h2 id="三、步骤-1：首次全量备份（核心操作）"><a href="#三、步骤-1：首次全量备份（核心操作）" class="headerlink" title="三、步骤 1：首次全量备份（核心操作）"></a>三、步骤 1：首次全量备份（核心操作）</h2><h3 id="3-1-进入本地文件夹并初始化-Git-仓库"><a href="#3-1-进入本地文件夹并初始化-Git-仓库" class="headerlink" title="3.1 进入本地文件夹并初始化 Git 仓库"></a>3.1 进入本地文件夹并初始化 Git 仓库</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 替换为你的本地文件夹路径</span></span><br><span class="line"><span class="built_in">cd</span> ~/my-backup-folder</span><br><span class="line"><span class="comment"># 初始化 Git 仓库（仅首次执行）</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 多账号必做：配置当前仓库专属的 Git 用户名/邮箱（对应 GitHub 账号）</span></span><br><span class="line">git config user.name <span class="string">&quot;your-github-username&quot;</span></span><br><span class="line">git config user.email <span class="string">&quot;your-github-email@xxx.com&quot;</span></span><br><span class="line"><span class="comment"># 单账号可省略，用全局配置：git config --global user.name/email</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-2-配置-gitignore（过滤无用文件）"><a href="#3-2-配置-gitignore（过滤无用文件）" class="headerlink" title="3.2 配置 .gitignore（过滤无用文件）"></a>3.2 配置 .gitignore（过滤无用文件）</h3><p>创建 <code>.gitignore</code> 文件，避免备份日志、缓存、依赖包等无用文件，减少仓库体积：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在备份文件夹内创建 .gitignore</span></span><br><span class="line">nano .gitignore</span><br></pre></td></tr></table></figure></div>
+
+<p>粘贴通用忽略模板（按需删减）：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 日志文件</span><br><span class="line">*.log</span><br><span class="line">logs/</span><br><span class="line"># 缓存/临时文件</span><br><span class="line">.DS_Store</span><br><span class="line">tmp/</span><br><span class="line">.cache/</span><br><span class="line">*.swp</span><br><span class="line"># 依赖包（按需删除）</span><br><span class="line">node_modules/</span><br><span class="line">venv/</span><br><span class="line">dist/</span><br><span class="line"># 自定义需忽略的文件夹/文件</span><br><span class="line"># test-folder/</span><br><span class="line"># secret.txt</span><br></pre></td></tr></table></figure></div>
+
+<p>保存退出：<code>Ctrl+O</code> → 回车 → <code>Ctrl+X</code>。</p>
+<h3 id="3-3-关联远程-GitHub-仓库并推送"><a href="#3-3-关联远程-GitHub-仓库并推送" class="headerlink" title="3.3 关联远程 GitHub 仓库并推送"></a>3.3 关联远程 GitHub 仓库并推送</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 关联远程仓库（替换为你的仓库地址）</span></span><br><span class="line"><span class="comment"># 单账号：git@github.com:用户名/仓库名.git</span></span><br><span class="line"><span class="comment"># 多账号：git@github-别名:用户名/仓库名.git（如 git@github-accountA:test/backup.git）</span></span><br><span class="line">git remote add origin git@github-accountA:your-username/your-repo-name.git</span><br><span class="line"><span class="comment"># 验证关联是否正确（输出 origin 对应的 SSH 地址即正常）</span></span><br><span class="line">git remote -v</span><br><span class="line"><span class="comment"># 添加所有文件到暂存区（.gitignore 中的文件自动忽略）</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件（备注清晰，便于追溯）</span></span><br><span class="line">git commit -m <span class="string">&quot;首次备份：完整备份 my-backup-folder 文件夹&quot;</span></span><br><span class="line"><span class="comment"># 首次推送（-u 绑定本地 main 分支与远程 main 分支）</span></span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="执行完成后，登录-GitHub-仓库页面，即可看到本地文件夹的所有文件已同步。"><a href="#执行完成后，登录-GitHub-仓库页面，即可看到本地文件夹的所有文件已同步。" class="headerlink" title="执行完成后，登录 GitHub 仓库页面，即可看到本地文件夹的所有文件已同步。"></a>执行完成后，登录 GitHub 仓库页面，即可看到本地文件夹的所有文件已同步。</h2><h2 id="四、步骤-2：日常增量备份（文件修改-x2F-新增后）"><a href="#四、步骤-2：日常增量备份（文件修改-x2F-新增后）" class="headerlink" title="四、步骤 2：日常增量备份（文件修改&#x2F;新增后）"></a>四、步骤 2：日常增量备份（文件修改&#x2F;新增后）</h2><p>当本地文件夹内容有变更时，只需执行以下 4 步完成增量备份：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 进入备份文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/my-backup-folder</span><br><span class="line"><span class="comment"># 2. 拉取远程最新版本（单人备份可省略，多人协作必做）</span></span><br><span class="line">git pull origin main</span><br><span class="line"><span class="comment"># 3. 添加所有变更文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 4. 提交并推送（备注描述变更内容）</span></span><br><span class="line">git commit -m <span class="string">&quot;增量备份：2026-03-06 修改 xxx 文件 + 新增 yyy 文件夹&quot;</span></span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="五、进阶：一键备份脚本（懒人必备）"><a href="#五、进阶：一键备份脚本（懒人必备）" class="headerlink" title="五、进阶：一键备份脚本（懒人必备）"></a>五、进阶：一键备份脚本（懒人必备）</h2><p>创建 Shell 脚本，无需手动输入命令，一键完成增量备份：</p>
+<h3 id="5-1-创建脚本文件"><a href="#5-1-创建脚本文件" class="headerlink" title="5.1 创建脚本文件"></a>5.1 创建脚本文件</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano ~/my-backup-folder/auto-backup.sh</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-2-编写脚本内容"><a href="#5-2-编写脚本内容" class="headerlink" title="5.2 编写脚本内容"></a>5.2 编写脚本内容</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 本地文件夹备份到 GitHub 一键脚本</span></span><br><span class="line"><span class="comment"># 定义备份文件夹路径（替换为你的路径）</span></span><br><span class="line">BACKUP_FOLDER=<span class="string">&quot;~/my-backup-folder&quot;</span></span><br><span class="line"><span class="comment"># 定义远程仓库地址（替换为你的地址）</span></span><br><span class="line">REMOTE_REPO=<span class="string">&quot;git@github-accountA:your-username/your-repo-name.git&quot;</span></span><br><span class="line"><span class="comment"># 进入备份文件夹，失败则退出</span></span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$BACKUP_FOLDER</span> || &#123; <span class="built_in">echo</span> <span class="string">&quot;❌ 文件夹路径错误！&quot;</span>; <span class="built_in">exit</span> 1; &#125;</span><br><span class="line"><span class="comment"># 拉取远程最新版本</span></span><br><span class="line">git pull origin main</span><br><span class="line"><span class="comment"># 添加所有变更</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 获取当前时间作为提交备注</span></span><br><span class="line">COMMIT_MSG=<span class="string">&quot;增量备份：<span class="subst">$(date +&#x27;%Y-%m-%d %H:%M:%S&#x27;)</span>&quot;</span></span><br><span class="line"><span class="comment"># 提交并推送</span></span><br><span class="line">git commit -m <span class="string">&quot;<span class="variable">$COMMIT_MSG</span>&quot;</span></span><br><span class="line">git push origin main</span><br><span class="line"><span class="comment"># 提示备份完成</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;✅ 备份成功！当前时间：<span class="subst">$(date +&#x27;%Y-%m-%d %H:%M:%S&#x27;)</span>&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-3-赋予执行权限并运行"><a href="#5-3-赋予执行权限并运行" class="headerlink" title="5.3 赋予执行权限并运行"></a>5.3 赋予执行权限并运行</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 赋予脚本执行权限</span></span><br><span class="line"><span class="built_in">chmod</span> +x ~/my-backup-folder/auto-backup.sh</span><br><span class="line"><span class="comment"># 一键备份（每次修改文件后执行）</span></span><br><span class="line">~/my-backup-folder/auto-backup.sh</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="六、常见问题解决"><a href="#六、常见问题解决" class="headerlink" title="六、常见问题解决"></a>六、常见问题解决</h2><h3 id="1-推送报错：fatal-remote-origin-already-exists"><a href="#1-推送报错：fatal-remote-origin-already-exists" class="headerlink" title="1. 推送报错：fatal: remote origin already exists"></a>1. 推送报错：fatal: remote origin already exists</h3><ul>
+<li><p>原因：本地仓库已关联过其他远程仓库；</p>
+</li>
+<li><p>解决：删除旧关联后重新关联：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="built_in">rm</span> origin</span><br><span class="line">git remote add origin git@github-accountA:your-username/your-repo-name.git</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-推送报错：Permission-denied-publickey"><a href="#2-推送报错：Permission-denied-publickey" class="headerlink" title="2. 推送报错：Permission denied (publickey)"></a>2. 推送报错：Permission denied (publickey)</h3></li>
+<li><p>原因：SSH Key 未配置&#x2F;未添加到 GitHub 账号；</p>
+</li>
+<li><p>解决：</p>
+<ol>
+<li><p>测试 SSH 连接：<code>ssh -T git@github-accountA</code>（多账号）&#x2F; <code>ssh -T git@github.com</code>（单账号）；</p>
+</li>
+<li><p>检查 SSH Key 权限：<code>chmod 700 ~/.ssh &amp;&amp; chmod 600 ~/.ssh/id_rsa_accountA</code>；</p>
+</li>
+<li><p>重新将公钥添加到 GitHub 账号。</p>
+<h3 id="3-部分文件未备份"><a href="#3-部分文件未备份" class="headerlink" title="3. 部分文件未备份"></a>3. 部分文件未备份</h3></li>
+</ol>
+</li>
+<li><p>原因：文件被 <code>.gitignore</code> 忽略，或未执行 <code>git add .</code>；</p>
+</li>
+<li><p>解决：</p>
+<ol>
+<li>检查 <code>.gitignore</code> 规则，删除不需要忽略的条目；</li>
+<li>强制添加被忽略的文件：<code>git add -f 文件名</code>（不推荐，优先修改 <code>.gitignore</code>）。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><strong>首次备份</strong>：核心是「初始化仓库 → 配置 .gitignore → 关联远程 → 提交推送」，完成全量同步；</li>
+<li><strong>日常备份</strong>：仅需「拉取 → 提交 → 推送」三步，实现增量更新；</li>
+<li><strong>效率优化</strong>：一键脚本可简化操作，适合高频备份场景；</li>
+<li><strong>多账号适配</strong>：只需将远程仓库地址替换为 SSH 别名（如 <code>git@github-accountA:xxx.git</code>），即可区分不同 GitHub 账号。<br>按上述步骤操作后，本地文件夹会与 GitHub 仓库实时同步，既保证文件安全，又能从其他设备随时拉取最新版本，完美适配多账号&#x2F;多仓库场景。</li>
+</ol>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/Ubuntu-%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%95%B4%E5%A4%87%E4%BB%BD%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93%EF%BC%88%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%EF%BC%89/323f358e986419487af4b51036d43be0f2b7c25f.jpeg"
+                     
+                ></p>
+
+		</div>
+
+		
+
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2026/03/06/woindows-%E6%96%B0%E5%A2%9E%E5%8D%9A%E5%AE%A2/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">woindows 新增博客</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2026/03/06/Ubuntu-%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%A4%9A-GitHub-%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86-Hexo-%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">Ubuntu 系统下多 GitHub 账号管理 Hexo 博客并部署到 GitHub Pages</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.js';
+
+      (function() {
+        const startPath = location.pathname;
+        const startTime = Date.now();
+        const retryDelay = 200;
+        const retryLimit = 5000;
+
+        const runWaline = () => {
+          if (location.pathname !== startPath) {
+            return;
+          }
+
+          const container = document.getElementById('waline');
+          if (!container) {
+            if (Date.now() - startTime < retryLimit) {
+              setTimeout(runWaline, retryDelay);
+            }
+            return;
+          }
+
+          if (window.redefineWalineInstance?.destroy) {
+            window.redefineWalineInstance.destroy();
+          }
+
+          container.innerHTML = '';
+          window.redefineWalineInstance = init({
+            el: '#waline',
+            serverURL: 'https://workblog-comment-c5spx73q1-zhw4616.vercel.app',
+            path: location.pathname,
+            dark: 'body[class~="dark-mode"]',
+            reaction: false,
+            requiredMeta: ['nick', 'mail'],
+            emoji: [],
+                      lang: 'en-US',
+          });
+        };
+
+        runWaline();
+      })();
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ubuntu-%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%95%B4%E5%A4%87%E4%BB%BD%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93%EF%BC%88%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%EF%BC%89"><span class="nav-text">Ubuntu 系统下本地文件夹完整备份到 GitHub 仓库（实操指南）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="nav-text">一、前置准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%A0%B8%E5%BF%83%E9%80%BB%E8%BE%91"><span class="nav-text">二、核心逻辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E9%A6%96%E6%AC%A1%E5%85%A8%E9%87%8F%E5%A4%87%E4%BB%BD%EF%BC%88%E6%A0%B8%E5%BF%83%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="nav-text">三、步骤 1：首次全量备份（核心操作）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E8%BF%9B%E5%85%A5%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96-Git-%E4%BB%93%E5%BA%93"><span class="nav-text">3.1 进入本地文件夹并初始化 Git 仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E9%85%8D%E7%BD%AE-gitignore%EF%BC%88%E8%BF%87%E6%BB%A4%E6%97%A0%E7%94%A8%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-text">3.2 配置 .gitignore（过滤无用文件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%85%B3%E8%81%94%E8%BF%9C%E7%A8%8B-GitHub-%E4%BB%93%E5%BA%93%E5%B9%B6%E6%8E%A8%E9%80%81"><span class="nav-text">3.3 关联远程 GitHub 仓库并推送</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%8C%E7%99%BB%E5%BD%95-GitHub-%E4%BB%93%E5%BA%93%E9%A1%B5%E9%9D%A2%EF%BC%8C%E5%8D%B3%E5%8F%AF%E7%9C%8B%E5%88%B0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%B7%B2%E5%90%8C%E6%AD%A5%E3%80%82"><span class="nav-text">执行完成后，登录 GitHub 仓库页面，即可看到本地文件夹的所有文件已同步。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E6%97%A5%E5%B8%B8%E5%A2%9E%E9%87%8F%E5%A4%87%E4%BB%BD%EF%BC%88%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9-x2F-%E6%96%B0%E5%A2%9E%E5%90%8E%EF%BC%89"><span class="nav-text">四、步骤 2：日常增量备份（文件修改&#x2F;新增后）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%BF%9B%E9%98%B6%EF%BC%9A%E4%B8%80%E9%94%AE%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC%EF%BC%88%E6%87%92%E4%BA%BA%E5%BF%85%E5%A4%87%EF%BC%89"><span class="nav-text">五、进阶：一键备份脚本（懒人必备）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-text">5.1 创建脚本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E7%BC%96%E5%86%99%E8%84%9A%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="nav-text">5.2 编写脚本内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E8%B5%8B%E4%BA%88%E6%89%A7%E8%A1%8C%E6%9D%83%E9%99%90%E5%B9%B6%E8%BF%90%E8%A1%8C"><span class="nav-text">5.3 赋予执行权限并运行</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="nav-text">六、常见问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8E%A8%E9%80%81%E6%8A%A5%E9%94%99%EF%BC%9Afatal-remote-origin-already-exists"><span class="nav-text">1. 推送报错：fatal: remote origin already exists</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%8E%A8%E9%80%81%E6%8A%A5%E9%94%99%EF%BC%9APermission-denied-publickey"><span class="nav-text">2. 推送报错：Permission denied (publickey)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%83%A8%E5%88%86%E6%96%87%E4%BB%B6%E6%9C%AA%E5%A4%87%E4%BB%BD"><span class="nav-text">3. 部分文件未备份</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2026&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">不再孤独ing</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        65 posts in total
+                    </span>
+                    
+                        <span>
+                            66.1k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.9.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container" role="dialog" aria-modal="true" aria-label="Image viewer">
+	<button class="image-viewer-close" type="button" aria-label="Close">
+		<i class="fa-solid fa-xmark"></i>
+	</button>
+	<button class="image-viewer-prev" type="button" aria-label="Prev">
+		<i class="fa-solid fa-chevron-left"></i>
+	</button>
+	<div class="image-viewer-frame">
+		<img src="" alt="">
+	</div>
+	<div class="image-viewer-exif-panel hidden absolute left-1/2 bottom-20 -translate-x-1/2 w-[min(92vw,420px)] max-h-[60vh] overflow-hidden rounded-2xl bg-background-color-transparent-80 p-4 text-left shadow-redefine-flat backdrop-blur-md" role="dialog" aria-label="EXIF" aria-hidden="true">
+		<div class="flex items-center justify-between mb-3">
+			<span class="text-sm font-semibold text-first-text-color">EXIF</span>
+			<button class="image-viewer-exif-close flex h-8 w-8 items-center justify-center rounded-full bg-background-color-transparent-80 text-first-text-color transition hover:bg-background-color-transparent-40" type="button" aria-label="Close">
+				<i class="fa-solid fa-xmark text-[0.65rem]"></i>
+			</button>
+		</div>
+		<div class="image-viewer-exif-cards grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto pr-1 scrollbar-hide"></div>
+		<template class="image-viewer-exif-card-template">
+			<div class="rounded-lg bg-background-color-transparent-40 px-3 py-2">
+				<div class="image-viewer-exif-card-header flex items-center gap-2 mb-1">
+					<i class="image-viewer-exif-card-icon fa-solid fa-circle-info text-xs text-third-text-color"></i>
+					<div class="image-viewer-exif-card-title text-xs font-semibold text-first-text-color"></div>
+				</div>
+				<div class="image-viewer-exif-card-items flex flex-col gap-1"></div>
+			</div>
+		</template>
+	</div>
+	<button class="image-viewer-exif-toggle flex items-center gap-2 hidden absolute left-1/2 bottom-6 -translate-x-1/2 rounded-full border border-border-color bg-background-color-transparent-80 px-4 py-2 text-first-text-color backdrop-blur-md transition hover:bg-background-color-transparent-40" type="button" aria-label="EXIF" aria-expanded="false">
+		<i class="fa-solid fa-circle-info text-xs"></i>
+		<span class="text-xs font-semibold uppercase tracking-wider">EXIF</span>
+	</button>
+	<button class="image-viewer-next" type="button" aria-label="Next">
+		<i class="fa-solid fa-chevron-right"></i>
+	</button>
+</div>
+
+
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Search..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    window.swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+
+    window.dispatchEvent(
+        new CustomEvent("redefine:swup:ready", {
+            detail: {
+                swup: window.swup,
+            },
+        }),
+    );
+</script>
+
+
+
+
+	
+<script src="/js/build/main.js" type="module"></script>
+
+
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/libs/minimasonry.min.js" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+
+	
+</body>
+
+</html>
